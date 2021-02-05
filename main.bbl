@@ -1,0 +1,140 @@
+\begin{thebibliography}{15}
+\input babelbst.tex
+\newcommand{\Capitalize}[1]{\uppercase{#1}}
+\newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[net()]{network_sec_assessment}
+\emph{Network Security Assessment}.
+\newblock O'Reilly Media, Inc., \bblfirst{} \bbledition{}.
+
+\bibitem[Deccio \bbland{} Davis(2019)]{dns_privacy}
+Casey Deccio \bbland{} Jacob Davis.
+\newblock Dns privacy in practice and preparation.
+\newblock  \emph{Proceedings of the 15th International Conference on Emerging
+  Networking Experiments And Technologies}, CoNEXT '19, \bblpage{} 138–143,
+  New York, NY, USA, 2019. Association for Computing Machinery.
+\newblock ISBN 9781450369985.
+\newblock \doi{10.1145/3359989.3365435}.
+\newblock URL \url{https://doi.org/10.1145/3359989.3365435}.
+
+\bibitem[Fukuda \bbland{} Heidemann(2015)]{detect_malicious}
+Kensuke Fukuda \bbland{} John Heidemann.
+\newblock Detecting malicious activity with dns backscatter.
+\newblock  \emph{Proceedings of the 2015 Internet Measurement Conference}, IMC
+  '15, \bblpage{} 197–210, New York, NY, USA, 2015. Association for Computing
+  Machinery.
+\newblock ISBN 9781450338486.
+\newblock \doi{10.1145/2815675.2815706}.
+\newblock URL \url{https://doi.org/10.1145/2815675.2815706}.
+
+\bibitem[Graves(2010)]{hackers_guide}
+Kimberly Graves.
+\newblock \emph{CEH Certified Ethical Hacker Study Guide: Certified Ethical
+  Hacker Study Guide}.
+\newblock John Wiley \& Sons, Incorporated, Hoboken, 2010.
+\newblock ISBN 9780470525203.
+
+\bibitem[{Klein} \bbletal{}.(2017){Klein}, {Shulman}, \bbland{}
+  {Waidner}]{counting_in_the_dark}
+A.~{Klein}, H.~{Shulman} \bbland{} M.~{Waidner}.
+\newblock Counting in the dark: Dns caches discovery and enumeration in the
+  internet.
+\newblock  \emph{2017 47th Annual IEEE/IFIP International Conference on
+  Dependable Systems and Networks (DSN)}, \bblpages{} 367--378, 2017.
+\newblock \doi{10.1109/DSN.2017.63}.
+
+\bibitem[Korczy\'{n}ski \bbletal{}.(2016)Korczy\'{n}ski, Kr\'{o}l, \bbland{}
+  van Eeten]{zone_poisoning}
+Maciej Korczy\'{n}ski, Micha\l{} Kr\'{o}l \bbland{} Michel van Eeten.
+\newblock Zone poisoning: The how and where of non-secure dns dynamic updates.
+\newblock  \emph{Proceedings of the 2016 Internet Measurement Conference}, IMC
+  '16, \bblpage{} 271–278, New York, NY, USA, 2016. Association for Computing
+  Machinery.
+\newblock ISBN 9781450345262.
+\newblock \doi{10.1145/2987443.2987477}.
+\newblock URL \url{https://doi.org/10.1145/2987443.2987477}.
+
+\bibitem[Kurose \bbland{} Ross(2013)]{kurose_ross}
+James~F. Kurose \bbland{} Keith~W. Ross.
+\newblock \emph{Computer networking : a top-down approach}.
+\newblock Pearson, Boston, 2013.
+\newblock ISBN 9780273775638.
+
+\bibitem[Liu \bbletal{}.(2016)Liu, Hao, \bbland{} Wang]{dns_belongs_to_us}
+Daiping Liu, Shuai Hao \bbland{} Haining Wang.
+\newblock All your dns records point to us: Understanding the security threats
+  of dangling dns records.
+\newblock  \emph{Proceedings of the 2016 ACM SIGSAC Conference on Computer and
+  Communications Security}, CCS '16, \bblpage{} 1414–1425, New York, NY, USA,
+  2016. Association for Computing Machinery.
+\newblock ISBN 9781450341394.
+\newblock \doi{10.1145/2976749.2978387}.
+\newblock URL \url{https://doi.org/10.1145/2976749.2978387}.
+
+\bibitem[Mockapetris(1987)]{RFC1035}
+Paul Mockapetris.
+\newblock {RFC 1035: Domain Names - Implentation And Specification}, \bblnov{}
+  1987.
+\newblock Status: DRAFT STANDARD.
+
+\bibitem[Pang \bbletal{}.(2004)Pang, Akella, Shaikh, Krishnamurthy, \bbland{}
+  Seshan]{dns_responsiveness}
+Jeffrey Pang, Aditya Akella, Anees Shaikh, Balachander Krishnamurthy \bbland{}
+  Srinivasan Seshan.
+\newblock On the responsiveness of dns-based network control.
+\newblock  \emph{Proceedings of the 4th ACM SIGCOMM Conference on Internet
+  Measurement}, IMC '04, \bblpage{} 21–26, New York, NY, USA, 2004.
+  Association for Computing Machinery.
+\newblock ISBN 1581138210.
+\newblock \doi{10.1145/1028788.1028792}.
+\newblock URL \url{https://doi.org/10.1145/1028788.1028792}.
+
+\bibitem[Piipponen(2011)]{ipv6_discovery}
+Tommi Piipponen.
+\newblock Laitteiden ja palvelujen löytäminen ipv6-verkossa.
+\newblock Kandidaatintyö, Aalto-yliopiston perustieteiden korkeakoulu, Espoo,
+  2011.
+\newblock Saatavissa \url{http://urn.fi/URN:NBN:fi:aalto-201305162358}.
+  Viitattu 2.2.2020.
+
+\bibitem[Shulman \bbland{} Waidner(2017)]{lotr}
+Haya Shulman \bbland{} Michael Waidner.
+\newblock One key to sign them all considered vulnerable: Evaluation of
+  {DNSSEC} in the internet.
+\newblock  \emph{14th {USENIX} Symposium on Networked Systems Design and
+  Implementation ({NSDI} 17)}, \bblpages{} 131--144, Boston, MA, \bblmar{}
+  2017. {USENIX} Association.
+\newblock ISBN 978-1-931971-37-9.
+\newblock URL
+  \url{https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/shulman}.
+
+\bibitem[{Skwarek} \bbletal{}.(2019){Skwarek}, {Korczynski}, {Mazurczyk},
+  \bbland{} {Duda}]{global_zone_transfer}
+M.~{Skwarek}, M.~{Korczynski}, W.~{Mazurczyk} \bbland{} A.~{Duda}.
+\newblock Characterizing vulnerability of dns axfr transfers with global-scale
+  scanning.
+\newblock  \emph{2019 IEEE Security and Privacy Workshops (SPW)}, \bblpages{}
+  193--198, 2019.
+\newblock \doi{10.1109/SPW.2019.00044}.
+
+\bibitem[Taipale(2011)]{service_discovery}
+Joni Taipale.
+\newblock Palvelun löytäminen erilaisissa verkoissa; service discovery in
+  different networks.
+\newblock Kandidaatintyö, Aalto-yliopiston perustieteiden korkeakoulu, Espoo,
+  2011.
+\newblock Saatavissa \url{http://urn.fi/URN:NBN:fi:aalto-201305162355}.
+  Viitattu 2.2.2020.
+
+\bibitem[Tanenbaum \bbland{} Wetherall(2014)]{tanenbaum}
+Andrew~S. Tanenbaum \bbland{} D.~Wetherall.
+\newblock \emph{Computer networks}.
+\newblock Pearson, Harlow, \bblfifth{} \bbledition{}, 2014.
+\newblock ISBN 9781292037189.
+
+\end{thebibliography}

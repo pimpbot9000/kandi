@@ -1,0 +1,522 @@
+@book{tanenbaum,
+	author={Andrew S. Tanenbaum and D. Wetherall},
+	year={2014},
+	title={Computer networks},
+	publisher={Pearson},
+	address={Harlow},
+	edition={5},	
+	abstract={Tanenbaum takes a structured approach to explaining how networks work from the inside out. He starts with an explanation of the physical layer of networking, computer hardware and transmission systems; then works his way up to network applications. Tanenbaum's in-depth application coverage includes email; the domain name system; the World Wide Web (both client- and server-side); and multimedia (including voice over IP, Internet radio video on demand, video conferencing, and streaming media. Each chapter follows a consistent approach: Tanenbaum presents key principles, then illustrates them utilizing real-world example networks that run through the entire book-the Internet, and wireless networks, including Wireless LANs, broadband wireless and Bluetooth. The fifth edition includes a chapter devoted exclusively to network security. The textbook is supplemented by a Solutions Manual, as well as a Website containing PowerPoint slides, art in various forms, and other tools for instruction, including a protocol simulator whereby students can develop and test their own network protocols.},
+	isbn={9781292037189}
+}
+@book{kurose_ross,
+	author={James F. Kurose and Keith W. Ross},
+	year={2013},
+	title={Computer networking : a top-down approach},
+	publisher={Pearson},
+	address={Boston},	
+	isbn={9780273775638}
+}
+
+@book{network_sec_assessment,
+booktitle = {Network Security Assessment},
+edition = {1st edition},
+keywords = {Electronic books},
+language = {eng},
+publisher = {O'Reilly Media, Inc.},
+title = {Network Security Assessment },
+}
+
+
+@INPROCEEDINGS{global_zone_transfer,
+  author={M. {Skwarek} and M. {Korczynski} and W. {Mazurczyk} and A. {Duda}},
+  booktitle={2019 IEEE Security and Privacy Workshops (SPW)}, 
+  title={Characterizing Vulnerability of DNS AXFR Transfers with Global-Scale Scanning}, 
+  year={2019},
+  volume={},
+  number={},
+  pages={193-198},
+  doi={10.1109/SPW.2019.00044}}
+
+
+@InProceedings{zone_provisioning,
+author = {Kalafut, Andrew J. and Shue, Craig A. and Gupta, Minaxi},
+title = {Understanding Implications of DNS Zone Provisioning},
+year = {2008},
+isbn = {9781605583341},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1452520.1452546},
+doi = {10.1145/1452520.1452546},
+abstract = {DNS is a critical component of the Internet. This paper takes a comprehensive look at the provisioning of Internet domains and its impact on the availability of various services. To gather data, we sweep 60% of the Internet's domains for zone transfers. 6.6% of them allow us to transfer their complete information. We find that carelessness in handling DNS records can lead to reduced availability of name servers, email, and Web servers. It also undermines anti-spam efforts and the efforts to shut down phishing sites or to contain malware infections.},
+booktitle = {Proceedings of the 8th ACM SIGCOMM Conference on Internet Measurement},
+pages = {211–216},
+numpages = {6},
+keywords = {domain name system, dns, zone transfer},
+location = {Vouliagmeni, Greece},
+series = {IMC '08}
+}
+
+@book{hackers_guide,
+author={Kimberly Graves},
+year={2010},
+title={CEH Certified Ethical Hacker Study Guide: Certified Ethical Hacker Study Guide},
+publisher={John Wiley \& Sons, Incorporated},
+address={Hoboken},	
+isbn={9780470525203}
+}
+
+
+@inproceedings{zone_poisoning,
+author = {Korczy\'{n}ski, Maciej and Kr\'{o}l, Micha\l{} and van Eeten, Michel},
+title = {Zone Poisoning: The How and Where of Non-Secure DNS Dynamic Updates},
+year = {2016},
+isbn = {9781450345262},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2987443.2987477},
+doi = {10.1145/2987443.2987477},
+abstract = {This paper illuminates the problem of non-secure DNS dynamic updates, which allow a miscreant to manipulate DNS entries in the zone files of authoritative name servers. We refer to this type of attack as to zone poisoning. This paper presents the first measurement study of the vulnerability. We analyze a random sample of 2.9 million domains and the Alexa top 1 million domains and find that at least 1,877 (0.065%) and 587 (0.062%) of domains are vulnerable, respectively. Among the vulnerable domains are governments, health care providers and banks, demonstrating that the threat impacts important services. Via this study and subsequent notifications to affected parties, we aim to improve the security of the DNS ecosystem.},
+booktitle = {Proceedings of the 2016 Internet Measurement Conference},
+pages = {271–278},
+numpages = {8},
+keywords = {dns, measurement, security, dynamic updates, domain name system, zone poisoning},
+location = {Santa Monica, California, USA},
+series = {IMC '16}
+}
+
+
+@inproceedings{detect_malicious,
+author = {Fukuda, Kensuke and Heidemann, John},
+title = {Detecting Malicious Activity with DNS Backscatter},
+year = {2015},
+isbn = {9781450338486},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2815675.2815706},
+doi = {10.1145/2815675.2815706},
+abstract = {Network-wide activity is when one computer (the originator) touches many others (the targets). Motives for activity may be benign (mailing lists, CDNs, and research scanning), malicious (spammers and scanners for security vulnerabilities), or perhaps indeterminate (ad trackers). Knowledge of malicious activity may help anticipate attacks, and understanding benign activity may set a baseline or characterize growth. This paper identifies DNS backscatter as a new source of information about network-wide activity. Backscatter is the reverse DNS queries caused when targets or middleboxes automatically look up the domain name of the originator. Queries are visible to the authoritative DNS servers that handle reverse DNS. While the fraction of backscatter they see depends on the server's location in the DNS hierarchy, we show that activity that touches many targets appear even in sampled observations. We use information about the queriers to classify originator activity using machine-learning. Our algorithm has reasonable precision (70-80%) as shown by data from three different organizations operating DNS servers at the root or country-level. Using this technique we examine nine months of activity from one authority to identify trends in scanning, identifying bursts corresponding to Heartbleed and broad and continuous scanning of ssh.},
+booktitle = {Proceedings of the 2015 Internet Measurement Conference},
+pages = {197–210},
+numpages = {14},
+keywords = {domain name system, scanning, internet, measurement, dns, network activity},
+location = {Tokyo, Japan},
+series = {IMC '15}
+}
+
+
+@inproceedings{dns_privacy,
+author = {Deccio, Casey and Davis, Jacob},
+title = {DNS Privacy in Practice and Preparation},
+year = {2019},
+isbn = {9781450369985},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3359989.3365435},
+doi = {10.1145/3359989.3365435},
+abstract = {An increased demand for privacy in Internet communications has resulted in privacy-centric enhancements to the Domain Name System (DNS), including the use of Transport Layer Security (TLS) and Hypertext Transfer Protocol Secure (HTTPS) for DNS queries. In this paper, we seek to answer questions about their deployment, including their prevalence and their characteristics. Our work includes an analysis of DNS-over-TLS (DoT) and DNS-over-HTTPS (DoH) availability at open resolvers and authoritative DNS servers. We find that DoT and DoH services exist on just a fraction of open resolvers, but among them are the major vendors of public DNS services. We also analyze the state of TCP Fast Open (TFO), which is considered key to reducing the latency associated with TCP-based DNS queries, required by DoT and DoH. The uptake of TFO is extremely low, both on the server side and the client side, and it must be improved to avoid performance degradation with continued adoption of DNS Privacy enhancements.},
+booktitle = {Proceedings of the 15th International Conference on Emerging Networking Experiments And Technologies},
+pages = {138–143},
+numpages = {6},
+keywords = {measurement, privacy, DNS},
+location = {Orlando, Florida},
+series = {CoNEXT '19}
+}
+
+
+@inproceedings{dns_responsiveness,
+author = {Pang, Jeffrey and Akella, Aditya and Shaikh, Anees and Krishnamurthy, Balachander and Seshan, Srinivasan},
+title = {On the Responsiveness of DNS-Based Network Control},
+year = {2004},
+isbn = {1581138210},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1028788.1028792},
+doi = {10.1145/1028788.1028792},
+abstract = {For the last few years, large Web content providers interested in improving their scalability and availability have increasingly turned to three techniques: mirroring, content distribution, and ISP multihoming. The Domain Name System (DNS) has gained a prominent role in the way each of these techniques directs client requests to achieve the goals of scalability and availability. The DNS is thought to offer the transparent and agile control necessary to react quickly to ISP link failures or phenomenon such as flash crowds.In this paper, we investigate this assumption with the objective of quantifying the degree of responsiveness that can be expected from DNS. We use a combination of Web and DNS access measurements from several busy Web sites, as well as a large content distribution network, to characterize the behavior of end-systems and local DNS servers in terms of their adherence to DNS-based controls. Our results suggest that DNS is at best a coarse-grained mechanism, and poorly suited for applications, such as route control, which require quick response to link failures or performance degradations. We then propose several proactive techniques that, when deployed in cooperation between large content providers and important clients, have the potential to improve the responsiveness of DNS-based control.},
+booktitle = {Proceedings of the 4th ACM SIGCOMM Conference on Internet Measurement},
+pages = {21–26},
+numpages = {6},
+keywords = {network control, time-to-live, DNS},
+location = {Taormina, Sicily, Italy},
+series = {IMC '04}
+}
+
+@inproceedings{dns_belongs_to_us,
+author = {Liu, Daiping and Hao, Shuai and Wang, Haining},
+title = {All Your DNS Records Point to Us: Understanding the Security Threats of Dangling DNS Records},
+year = {2016},
+isbn = {9781450341394},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2976749.2978387},
+doi = {10.1145/2976749.2978387},
+abstract = {In a dangling DNS record (Dare), the resources pointed to by the DNS record are invalid, but the record itself has not yet been purged from DNS. In this paper, we shed light on a largely overlooked threat in DNS posed by dangling DNS records. Our work reveals that Dare can be easily manipulated by adversaries for domain hijacking. In particular, we identify three attack vectors that an adversary can harness to exploit Dares. In a large-scale measurement study, we uncover 467 exploitable Dares in 277 Alexa top 10,000 domains and 52 edu zones, showing that Dare is a real, prevalent threat. By exploiting these Dares, an adversary can take full control of the (sub)domains and can even have them signed with a Certificate Authority (CA). It is evident that the underlying cause of exploitable Dares is the lack of authenticity checking for the resources to which that DNS record points. We then propose three defense mechanisms to effectively mitigate Dares with little human effort.},
+booktitle = {Proceedings of the 2016 ACM SIGSAC Conference on Computer and Communications Security},
+pages = {1414–1425},
+numpages = {12},
+keywords = {dangling records, domain hijacking, DNS},
+location = {Vienna, Austria},
+series = {CCS '16}
+}
+
+@INPROCEEDINGS{counting_in_the_dark,  
+author={A. {Klein} and H. {Shulman} and M. {Waidner}},  
+booktitle={2017 47th Annual IEEE/IFIP International Conference on Dependable Systems and Networks (DSN)},   
+title={Counting in the Dark: DNS Caches Discovery and Enumeration in the Internet},   year={2017},
+volume={},
+number={},
+pages={367-378},
+doi={10.1109/DSN.2017.63}
+}
+
+@inproceedings {lotr,
+author = {Haya Shulman and Michael Waidner},
+title = {One Key to Sign Them All Considered Vulnerable: Evaluation of {DNSSEC} in the Internet},
+booktitle = {14th {USENIX} Symposium on Networked Systems Design and Implementation ({NSDI} 17)},
+year = {2017},
+isbn = {978-1-931971-37-9},
+address = {Boston, MA},
+pages = {131--144},
+url = {https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/shulman},
+publisher = {{USENIX} Association},
+month = mar,
+}
+
+
+@MastersThesis{ipv6_discovery,
+title={Laitteiden ja palvelujen löytäminen IPv6-verkossa},
+author={Tommi Piipponen},
+school={Aalto-yliopiston perustieteiden korkeakoulu},
+year={2011},
+language={fi},
+pages={23},
+keyword={IPv6; palvelun löytäminen; SLAAC; SLP; SSDP; DNS-SD},
+type={Kandidaatintyö},
+note={Saatavissa \url{http://urn.fi/URN:NBN:fi:aalto-201305162358}. Viitattu 2.2.2020},
+address={Espoo}
+}
+
+
+
+@Mastersthesis{service_discovery,
+title={Palvelun löytäminen erilaisissa verkoissa; Service Discovery in different networks},
+author={Joni Taipale},
+school = 	 {Aalto-yliopiston perustieteiden korkeakoulu},
+year={2011},
+language={fi},
+pages={15},
+keyword={Service Discovery; SSDP; SLP; DHCP; DNS-SD; USDP},
+type={Kandidaatintyö},
+note={Saatavissa \url{http://urn.fi/URN:NBN:fi:aalto-201305162355}. Viitattu 2.2.2020},
+address={Espoo}
+}
+
+
+
+
+@MastersThesis{Teekkari2010,
+  author = 	 {Teemu Teekkari},
+  title = 	 {Diplomityöni},
+  school = 	 {Aalto-yliopiston perustieteiden korkeakoulu},
+  year = 	 {2010},
+  type = 	 {Diplomityö},
+  note =		 {Saatavissa \url{http://www.cis.hut.fi/
+teemu/katkotaan/
+rivia/
+jotta/
+helpompi/
+katkaista/
+sopivasta/
+kohtaa/
+tamakin/
+litania/
+poikki/
+rtfm.html}. Viitattu 25.1.2011.},
+  address = 	 {Espoo}
+}
+
+%% ###################################################
+%%
+%% RFCs
+%%
+%% ###################################################
+
+Network Working Group                                          D. Atkins
+Request for Comments: 3833                              IHTFP Consulting
+Category: Informational                                       R. Austein
+                                                                     ISC
+                                                             August 2004
+
+
+            Threat Analysis of the Domain Name System (DNS)
+
+@misc{RFC_threat_analysis,
+  author =	 {D. Atkins, R. Austein},
+  title =	 {{RFC 3833: Threat Analysis of the Domain Name System (DNS)}},
+  insitution =	 {{IETF}},
+  year =	 2004,
+  month =	 aug,
+  note =	 {Status: DRAFT STANDARD}
+}
+
+
+
+@misc{RFC1035,
+  author =	 {Paul Mockapetris},
+  title =	 {{RFC 1035: Domain Names - Implentation And Specification}},
+  insitution =	 {{IETF}},
+  year =	 1987,
+  month =	 nov,
+  note =	 {Status: DRAFT STANDARD}
+}
+
+
+
+
+@book{kauranen2006,
+        author={Kaauraneeeen,Ilkka and Mustakallio,Mikko A. and Palmgren,Virpi},
+        year={2006},
+        title={Tutkimusraportin kirjoittamisen opas opinnäytetyön tekijöille},
+        publisher={Teknillinen korkeakoulu},
+        address={Espoo},
+        pages={109 s},
+        note={Lisäpainokset: 2. korj. p. 2007.},
+        isbn={951-22-8359-X (nid.)},
+        language={fin}
+}
+
+
+@book{hirsjarvi2009,
+        author={Hirsjärvi, Sirkka and Remes, Pirkko and Sajavaara, Paula},
+        year={2009},
+        title={Tutki ja kirjoita},
+        publisher={Tammi},
+        address={Hämeenlinna},
+        note={15. uudistettu painos},
+        isbn={978-951-31-4836-2},
+        language={fin}
+}
+
+
+@Book{oikeinkirjoitus2010,
+  ALTauthor = 	 {},
+  editor = 	 {Kankaanpää, Salli and Heikkilä, Elina and Korhonen, Riitta and Maamies, Sari and Piehl, Aino},
+  title = 	 {Kielitoimiston oikeinkirjoitusopas},
+  publisher = 	 {Kotimaisten kielten tutkimuskeskus},
+  year = 	 {2010},
+  OPTkey = 	 {},
+  OPTvolume = 	 {},
+  OPTnumber = 	 {},
+  OPTseries = 	 {},
+  OPTaddress = 	 {},
+  OPTedition = 	 {},
+  OPTmonth = 	 {},
+  note = 	 {8. painos},
+  OPTannote = 	 {}
+}
+
+@book{goossens1994,
+        author={Goossens,Michel and Mittelbach,Frank and Samarin,Alexander},
+        year={1994},
+        title={The LATEX companion},
+        publisher={Addison-Wesley},
+        address={Reading (MA)},
+        pages={528 s},
+        isbn={0-201-54199-8},
+        language={eng}
+}
+
+
+@book{mittelbach2004Safari,
+        author={Mittelbach,Frank},
+        year={2004},
+        title={{The LaTeX companion}},
+        publisher={Safari Tech Books Online},
+        address={Boston, MA},
+        edition={2nd ed.},
+        note={Safari Tech Books Online},
+        language={eng}
+}
+
+@book{mittelbach2004,
+        author={Mittelbach,Frank and Goossens,Michel and Braams,Johannes},
+        year={2004},
+        title={{The LaTeX companion}},
+        publisher={Addison-Wesley},
+        address={Boston},
+        pages={1090 s. +},
+        edition={2nd ed.},
+        note={Lisäpainokset: Repr. 2006.},
+        keywords={textbehandling - dataprogram; textproduktion; datorsättning; tekstinkäsittely; tekstinvalmistus; Latex; atk-ohjelmat - LaTeX; tekstinkäsittely - atk-ohjelmat; tekstinvalmistus - atk-ohjelmat; graafinen teollisuus; ohjelmistot; Printing industry; Computerized typesetting; Software; textbehandling; atk-ohjelmat},
+        isbn={0-201-36299-6 (nid.)},
+        language={eng}
+}
+
+
+
+
+@Misc{mattakivela,
+  OPTkey = 	 {},
+  author = 	 {Kivelä, Simo K.},
+  title = 	 {{LaTeX-kurssi}},
+  OPThowpublished = {},
+  OPTmonth = 	 {},
+  OPTyear = 	 {},
+  note = 	 {Saatavissa \url{http://matta.hut.fi/matta2/latex/index.html}. Viitattu 28.1.2011.},
+  OPTannote = 	 {}
+}
+
+@Misc{lyhyt2e,
+  OPTkey = 	 {},
+  author = 	 {Oetiker, Tobias},
+  title = 	 {{Pitkänpuoleinen johdanto LaTeX2e:n käyttöön}},
+  OPThowpublished = {},
+  OPTmonth = 	 {},
+  OPTyear = 	 {},
+  note = 	 {Saatavissa \url{ftp://www.ctan.org/ctan/info/lshort/finnish/lyhyt2e.pdf}. Viitattu 28.1.2011.},
+  OPTannote = 	 {}
+}
+
+
+@Article{AAP+04,
+  author =	 {Dimitrios I. Axiotis and Tareq Al-Gizawi and
+                  Konstatntinos Peppas and Emmanuel N. Protonotarios
+                  and Fotis I. Lazarakis and Constantitnos Papadias
+                  and Panos I. Philippopoulos},
+  title =	 {Services in Interworking {3G} and {WLAN}
+                  Environments},
+  journal =	 {IEEE Wireless Communications},
+  year =	 2004,
+  volume =	 11,
+  number =	 5,
+  pages =	 {14-20},
+  month =	 oct
+}
+
+@book{hand2001principles,
+  title={{Principles of data mining}},
+  author={Hand, D.J. and Mannila, H. and Smyth, P.},
+  isbn={026208290X},
+  year={2001},
+  publisher={The MIT press}
+}
+
+
+@InProceedings{AB95,
+  author =	 {Ross J. Anderson and S. Johann Bezuidenhout},
+  title =	 {Cryptographic Credit Control in Pre-payment Metering
+                  Systems},
+  booktitle =	 {1995 IEEE Symposium on Security and Privacy},
+  year =	 1995,
+  annote =	 {referred 13.4.2000},
+}
+
+
+
+@Misc{EC96,
+  author =	 {{European Commission}},
+  title =	 {{Strategic Developments for the European Publishing
+                  Industry towards the Year 2000 - Europe's Multimedia
+                  Challenge}},
+  year =	 1996,
+  annote =	 {Beskriver en värdekedjemodell som är indelad i två
+                  nivåer; innehåll och infrastruktur. Bas för INDICAs
+                  värdekedjemodell.}
+}
+
+@techreport{IDReqNom03,
+  author =	 {Y. Nomura and R. Walsh and J. Ott and
+                  H. Schulzrinne},
+  title =	 {{Protocol Requirements for Internet Media Guides}},
+  institution =	 {{IETF}},
+  year =	 {2003},
+  type =	 {Internet Draft},
+  month =	 dec,
+  note =	 {Work in progress. Expires June, 2004},
+  description =	 {Now (Oct 2003) it seems as if the Electronic Service
+                  Guide ESG used in IP Datacasting will be based on
+                  IMG},
+  abstract =	 { This memo specifies requirements for a protocol for
+                  accessing and updating Internet Media Guide (IMG)
+                  information for media-on-demand and multicast
+                  applications. These requirements are designed to
+                  guide development of an IMG protocol for efficient
+                  and scalable delivery. },
+  url =
+                  {http://www.ietf.org/internet-drafts/draft-ietf-mmusic-img-req-02.txt}
+}
+
+@misc{RFC3550,
+  author =	 {H. Schulzrinne and S. Casner and R. Frederic and
+                  V. Jacobson},
+  title =	 {{RFC 3550: RTP: A Transport Protocol for Real-Time
+                  Applications}},
+  insitution =	 {{IETF}},
+  year =	 2003,
+  month =	 jul,
+  note =	 {Status: DRAFT STANDARD}
+}
+
+@misc{SFS,  
+  title =	 {{SFS 7004: Asfalttikiviaineksilta eri käyttökohteissa vaadittavat ominaisuudet ja niille asetetut vaatimustasot}},
+  insitution =	 {{Suomen standardoimisliitto}},
+  year =	 2003,
+  month =	 jul,
+  note =	 {Status: DRAFT STANDARD}
+}
+
+
+@misc{ipdcforum_def,
+  title =	 {{About {IP} Datacasting - Overview}},
+  author =	 {{IPDC Forum}},
+  url =          {http://www.ipdc-forum.org/about/index.html},
+  year =         {2004},
+  note =	 {{IPDC Forumin WWW-sivu. Viitattu 18.2.2004.}}
+}
+
+@MastersThesis{Teekkari2010,
+  author = 	 {Teemu Teekkari},
+  title = 	 {Diplomityöni},
+  school = 	 {Aalto-yliopiston perustieteiden korkeakoulu},
+  year = 	 {2010},
+  type = 	 {Diplomityö},
+  note =		 {Saatavissa \url{http://www.cis.hut.fi/
+teemu/katkotaan/
+rivia/
+jotta/
+helpompi/
+katkaista/
+sopivasta/
+kohtaa/
+tamakin/
+litania/
+poikki/
+rtfm.html}. Viitattu 25.1.2011.},
+  address = 	 {Espoo}
+}
+
+@InCollection{Hinton94,
+  author =      {Geoffrey E. Hinton and Richard S. Zemel},
+  title =       {Autoencoders, Minimum Description Length and {H}elmholtz
+                 Free Energy},
+  booktitle =   {Advances in Neural Information Processing Systems 6},
+  publisher =   {The MIT Press},
+  address =     {Cambridge, MA, USA},
+  year =        {1998},
+  pages =       {3--10},
+  editor =      {Jack D. Cowan and Gerald Tesauro and Joshua Alspector}
+}
+
+@Manual{tktl,
+  title = 	 {BiBTeX-tyylin tktl käyttöohje},
+  OPTkey = 	 {},
+  author = 	 {Puolakka, Mikael},
+  organization = {Helsingin yliopiston tietojenkäsittelytieteen laitos},
+  OPTaddress = 	 {},
+  OPTedition = 	 {},
+  OPTmonth = 	 {},
+  year = 	 {2002},
+  OPTnote = 	 {},
+  OPTannote = 	 {}
+}
+
