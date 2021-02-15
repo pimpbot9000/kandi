@@ -35,7 +35,7 @@ In addition there is another class of DNS servers called the local DNS Server wh
 \begin{figure}[htb]
   \begin{center}
     \includegraphics[width=0.9\textwidth]{resolving.png}
-    \caption{Resolving an IP address for a host \texttt{www.example.com}. In this example Authoritative name server does not have a record for the IP address. Instead, Authoritative name server has a CNAME record (see Table \ref{table:dns_record_types}). Hostname \texttt{www.example.com} is an "alias" that points to a Canonical Name, \texttt{server123.cloudhosting.com}. This triggers a new iterative query until IP address is resolved.}
+    \caption{A simplistic presentation of resolving an IP address for a host \texttt{www.example.com}. In this example Authoritative name server does not have a record for the IP address. Instead, Authoritative name server has a CNAME record (see Table \ref{table:dns_record_types}). Hostname \texttt{www.example.com} is an "alias" that points to a Canonical Name, \texttt{server123.cloudhosting.com}. This triggers a new iterative query until IP address is resolved.}
     \label{fig:resolving}
   \end{center}
 \end{figure}
@@ -79,42 +79,48 @@ In the example presented if Fig. \ref{fig:resolving} second level domain name se
 If there are multiple domain name servers for a zone there is a primary DNS server which is replicated by secondary servers. A secondary DNS server maintains a read-only copy of the DNS zone file maintained in the primary DNS server. If modifications are made they are made into the DNS zone file of the primary DNS server. The process of secondary DNS server requesting an update and receiving this information is called a Zone Transfer. \citep{tanenbaum}
 
 \subsection{Publicity and Security of DNS}
+\label{sec:dns_security}
 
 The instrinsic property of DNS records is that on the most part they are public by design and normal DNS queries are not encrypted. DNS system has a long history of being vulnerable for DNS spoofing and DNS cache poisoning where the attacker tricks DNS server to store false information in a DNS cache \cite{tanenbaum} [RFS3833]. 
 
-DNS Security Extension or DNSSEC has been developed to provide end-to-end data integrity and source authenticity check between the source of DNS data and the client. Threaths of data disclosure were ruled out of scope of DNSSEC [RFS3833]. Although DNSSEC was standardized already in 1997 it is still not widely used but the adoption is progressing slowly \cite{lotr}. In recent years new standards for encrypting DNS query traffic has been developed such as DNS over TCP (DoT) [RFC 7858], DNS Queries over HTTP (DoH) [RFC 8484] and DNS over DTLS [RFC 8094] to prevent passive information gathering. 
-[counting in the dark]
+DNS Security Extension or DNSSEC (defined originally in now obsolete [rfc 2065]) has been developed to provide end-to-end data integrity and source authenticity check between the source of DNS data and the client. To achieve this DNSSEC uses public/private key pair signatures. Threaths of data disclosure were ruled out of scope of DNSSEC [RFS3833]. Although DNSSEC was standardized already in 1997 it is still not widely used but the adoption is progressing slowly \cite{lotr}. DNSSEC relies on authentication chain. All root level domain name servers use DNSSEC signatures but if a TLD does not implement DNSSEC there can not be DNSSEC for any domain under such TLD [citation needed].
 
+Transmission signatures or TSIG [RFC2845] use shared private keys to provide authentication of servers to secure actions such as zone transfers and dynamic updates of resource records.
+
+In recent years new standards for encrypting DNS query traffic has been developed such as DNS over TCP (DoT) [RFC 7858], DNS Queries over HTTP (DoH) [RFC 8484] and DNS over DTLS [RFC 8094] to prevent passive information gathering. 
+
+* BIND?
 * DANE?
 * Dynamic Updating?
 * Zone poisoning?
-* (TSIG) Transaction Signature
+* SIG(0) ?
 
 \subsection{Recent development in DNS}
 
-* Using DNS to store all sorts of data (TXT RR)
+* Using DNS to store all sorts of data, explosion of number of RR types, TXT RR ?
 
 * Changes/advances/new fashions  DNS infrastructure ??
 
 \section{DNS Enumeration}
 
-Due to the original design philosophy and easy access principle, DNS is not only vulnerable to information leakage and attacks such as DNS spoofing. Since DNS records on the most part are intended to be public DNS queries allow attackers the gather information about the target. DNS Enumeration is part of the reconnaissance stage where an attacker gathers information about targets network footprint. This includes gathering information about IP addresses, domains and subdomains. DNS Enumeration is considered to be part of the Open Source Intelligent or OSINT methodology where publicly available ("open source") sources are used in an intelligence context \cite{network_sec_assessment}. DNS enumeration is commonly used jointly with other OSINT methods such as \texttt{whois} queries and exploiting advanced search engine features such as "Google Dorks" \cite{network_sec_assessment}.
+Due to the original design philosophy and easy access principle, DNS is vulnerable to information leakage and attacks such as DNS spoofing. Since DNS records on the most part are intended to be public DNS queries allow attackers the gather information about the target. DNS Enumeration is part of the reconnaissance stage where an attacker gathers information about targets network footprint. This includes gathering information about IP addresses, domains and subdomains. DNS Enumeration is considered to be part of the Open Source Intelligent or OSINT methodology where publicly available ("open source") sources are used in an intelligence context \cite{network_sec_assessment}. DNS enumeration is commonly used jointly with other OSINT methods such as \texttt{whois} queries and exploiting advanced search engine features such as "Google Dorks" \cite{network_sec_assessment}.
 
 This chapter will review the most common methods of DNS enumeration.
 
 \subsection{Basic DNS lookup}
 
-Every resource record or RR can be considered a five-tuple (Domain Name, Type, Class, Time to Live, Value) [1035]. Some of the Types were listed in Table \ref{table:dns_record_types}. In addition to Types (TYPE), DNS defines Query Types (QTYPE) which is a superset of Types. The DNS protocol also defines a Query Class (QCLASS) as a superset of class (CLASS). Every query contains QNAME (fully qualifed domain name or FQDN), QTYPE and QCLASS [1035].
+Every resource record or RR can be considered a five-tuple (Name, Type, Class, Time to Live, Value) [1035]. Some of the Types were listed in Table \ref{table:dns_record_types}. In addition to Types (TYPE), DNS defines query types (QTYPE) which is a superset of types. The DNS protocol also defines a query class (QCLASS) as a superset of class (CLASS). Every query contains QNAME (fully qualifed domain name or FQDN), QTYPE and QCLASS [1035].
 
-\texttt{Nslookup} and Domain Internet Grober (\texttt{dig}) are common tools found in most Unix enviroments to carry out basic DNS queries. For example \texttt{dig -q www.example.com -t AAAA -c IN} returns an IPv6 address for \texttt{www.example.com} with query type \texttt{IN}.
+\texttt{Nslookup} and 'Domain Internet Grober' (\texttt{dig}) are common tools found in most Unix enviroments to carry out basic DNS queries. For example \texttt{dig -q www.example.com -t AAAA -c IN} returns an IPv6 address for \texttt{www.example.com} with query class \texttt{IN} (Internet). In practise the query class is now redundant since the query class \texttt{IN} is the only one in use but is required by the protocol definition.
 
-Above example which returns an IP address for a host name is called a forward lookup. A reverse lookup is aquery returning a host name for an IP address (PTR record).
+Above example which returns an IP address for a host name is called a forward lookup. A reverse lookup is a query returning a host name for an IP address (PTR record).
 
 \subsection{Zone Transfer Attack}
 
-As explained in Section \ref{sec:dns_zones} each DNS zone has a primary server and secondary servers maintain read-only copies of primary servers zone file. DNS protocol defines a special type of query, Asynchronous Transfer Full Range or AXFR which requests for a transfer of an entire list of resource records for zone [RFC 1035]. The DNS zone information may include sensitive information e.g about the internal infrastructure of a network of an organization. Although succeeding in unauthorized zone transfer requests is considered by some as a thing for the past \cite{network_sec_assessment} on a global-scale vulnerability assessment  \citet{global_zone_transfer} were able to carry out approximately 11 million zone transfers containing information such as HINFO (exlplanation here, OS and CPU info etc) records, and domains with \texttt{test.} and \texttt{dev.} prefixes etc.
+As explained in Section \ref{sec:dns_zones} each DNS zone has a primary server and secondary servers maintain read-only copies of primary servers zone file. DNS protocol defines a special type of query, Asynchronous Transfer Full Range or AXFR which requests for a transfer of an entire list of resource records for zone [RFC 1035] or a zone file. The DNS zone information may include sensitive information e.g about the internal infrastructure of a network of an organization. Although succeeding in unauthorized zone transfer requests is considered by some as a thing for the past \cite{network_sec_assessment} on a global-scale vulnerability assessment  \citet{global_zone_transfer} were able to carry out approximately 11 million zone transfers containing information such as HINFO (information about OS and CPU etc.) records, and domains with \texttt{test.} and \texttt{dev.} prefixes etc.
 
-The AXFR offers no authentication method []. In order to prevent the vulneralibility from occurring the DNS server should be configured to only allow AXFR requests from trusted IP addresses. Transaction signatures should be used..... etc.
+The AXFR offers no authentication method [RFC 1035, 5936]. In order to prevent the vulneralibility from occurring the DNS server should be configured to only allow AXFR requests from trusted IP addresses. Additionally the use of TSIG provides authentication of trusted servers. Since AXFR uses TCP [RFC5936] using a firewall to block TCP traffic to port 56 is an option but would violate DNS specifications ( DNS queries over X bytes should be transferred over TCP) [Hacking exposed].
+
 
 \subsection{Zone Enumeration}
 
@@ -134,13 +140,111 @@ useful during a reconnaissance phase of a network attack."  \citet{global_zone_t
 
 What the hell is protected or filtered hosts?
 
-\subsection{Zone Walking}
+\subsection{Zone Enumeration}
+
+As explained in section \ref{sec:dns_security} the purpose of DNSSEC is to provide end-to-end data integrity and source authenticity check in the Domain Name System. This section will not cover DNSSEC in detail but an important part of DNSSEC which is called an authenticated denial of 
+of existence in DNS. The section will further discuss how the authenticated denial of existence can be leveraged to execute a DNS enumeration technique called Zone Walking or Zone Enumeration.
+
+\subsubsection{Denial of Existence in DNS}
+
+DNSSEC signatures are used only for signing the Resource Records in the DNS response message or packet. The DNS message header is not signed.  
+
+The DNS response message header contains a status code. If a DNS query is made for an existing name (QNAME), status code of the response header is NOERROR and the answer section contains Resource Records for the name in question, which are signed if DNSSEC is supported.
+
+There are two cases of status codes corresponding to situations where requested Resource record does not exits.
+
+\begin{itemize}
+ \item If a query is made for a name that does not exist the status code of the response is \texttt{NXDOMAIN} (Non-Existing Domain).  
+ \item If a query is made for a name that does exist but the requested resource record does not exist the status code of the response is \texttt{NOERROR}. Based on the response the resolver can infer that the type of response is of type called \texttt{NODATA}.
+\end{itemize}
+
+Since DNSSEC signature is not used to sign DNS message header the NXDOMAIN status cannot be trusted. In addition the DNSSEC signatures are precomputed. The original design of DNSSEC excluded online signing due to security reasons (to keep the private key offline) and the computational overhead. Therefore, offline signing the header is not feasible since it would require precomputing signatures for all conceivable nonexisting answers.
+
+Above elaborates the issue with DNSSEC and authenticated denial of existence: if an empty answer is returned there are no resource records to sign. The first attempt to specify authenticated denial of existence was NXT resource record (defined in [RFC2535]) but this was superceded by NSEC resource record.
+
+NSEC resource record indirectly lets the resolver to know that the name does not exist in the zone. Zone is sorted into canonical order [RFC 4034] and NSEC describes an interval between names. For example if a zone contains a domain names \texttt{a.domain.org} and \texttt{c.domain.org} and in canonical ordering there are no domain names in between in the zone, DNS query for a domain name \texttt{b.domain.org} returns (class and time to live omitted for simplicity):
+
+\begin{verbatim}
+Name	            Type    Value
+a.domain.org     NSEC    c.domain.org NS SOA TXT RRSIG NSEC DNSKEY
+\end{verbatim}
+
+The answer above is returned since \texttt{b.domain.org} resides in the interval between \texttt{a.domain.org} and \texttt{c.domain.org}. The value returned contains the endpoint of the interval and a list of resource records types where RRSIG, NSEC and DNSKEY are related to DNSSEC.
+
+NSEC records are also used in \texttt{NODATA} responses as is explained in [7129].
+
+Aika lailla koko paska [rfc7129]
+
+\subsubsection{Zone Walking}
+
+The drawback of NSEC is that it permits DNS enumeration method called Zone Walking or Zone Enumeration. NSEC records point from one name to another and this allows enumeration of the whole zone. For example using \texttt{dig} tool it is easy to see if a top level domain uses NSEC. In the example below one can see that when that when making a DNS query for a TLD name server (\texttt{a.fi}) responsible for top level domain \texttt{fi.} the authority section reveals that NSEC3 is used for denial of existence, See section XX.
+
+\begin{verbatim}
+> dig +dnssec @a.fi fi.
+---
+;; AUTHORITY SECTION:
+---
+uhirv2ck3kkgn20e3fnqecj1nfu6eeko.fi. 86400 IN NSEC3 1 1 5 7B7EE2F...
+---
+\end{verbatim}
+
+On the other hand, using \texttt{dig} to query name server (\texttt{a.ns.fi}) responsible for TLD \texttt{se.} the authority section reveals that NSEC is used which allows zone walking.
+
+\begin{verbatim}
+> dig +dnssec @a.ns.se se.
+---
+;; AUTHORITY SECTION:
+---
+se.   7200	   IN NSEC 	0.se. NS SOA TXT RRSIG NSEC DNSKEY
+---
+\end{verbatim}
+
+In the previous answer \texttt{se.} is the start of an interval and \texttt{0.se.} is the end of an interval. Requesting DNSSEC resource records for the domain name \texttt{0.se.} one can find out the next domain name:
+
+\begin{verbatim}
+> dig +dnssec @a.ns.se se. NSEC
+---
+;; ANSWER SECTION:
+---
+0.se.   7200	   IN NSEC 	0-0.se. NS DS RRSIG NSEC
+---
+\end{verbatim}
+
+Previous answer reveals that the next interval is from \texttt{0.se} to \texttt{0-0.se}. Iterating previous procedure and listing the domain names is the operating principle of Zone Walking. To illustrate how easily NSEC can be leveraged to perform zone walking Appendix X presents a small Python script to execute zone walking. An example of an output, starting the enumeration from domain \texttt{aftonbladet.se.} is presented below.
+
+\begin{verbatim}
+> python3 zone-walk.py aftonbladet.se. 192.36.144.107
+
+aftonbladet.se.
+aftonbladet-cdn.se.
+aftonbladet-cloudflare.se.
+aftonbladet5.se.
+aftonbladet6.se.
+aftonbladeta.se.
+aftonbladetbingo.se.
+aftonbladetblogg.se.
+aftonbladetcasino.se.
+aftonbladetdeal.se.
+aftonbladetdeals.se.
+aftonbladetet.se.
+aftonbladetf.se.
+aftonbladetg.se.
+aftonbladeth.se.
+aftonbladethierta.se.
+aftonbladetkultur.se.
+aftonbladetlive.se.
+---
+\end{verbatim}
+
+\subsubsection{NSEC3}
 
 NSEC allows zone walking, NSEC3 was to make this harder.
 
 \subsection{Brute Forcing}
 
+\subsection{Online Tools}
 
+Few words about online databases.
 
 \subsection{Notes}
 
@@ -164,6 +268,8 @@ Joku viittaus \citep{kurose_ross}. Kolmas viittaus
 \section{Enumerating Cloud Services}
 
 \subsection{Something something}
+
+Found some scripts that try to enumerate e.g google cloud buckets or Amazon S3 storages.
 
 \subsection{Oma testaus2}
 
@@ -1210,3 +1316,38 @@ mitä se nyt tarkoittaa tälle asialle/alalle.)
 
 % --------------------------------------------------------------------
 
+\section{Liite}
+
+\begin{lstlisting}
+import dns.resolver
+import sys
+
+def walk(start, dns_ip):
+    start, end = get_answer(start, dns_ip)
+    print(start)
+    print(end)
+    while True:
+        start, end = get_answer(end, dns_ip)
+        print(end)
+
+def get_answer(name, dns_ip):
+    req = dns.message.make_query(name, rdtype=dns.rdatatype.NSEC)
+    response = dns.query.udp(req, dns_ip)
+    
+    # Example answer section of a Resource Record of type NSEC:
+    #
+    #   a.org 7200 IN NSEC b.org NS SOA TXT RRSIG NSEC DNSKEY,
+    #
+    # where a.org is the start of the interval and
+    # b.org is the end of the interval
+
+    answer = response.answer[0].to_text()
+    arr = answer.split(' ')
+    
+    # return start and end of the interval
+    return arr[0], arr[4]
+
+if __name__ == "__main__":
+    args = sys.argv[1:]
+    walk(args[0], args[1])
+\end{lstlisting}

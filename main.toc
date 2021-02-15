@@ -12,44 +12,49 @@
 \contentsline {subsection}{\numberline {2.4}Publicity and Security of DNS}{8}%
 \contentsline {subsection}{\numberline {2.5}Recent development in DNS}{9}%
 \contentsline {section}{\numberline {3}DNS Enumeration}{9}%
-\contentsline {subsection}{\numberline {3.1}Basic DNS lookup}{9}%
+\contentsline {subsection}{\numberline {3.1}Basic DNS lookup}{10}%
 \contentsline {subsection}{\numberline {3.2}Zone Transfer Attack}{10}%
-\contentsline {subsection}{\numberline {3.3}Zone Enumeration}{10}%
-\contentsline {subsection}{\numberline {3.4}Reverse DNS sweeping}{10}%
-\contentsline {subsection}{\numberline {3.5}Zone Walking}{11}%
-\contentsline {subsection}{\numberline {3.6}Brute Forcing}{11}%
-\contentsline {subsection}{\numberline {3.7}Notes}{11}%
-\contentsline {section}{\numberline {4}Subdomain Enumeration}{11}%
-\contentsline {section}{\numberline {5}Enumerating Cloud Services}{11}%
-\contentsline {subsection}{\numberline {5.1}Something something}{11}%
-\contentsline {subsection}{\numberline {5.2}Oma testaus2}{11}%
-\contentsline {subsubsection}{\numberline {5.2.1}Testaus2}{11}%
-\contentsline {subsection}{\numberline {5.3}Tämän dokumentin tausta}{11}%
-\contentsline {subsection}{\numberline {5.4}Johdantoluku}{12}%
-\contentsline {section}{\numberline {6}Kandidaatintyön rakenne- ja muotoseikat}{13}%
-\contentsline {subsection}{\numberline {6.1}TKK:n kandidaattityöryhmän ohjeistus}{13}%
-\contentsline {subsection}{\numberline {6.2}TIK.kand: kommentteja rakenne- ja muotoseikoista}{14}%
-\contentsline {subsection}{\numberline {6.3}Kirjallisuutta}{15}%
-\contentsline {section}{\numberline {7}Esimerkkejä \LaTeX {}in käytöstä}{15}%
-\contentsline {subsection}{\numberline {7.1}\LaTeX {}in asennus ja taustaa}{16}%
-\contentsline {subsubsection}{\numberline {7.1.1}Lähdetiedostosta PDF:ksi}{16}%
-\contentsline {subsubsection}{\numberline {7.1.2}Ongelmien ratkaisija: \LaTeX {} checker}{16}%
-\contentsline {subsubsection}{\numberline {7.1.3}``Ääkköset eivät ole enää ongelma''}{17}%
-\contentsline {subsubsection}{\numberline {7.1.4}Tavutus ei toimi?}{17}%
-\contentsline {subsubsection}{\numberline {7.1.5}Oikoluku}{17}%
-\contentsline {subsubsection}{\numberline {7.1.6}Hienosäätö}{18}%
-\contentsline {subsubsection}{\numberline {7.1.7}Eräs vaihtoehto Win7-koneella: MiKTeX ja LEd, Notepad++}{18}%
-\contentsline {subsection}{\numberline {7.2}Tekstin kirjoittaminen}{18}%
-\contentsline {subsubsection}{\numberline {7.2.1}Perusteksti ja muotoilut}{19}%
-\contentsline {subsubsection}{\numberline {7.2.2}Luetelmat}{19}%
-\contentsline {subsubsection}{\numberline {7.2.3}Kuvat ja taulukot}{20}%
-\contentsline {subsubsection}{\numberline {7.2.4}Matematiikka}{21}%
-\contentsline {subsubsection}{\numberline {7.2.5}Algoritmit ja ohjelmalistaukset}{22}%
-\contentsline {subsection}{\numberline {7.3}Viittaukset ja lähdeluettelo}{23}%
-\contentsline {subsubsection}{\numberline {7.3.1}Ristiinviittaukset}{23}%
-\contentsline {subsubsection}{\numberline {7.3.2}Lähdetiedosto}{23}%
-\contentsline {subsubsection}{\numberline {7.3.3}Tekstiviite}{23}%
-\contentsline {subsubsection}{\numberline {7.3.4}Lähdeluettelo}{24}%
-\contentsline {section}{\numberline {8}Testi: pelkkää tekstiä}{24}%
-\contentsline {section}{\numberline {9}Loppuluku}{26}%
-\contentsline {section}{References}{28}%
+\contentsline {subsection}{\numberline {3.3}Zone Enumeration}{11}%
+\contentsline {subsection}{\numberline {3.4}Reverse DNS sweeping}{11}%
+\contentsline {subsection}{\numberline {3.5}Zone Enumeration}{11}%
+\contentsline {subsubsection}{\numberline {3.5.1}Denial of Existence in DNS}{11}%
+\contentsline {subsubsection}{\numberline {3.5.2}Zone Walking}{12}%
+\contentsline {subsubsection}{\numberline {3.5.3}NSEC3}{14}%
+\contentsline {subsection}{\numberline {3.6}Brute Forcing}{14}%
+\contentsline {subsection}{\numberline {3.7}Online Tools}{14}%
+\contentsline {subsection}{\numberline {3.8}Notes}{14}%
+\contentsline {section}{\numberline {4}Subdomain Enumeration}{15}%
+\contentsline {section}{\numberline {5}Enumerating Cloud Services}{15}%
+\contentsline {subsection}{\numberline {5.1}Something something}{15}%
+\contentsline {subsection}{\numberline {5.2}Oma testaus2}{15}%
+\contentsline {subsubsection}{\numberline {5.2.1}Testaus2}{15}%
+\contentsline {subsection}{\numberline {5.3}Tämän dokumentin tausta}{15}%
+\contentsline {subsection}{\numberline {5.4}Johdantoluku}{15}%
+\contentsline {section}{\numberline {6}Kandidaatintyön rakenne- ja muotoseikat}{16}%
+\contentsline {subsection}{\numberline {6.1}TKK:n kandidaattityöryhmän ohjeistus}{16}%
+\contentsline {subsection}{\numberline {6.2}TIK.kand: kommentteja rakenne- ja muotoseikoista}{18}%
+\contentsline {subsection}{\numberline {6.3}Kirjallisuutta}{18}%
+\contentsline {section}{\numberline {7}Esimerkkejä \LaTeX {}in käytöstä}{19}%
+\contentsline {subsection}{\numberline {7.1}\LaTeX {}in asennus ja taustaa}{19}%
+\contentsline {subsubsection}{\numberline {7.1.1}Lähdetiedostosta PDF:ksi}{20}%
+\contentsline {subsubsection}{\numberline {7.1.2}Ongelmien ratkaisija: \LaTeX {} checker}{20}%
+\contentsline {subsubsection}{\numberline {7.1.3}``Ääkköset eivät ole enää ongelma''}{20}%
+\contentsline {subsubsection}{\numberline {7.1.4}Tavutus ei toimi?}{21}%
+\contentsline {subsubsection}{\numberline {7.1.5}Oikoluku}{21}%
+\contentsline {subsubsection}{\numberline {7.1.6}Hienosäätö}{21}%
+\contentsline {subsubsection}{\numberline {7.1.7}Eräs vaihtoehto Win7-koneella: MiKTeX ja LEd, Notepad++}{22}%
+\contentsline {subsection}{\numberline {7.2}Tekstin kirjoittaminen}{22}%
+\contentsline {subsubsection}{\numberline {7.2.1}Perusteksti ja muotoilut}{22}%
+\contentsline {subsubsection}{\numberline {7.2.2}Luetelmat}{23}%
+\contentsline {subsubsection}{\numberline {7.2.3}Kuvat ja taulukot}{23}%
+\contentsline {subsubsection}{\numberline {7.2.4}Matematiikka}{25}%
+\contentsline {subsubsection}{\numberline {7.2.5}Algoritmit ja ohjelmalistaukset}{26}%
+\contentsline {subsection}{\numberline {7.3}Viittaukset ja lähdeluettelo}{26}%
+\contentsline {subsubsection}{\numberline {7.3.1}Ristiinviittaukset}{26}%
+\contentsline {subsubsection}{\numberline {7.3.2}Lähdetiedosto}{26}%
+\contentsline {subsubsection}{\numberline {7.3.3}Tekstiviite}{27}%
+\contentsline {subsubsection}{\numberline {7.3.4}Lähdeluettelo}{27}%
+\contentsline {section}{\numberline {8}Testi: pelkkää tekstiä}{27}%
+\contentsline {section}{\numberline {9}Loppuluku}{30}%
+\contentsline {section}{\numberline {10}Liite}{30}%
+\contentsline {section}{References}{32}%
