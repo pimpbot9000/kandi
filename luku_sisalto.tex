@@ -15,11 +15,7 @@ The goals of this study is as follows:
  \item Present some use cases
 \end{itemize}
 
-
-
 DNS has been and still is vulnerable to attacks such as DNS cache poisoning but discussing these kinds of attacks in detail is out of the scope of this study.
-
-
 
 \section{The Domain Name System}
 
@@ -83,9 +79,9 @@ If there are multiple domain name servers for a zone there is a primary DNS serv
 
 The instrinsic property of DNS records is that on the most part they are public by design and normal DNS queries are not encrypted. DNS system has a long history of being vulnerable for DNS spoofing and DNS cache poisoning where the attacker tricks DNS server to store false information in a DNS cache \cite{tanenbaum} [RFS3833]. 
 
-DNS Security Extension or DNSSEC (defined originally in now obsolete [rfc 2065]) has been developed to provide end-to-end data integrity and source authenticity check between the source of DNS data and the client. To achieve this DNSSEC uses public/private key pair signatures. Threaths of data disclosure were ruled out of scope of DNSSEC [RFS3833]. Although DNSSEC was standardized already in 1997 it is still not widely used but the adoption is progressing slowly \cite{lotr}. DNSSEC relies on authentication chain. All root level domain name servers use DNSSEC signatures but if a TLD does not implement DNSSEC there can not be DNSSEC for any domain under such TLD [citation needed].
+DNS Security Extension or DNSSEC (defined originally in now obsolete [rfc 2065]) has been developed to provide end-to-end data integrity and source authenticity check between the source of DNS data and the client. To achieve this DNSSEC uses public/private key pair signatures. Threaths of data disclosure were ruled out of scope of DNSSEC [RFS3833]. Although DNSSEC was standardized already in 1997 it is still not widely used but the adoption is progressing slowly \cite{lotr}. DNSSEC relies on authentication chain of trust. All root level domain name servers use DNSSEC signatures but if a TLD does not implement DNSSEC there can not be DNSSEC for any domain under such TLD [citation needed].
 
-Transmission signatures or TSIG [RFC2845] use shared private keys to provide authentication of servers to secure actions such as zone transfers and dynamic updates of resource records.
+Transmission signatures or TSIG [RFC 2845] use shared private keys to provide authentication of servers to secure actions such as zone transfers and dynamic updates of resource records.
 
 In recent years new standards for encrypting DNS query traffic has been developed such as DNS over TCP (DoT) [RFC 7858], DNS Queries over HTTP (DoH) [RFC 8484] and DNS over DTLS [RFC 8094] to prevent passive information gathering. 
 
@@ -136,31 +132,30 @@ useful during a reconnaissance phase of a network attack."  \citet{global_zone_t
 
 \subsection{Reverse DNS sweeping}
 
-"After building a list of IP network blocks used or reserved by        the target organization,  reverse DNS sweeping can gather details of hosts that may be protected or filtered but still have DNS hostnames assigned to them." \cite{network_sec_assessment}
+Add crap here? Who is?
 
 What the hell is protected or filtered hosts?
 
 \subsection{Zone Enumeration}
 
 As explained in section \ref{sec:dns_security} the purpose of DNSSEC is to provide end-to-end data integrity and source authenticity check in the Domain Name System. This section will not cover DNSSEC in detail but an important part of DNSSEC which is called an authenticated denial of 
-of existence in DNS. The section will further discuss how the authenticated denial of existence can be leveraged to execute a DNS enumeration technique called Zone Walking or Zone Enumeration.
+of existence in DNS [7129]. The section will further discuss how the authenticated denial of existence can be leveraged to execute a DNS enumeration technique called Zone Walking or Zone Enumeration.
 
 \subsubsection{Denial of Existence in DNS}
 
-DNSSEC signatures are used only for signing the Resource Records in the DNS response message or packet. The DNS message header is not signed.  
+DNSSEC signatures are used only for signing the Resource Records in the DNS response message or packet. The DNS message header is not signed. [7129]  
 
-The DNS response message header contains a status code. If a DNS query is made for an existing name (QNAME), status code of the response header is NOERROR and the answer section contains Resource Records for the name in question, which are signed if DNSSEC is supported.
-
-There are two cases of status codes corresponding to situations where requested Resource record does not exits.
+The DNS response message header contains a status code. If a DNS query is made for an existing name (QNAME), status code of the response header is NOERROR and the answer section contains Resource Records for the name in question, which are signed if DNSSEC is supported. 
+There are two cases of status codes corresponding to situations where requested Resource record does not exits [7129] :
 
 \begin{itemize}
  \item If a query is made for a name that does not exist the status code of the response is \texttt{NXDOMAIN} (Non-Existing Domain).  
  \item If a query is made for a name that does exist but the requested resource record does not exist the status code of the response is \texttt{NOERROR}. Based on the response the resolver can infer that the type of response is of type called \texttt{NODATA}.
 \end{itemize}
 
-Since DNSSEC signature is not used to sign DNS message header the NXDOMAIN status cannot be trusted. In addition the DNSSEC signatures are precomputed. The original design of DNSSEC excluded online signing due to security reasons (to keep the private key offline) and the computational overhead. Therefore, offline signing the header is not feasible since it would require precomputing signatures for all conceivable nonexisting answers.
+Since DNSSEC signature is not used to sign DNS message header the NXDOMAIN status cannot be trusted. In addition the DNSSEC signatures are precomputed. The original design of DNSSEC excluded online signing due to security reasons (to keep the private key offline) and the computational overhead. Therefore, offline signing the header is not feasible since it would require precomputing signatures for all conceivable nonexisting answers. [7129]
 
-Above elaborates the issue with DNSSEC and authenticated denial of existence: if an empty answer is returned there are no resource records to sign. The first attempt to specify authenticated denial of existence was NXT resource record (defined in [RFC2535]) but this was superceded by NSEC resource record.
+Above elaborates the issue with DNSSEC and authenticated denial of existence: if an empty answer is returned there are no resource records to sign. The first attempt to specify authenticated denial of existence was NXT resource record (intruduced in [RFC2535]) but this was superceded by NSEC resource record [RFC 3033].
 
 NSEC resource record indirectly lets the resolver to know that the name does not exist in the zone. Zone is sorted into canonical order [RFC 4034] and NSEC describes an interval between names. For example if a zone contains a domain names \texttt{a.domain.org} and \texttt{c.domain.org} and in canonical ordering there are no domain names in between in the zone, DNS query for a domain name \texttt{b.domain.org} returns (class and time to live omitted for simplicity):
 
@@ -175,9 +170,13 @@ NSEC records are also used in \texttt{NODATA} responses as is explained in [7129
 
 Aika lailla koko paska [rfc7129]
 
+
 \subsubsection{Zone Walking}
 
-The drawback of NSEC is that it permits DNS enumeration method called Zone Walking or Zone Enumeration. NSEC records point from one name to another and this allows enumeration of the whole zone. For example using \texttt{dig} tool it is easy to see if a top level domain uses NSEC. In the example below one can see that when that when making a DNS query for a TLD name server (\texttt{a.fi}) responsible for top level domain \texttt{fi.} the authority section reveals that NSEC3 is used for denial of existence, See section XX.
+The drawback of NSEC is that it permits DNS enumeration method called Zone Walking or Zone Enumeration. An enumerated zone can be used, for example, as a source of probable e-mail addresses for spam. NSEC records point from one name to another and this allows enumeration of the whole zone thus defeating attempts to block zone transfers. An attacker can query these NSEC RRs in sequence to obtain all the names in a zone. [5155] "Hacking exposed" [7129] 
+
+For example using \texttt{dig} tool it is easy to see if a top level domain uses NSEC. In the example below one can see that when that when making a DNS query for a TLD name server (\texttt{a.fi}) responsible for top level domain \texttt{fi.} the authority section reveals that NSEC3 is used for denial of existence, See section XX. Dig tool offers option \texttt{+dnssec} which set's the use the \texttt{DO} bit [RFC4035].
+
 
 \begin{verbatim}
 > dig +dnssec @a.fi fi.
@@ -222,29 +221,62 @@ aftonbladet5.se.
 aftonbladet6.se.
 aftonbladeta.se.
 aftonbladetbingo.se.
-aftonbladetblogg.se.
-aftonbladetcasino.se.
-aftonbladetdeal.se.
-aftonbladetdeals.se.
-aftonbladetet.se.
-aftonbladetf.se.
-aftonbladetg.se.
-aftonbladeth.se.
-aftonbladethierta.se.
-aftonbladetkultur.se.
-aftonbladetlive.se.
 ---
 \end{verbatim}
 
 \subsubsection{NSEC3}
 
+NSEC is implemented using a sorted linked list of clear text names in the zone.
+RFC 5155 introduces NSEC3 as an alternative for NSEC which aims to make zone enumeration considerably harder. NSEC3 still works the similar way but instead of using clear-text names, 
+hashed names are used to construct the (linked) list for names in the zone. NSEC3 was developed to attempt to obstruct zone walking using obfuscated names. Walking the zone is still possible but NSEC3 does not disclose the names in the zone. 
+
+Study of ---
+GPU-based NSEC3 Hash Breaking
+Matthaus Wander, Lorenz Schwittmann, Christopher Boelmann, Torben Weis ¨
+University of Duisburg-Essen
+Duisburg, Germany ..showed that as NSEC3 was prone to zonewalking and hash breaking using GPU:s  could be leveraged to perform zone walking an to reveal actual hist names. The authors admit that where comprehensive IPv6 scanning due to the large the domain space is infeasible, using high performance computing similar results may be achieved. Although the paper by Wander et. al demonstrated the possibility of this technique one might argue that it is of an academic interest: better ways of mapping the infrastrucute of a target might exist.
+
+
+Even further NSEC5 has been suggested to overcome the limitions to existin vulneralibilities in a auhtenticated denial on existence-
+%https://www.ndss-symposium.org/wp-content/uploads/2017/09/06_5_0.pdf
+
+
+
+
+%https://www.researchgate.net/publication/286838795_GPU-based_NSEC3_hash_breaking/link/%573849da08ae9f741b2baaf5/download
+
+%[2] R. Arends, R. Austein, M. Larson, D. Massey, and S. Rose, “DNS
+%Security Introduction and Requirements,” RFC 4033, 2005.
+
+"Another vulnerability related to our work is so-called zone
+enumeration. Initially, ability to enumerate all the names in
+a zone was not considered as an error [2], however, later on,
+a compromise has been reached [22] that in certain cases,
+the knowledge of all the domain names in a zone can lead
+to security risks. RFC 5155 [22] provides some examples
+showing that due to this vulnerability, it is easier for an attacker
+to obtain email addresses for future spam campaigns or data
+useful during a reconnaissance phase of a network attack."  \citet{global_zone_transfer}
+
+
 NSEC allows zone walking, NSEC3 was to make this harder.
 
 \subsection{Brute Forcing}
 
-\subsection{Online Tools}
+Brute forcing is essentially a method used in finding out subdomains. As the name suggests the method is not very finessed. Then again the "guessing" of subdomain names is feasible since certain services tend to have certain names which reflect their purpose. In this section we shall discuss a particular use-case which is mapping services presented by some popular cloud service platforms.
 
-Few words about online databases.
+\subsubsection{Enumerating Cloud Services in GCP}
+
+\subsubsection{Enumerating Cloud Services in AWS}
+
+\section{After getting a foothold: a case study}
+
+The world seems to be is a very different animal one an attacker get a foothold into system. In this section a certain vulneratibilies of Kubernetes cluster will be discussed.
+
+
+
+
+
 
 \subsection{Notes}
 
@@ -265,7 +297,8 @@ Joku viittaus \citep{kurose_ross}. Kolmas viittaus
 \section{Subdomain Enumeration}
 
 
-\section{Enumerating Cloud Services}
+
+
 
 \subsection{Something something}
 
