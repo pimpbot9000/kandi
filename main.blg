@@ -3,51 +3,63 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: aaltosci_t.bst
 Database file #1: lahteet.bib
-Warning--I didn't find a database entry for "RefWorks:doc:601937178f0884cb02a8458c"
+Warning--string name "march" is undefined
+--line 308 of file lahteet.bib
+Warning--string name "july" is undefined
+--line 348 of file lahteet.bib
+Warning--string name "march" is undefined
+--line 405 of file lahteet.bib
 Warning--to sort, need author, editor, or key in network_sec_assessment
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty author and editor in network_sec_assessment
-Warning--empty year in network_sec_assessment
-Warning--empty year in network_sec_assessment
-You've used 15 entries,
+Warning--empty institution in RFC2782
+Warning--empty institution in RFC5155
+Warning--empty institution in RFC_threat_analysis
+Warning--empty year in sweden
+Warning--empty institution in RFC_2845_trans_sec
+Warning--empty institution in RFC_7129
+Warning--empty institution in RFC3550
+Warning--empty booktitle in NSEC5_provably
+Warning--empty booktitle in SMART_BRUTE
+You've used 24 entries,
             3106 wiz_defined-function locations,
-            776 strings with 8859 characters,
-and the built_in function-call counts, 7695 in all, are:
-= -- 799
-> -- 315
-< -- 20
-+ -- 111
-- -- 96
-* -- 473
-:= -- 1115
-add.period$ -- 74
-call.type$ -- 15
-change.case$ -- 64
-chr.to.int$ -- 24
-cite$ -- 35
-duplicate$ -- 441
-empty$ -- 607
-format.name$ -- 130
-if$ -- 1763
-int.to.chr$ -- 1
+            808 strings with 9077 characters,
+and the built_in function-call counts, 9001 in all, are:
+= -- 881
+> -- 407
+< -- 28
++ -- 148
+- -- 123
+* -- 585
+:= -- 1496
+add.period$ -- 97
+call.type$ -- 24
+change.case$ -- 105
+chr.to.int$ -- 41
+cite$ -- 60
+duplicate$ -- 451
+empty$ -- 713
+format.name$ -- 165
+if$ -- 1895
+int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 15
-newline$ -- 109
-num.names$ -- 56
-pop$ -- 175
+missing$ -- 12
+newline$ -- 154
+num.names$ -- 92
+pop$ -- 233
 preamble$ -- 1
-purify$ -- 47
+purify$ -- 65
 quote$ -- 0
-skip$ -- 365
+skip$ -- 311
 stack$ -- 0
-substring$ -- 215
-swap$ -- 146
-text.length$ -- 8
+substring$ -- 149
+swap$ -- 64
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 145
-warning$ -- 4
-while$ -- 56
+type$ -- 244
+warning$ -- 11
+while$ -- 79
 width$ -- 0
-write$ -- 269
-(There were 5 warnings)
+write$ -- 361
+(There were 14 warnings)

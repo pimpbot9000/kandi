@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.2.2)  21 FEB 2021 19:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.2.2)  23 MAR 2021 20:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -285,14 +285,7 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count274
 \l__pdf_internal_box=\box55
 )
-(./main.aux
-
-LaTeX Warning: Label `sec:esimluku' multiply defined.
-
-
-LaTeX Warning: Label `sec:esimviitteet' multiply defined.
-
-)
+(./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
@@ -339,7 +332,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 (./makroja.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 224--224
+Underfull \hbox (badness 10000) in paragraph at lines 226--226
 
  []
 
@@ -367,13 +360,13 @@ Overfull \hbox (2.61234pt too wide) in paragraph at lines 19--23
 
 [3
 
-]) (./main.toc [4
-
-])
+]) (./main.toc)
 \tf@toc=\write3
 \openout3 = `main.toc'.
 
- [5] (./luku_sisalto.tex
+ [4
+
+] (./luku_sisalto.tex
 LaTeX Font Info:    Trying to load font information for TS1+aer on input line 1
 2.
 LaTeX Font Info:    No file TS1aer.fd. on input line 12.
@@ -383,388 +376,94 @@ LaTeX Font Warning: Font shape `TS1/aer/m/n' undefined
 (Font)              using `TS1/cmr/m/n' instead
 (Font)              for symbol `textbullet' on input line 12.
 
-[6
+[5
 
 ]
-<resolving.png, id=25, 1288.815pt x 556.0775pt>
+<resolving.png, id=21, 1288.815pt x 556.0775pt>
 File: resolving.png Graphic file (type png)
 <use resolving.png>
-Package pdftex.def Info: resolving.png  used on input line 33.
+Package pdftex.def Info: resolving.png  used on input line 34.
 (pdftex.def)             Requested size: 407.6683pt x 175.89505pt.
 LaTeX Font Info:    Trying to load font information for T1+aett on input line 3
-4.
+5.
  (/usr/share/texlive/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-)
-Underfull \hbox (badness 1342) in paragraph at lines 34--34
-\T1/aer/m/n/12 In this ex-am-ple Au-thor-i-ta-tive name server does not have a 
-record for the IP
+) [6 <./resolving.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 62--62
+[]|\T1/aer/m/n/12 Start of Au-thor-ity. Spec-i-fies
  []
 
 
-Underfull \hbox (badness 1275) in paragraph at lines 34--34
-\T1/aer/m/n/12 ad-dress. In-stead, Au-thor-i-ta-tive name server has a CNAME re
-cord (see Ta-ble
- []
-
-[7 <./resolving.png>] [8] [9] [10] [11] [12] [13]
-LaTeX Info: Symbol \textasciidieresis not provided by
-            font family aer in TS1 encoding.
-            Default family used instead on input line 235.
-
-Overfull \hbox (8.03326pt too wide) in paragraph at lines 240--242
-[]\T1/aer/m/n/12 Even fur-ther NSEC5 has been sug-gested to over-come the lim-i
--tions to ex-istin vul-ner-al-i-bil-i-ties
- []
-
-[14] [15]
-Overfull \hbox (16.52315pt too wide) in paragraph at lines 350--354
-\T1/aer/m/n/12 tarvetta jakaa alalukui-hin, diplomi-työssä ja muissa isom-missa
- töissä sekä tutkimus-ra-porteissa
+Underfull \hbox (badness 10000) in paragraph at lines 62--62
+\T1/aer/m/n/12 au-thor-i-ta-tive in-for-ma-tion about a
  []
 
 
-Overfull \hbox (5.43552pt too wide) in paragraph at lines 350--354
-\T1/aer/m/n/12 alalu-vut ovat mah-dol-lisia (esim. 1.1 Tutkimu-songelma, 1.2 Ai
-neisto ja tutkimus-menetelmä,
+Underfull \hbox (badness 2142) in paragraph at lines 66--69
+[]|\T1/aer/m/n/12 Provides an au-then-ti-cated de-nial of
  []
 
-[16]
-Overfull \hbox (16.62212pt too wide) in paragraph at lines 423--431
-[]\T1/aer/m/it/12 Kandidaatintyö voi pe-rus-tua teo-reet-tisen taus-tan tarkast
-eluun ja sen analysoin-tiin
+[7] [8] [9] [10] [11] [12]
+Overfull \hbox (3.4607pt too wide) in paragraph at lines 230--230
+[]\T1/aett/m/n/12 uhirv2ck3kkgn20e3fnqecj1nfu6eeko.fi. 86400 IN NSEC3 1 1 5 7B7
+EE2F28EAFC626[] 
  []
 
-[17]
-Overfull \hbox (1.90125pt too wide) in paragraph at lines 456--470
-\T1/aer/m/n/12 kaikki sivut yh-teen nim-iöle-hdestä lähdeluet-telon tai li-it-t
-ei-den lop-puun (Kir-jas-ton su-ulli-nen
+[13]
+<nsec3.png, id=51, 1092.08pt x 855.195pt>
+File: nsec3.png Graphic file (type png)
+<use nsec3.png>
+Package pdftex.def Info: nsec3.png  used on input line 279.
+(pdftex.def)             Requested size: 226.48393pt x 177.35179pt.
+ [14] [15 <./nsec3.png>]
+<markov.png, id=58, 1280.785pt x 1031.855pt>
+File: markov.png Graphic file (type png)
+<use markov.png>
+Package pdftex.def Info: markov.png  used on input line 332.
+(pdftex.def)             Requested size: 135.89174pt x 109.47372pt.
+ [16] [17 <./markov.png>]) [18] (./main.bbl
+(./babelbst.tex (./englbst.tex))
+Underfull \hbox (badness 2181) in paragraph at lines 82--86
+\T1/aer/m/n/12 stan-dard, IETF, Novem-ber 1987.  URL $\T1/aett/m/n/12 http : / 
+/ www . rfc-[]editor . org / rfc /
  []
 
-
-Overfull \hbox (7.85997pt too wide) in paragraph at lines 476--479
-[]\T1/aer/m/n/12 Huomaa, että TKK:n kan-di-daat-in-työn ohjeissa sivu-jen nu-me
-roin-nin ohjeet ovat ri-s-tiri-itaiset
- []
-
-[18]
-Overfull \hbox (47.5237pt too wide) in paragraph at lines 518--524
-[]\T1/aer/m/n/12 Ohjeita kan-di-daat-in-työn eri osien kir-joit-tamiseen on sis
-äl-lytetty tähän po-h-jaan. Kir-joit-tamiso-hjeita
- []
-
-
-Overfull \hbox (38.80011pt too wide) in paragraph at lines 566--573
-\T1/aer/m/n/12 ko-men-toja). Tämän doku-mentin sivuaset-te-lut tehdään pääosin 
-tyyl-i-tiedos-tossa [][]\T1/aett/m/n/12 aaltosci_t.sty[]\T1/aer/m/n/12 ,
- []
-
-[19]
-Overfull \hbox (4.63023pt too wide) in paragraph at lines 574--583
-\T1/aer/m/n/12 suomeksi: , Wik-i-booksin LaTeX-opas[], Jukka Ko-r-pelan LaTeX-s
-ivut[] yms. Järkäle-teok-sia,
- []
-
-
-Overfull \hbox (5.69933pt too wide) in paragraph at lines 613--616
-[]\T1/aer/m/n/12 Käännösvaiheissa hakemis-toon ilmestyy mo-n-en-laisia työ- ja 
-lok-i-tiedos-toja, joiden päät-teinä
- []
-
-[20] [21]
-Overfull \hbox (6.4556pt too wide) in paragraph at lines 702--706
-[][]\T1/aett/m/n/12 \clearpage []\T1/aer/m/n/12 tai [][]\T1/aett/m/n/12 \afterp
-age{\clearpage}[]\T1/aer/m/n/12 , minkä tarkoituk-sena pakot-taa kel-lu-vat ob-
-jek-tit
- []
-
-[22]
-Underfull \hbox (badness 3386) in paragraph at lines 744--751
-\T1/aer/m/n/12 1,5, mutta sen voi ha-lutes-saan vai-h-taa vä-liksi 1 kom-men-to
-imalla [][]\T1/aett/m/n/12 main.tex[]\T1/aer/m/n/12 in
- []
-
-
-Package natbib Warning: Citation `RefWorks:doc:601937178f0884cb02a8458c' on pag
-e 23 undefined on input line 769.
-
-
-Overfull \hbox (2.91707pt too wide) in paragraph at lines 765--770
-[]\T1/aer/m/it/12 IP Dat-a-cast-ing is a ser-vice where dig-i-tal con-tent for-
-mats, soft-ware ap-pli-ca-tions,
- []
-
-
-Package natbib Warning: Citation `RefWorks:doc:601937178f0884cb02a8458c' on pag
-e 23 undefined on input line 788.
-
-
-Overfull \hbox (12.08336pt too wide) in paragraph at lines 785--791
-\T1/aer/m/n/12 Lis-toja ja ni-iden ulkoa-sua on mah-dol-lista muokata [katso es
-im. \T1/aer/b/n/12 ? \T1/aer/m/n/12 , s. 128]. Pe-rus-es-imerkkejä: 
- []
-
-[23]
-Overfull \hbox (75.02728pt too wide) in paragraph at lines 829--835
-\T1/aer/m/n/12 muodossa (En-cap-su-lated PostScript). Ku-vafor-maat-tia voi muu
-t-taa sopivilla ku-vankäsit-te-ly-ohjelmis-toilla
- []
-
-
-Overfull \hbox (117.03522pt too wide) in paragraph at lines 836--843
-\T1/aer/m/n/12 Ku-vatek-stin ``Kuva'' muut-tuu sanaksi ``Fig-ure'', kun val-it-
-set kieleksi englan-nin ([][]\T1/aett/m/n/12 \usepackage[english]{babel}[]\T1/a
-er/m/n/12 ).
- []
-
-<indica_model.pdf, id=88, 261.97874pt x 88.33pt>
-File: indica_model.pdf Graphic file (type pdf)
-<use indica_model.pdf>
-Package pdftex.def Info: indica_model.pdf  used on input line 846.
-(pdftex.def)             Requested size: 181.18437pt x 61.09062pt.
-File: indica_model.pdf Graphic file (type pdf)
-<use indica_model.pdf>
-Package pdftex.def Info: indica_model.pdf  used on input line 859.
-(pdftex.def)             Requested size: 168.77711pt x 56.9055pt.
-<AaltoSCI_FI_1.pdf, id=89, 112.18312pt x 129.66713pt>
-File: AaltoSCI_FI_1.pdf Graphic file (type pdf)
-<use AaltoSCI_FI_1.pdf>
-Package pdftex.def Info: AaltoSCI_FI_1.pdf  used on input line 862.
-(pdftex.def)             Requested size: 49.23233pt x 56.9055pt.
-[24 <./indica_model.pdf>]
-Overfull \hbox (201.13748pt too wide) in paragraph at lines 890--903
- [] 
- []
-
-
-Underfull \hbox (badness 4779) in paragraph at lines 921--924
-[]|\T1/aer/m/n/12 COFDM mode (num-ber of
- []
-
-
-Underfull \hbox (badness 1472) in paragraph at lines 924--926
-[]|\T1/aer/m/n/12 8k (6817, 1116 Hz, 896 $\OML/cmm/m/it/12 ^^V$\T1/aer/m/n/12 s
-) or 2k
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 927--928
-[]|\T1/aer/m/n/12 Guard in-ter-val (8k/4k
- []
-
-[25 <./AaltoSCI_FI_1.pdf>]
-
-Package natbib Warning: Citation `RefWorks:doc:601937178f0884cb02a8458c' on pag
-e 26 undefined on input line 1070.
-
-
-Underfull \hbox (badness 2142) in paragraph at lines 1088--1095
-[]\T1/aer/m/n/12 Algoritmien ja pseu-dokoodin esit-tämiseen tarvi-taan es-imerk
-iksi [][]\T1/aett/m/n/12 algorithmic[]\T1/aer/m/n/12 - ja
- []
-
-
-Overfull \hbox (11.25117pt too wide) in paragraph at lines 1104--1110
-\T1/aer/m/n/12 Ristiinviittauksia taulukkoon, ku-vaan, kap-paleeseen tai muuhun
- voi tehdä [][]\T1/aett/m/n/12 \ref[]\T1/aer/m/n/12 -komennolla,
- []
-
-[26]
-Overfull \hbox (8.77614pt too wide) in paragraph at lines 1121--1125
-\T1/aer/m/n/12 Lähdeluettelo kir-joite-taan joko käsin tai au-tomaat-tis-esti k
-erä-ty-istä lähteistä bib-päät-tei-seen
- []
-
-
-Overfull \hbox (0.14833pt too wide) in paragraph at lines 1135--1144
-[]\T1/aer/m/n/12 Kurssilla opete-taan käyt-tämään Re-f-Work-sia lähtei-den koko
-amiseen. Sieltä on mah-dol-lista
- []
-
-
-Overfull \hbox (12.49193pt too wide) in paragraph at lines 1145--1147
-[]\T1/aer/m/n/12 Google Scholar palaut-taa myös BibTeX-muotoisia lähde-vi-it-te
-itä, kun-han olet sen ase-tuk-sissa
- []
-
-
-Package natbib Warning: Citation `RefWorks:doc:601937178f0884cb02a8458c' on pag
-e 27 undefined on input line 1153.
-
-[27]
-
-Package natbib Warning: Citation `RefWorks:doc:601937178f0884cb02a8458c' on pag
-e 28 undefined on input line 1170.
-
-
-Package natbib Warning: Citation `RefWorks:doc:601937178f0884cb02a8458c' on pag
-e 28 undefined on input line 1176.
-
-
-Overfull \hbox (14.22412pt too wide) in paragraph at lines 1179--1185
-\T1/aer/m/n/12 ``Pro gradu'' (kts. [][]\T1/aett/m/n/12 finnbst.tex[]\T1/aer/m/n
-/12 ). Tämä voidaan muut-taa an-ta-malla ky-seisen merk-in-tä-tyypin
- []
-
-
-Overfull \hbox (42.11163pt too wide) in paragraph at lines 1210--1217
-\T1/aer/m/n/12 muu-tok-set on valmis-teltu ti-ivi-issä yhteistyössä ym-päristöm
-in-is-ter-iön kanssa. Ym-päristö-valiokunta
- []
-
-
-Overfull \hbox (14.27966pt too wide) in paragraph at lines 1218--1224
-\T1/aer/m/n/12 että vaa-timuk-set aset-tuvat yleis-esti sel-l-aiselle tasolle, 
-että ne ovat ko-htu-ullisella in-vestoin-nilla
- []
-
-
-Overfull \hbox (1.28827pt too wide) in paragraph at lines 1218--1224
-\T1/aer/m/n/12 kuitenkaan vaaranna ym-päristön-suo-jelun tasoa ja on es-imerkik
-si Itämeren suo-jelukomis-sio
- []
-
-
-Overfull \hbox (30.4841pt too wide) in paragraph at lines 1225--1232
-\T1/aer/m/n/12 pi-laan-tu-mis-vaaran pe-rus-teella herkillä alueilla kuten rant
-a-alueilla tai tärkeillä po-h-javesialueilla. 
- []
-
-[28]
-Overfull \hbox (19.75168pt too wide) in paragraph at lines 1240--1249
-[]\T1/aer/m/n/12 Valiokunta ko-rostaa, että lain ja ase-tuk-sen mukaisten vaa-t
-imusten to-teut-tami-nen käytän-nössä
- []
-
-
-Overfull \hbox (16.18007pt too wide) in paragraph at lines 1240--1249
-\T1/aer/m/n/12 neu-von-nan jär-jestämiseksi kun-nissa. Vaa-timus-ta-son muu-tok
--sella ko-htu-ullis-te-taan tarvit-tavia
- []
-
-
-Overfull \hbox (19.70778pt too wide) in paragraph at lines 1250--1256
-\T1/aer/m/n/12 vesives-salla varuste-tu-illa vapaa-ajan asun-noilla. Val-taos-a
-lla vapaa-ajan asun-toja lain-säädäntö
- []
-
-
-Overfull \hbox (8.0398pt too wide) in paragraph at lines 1257--1265
-[]\T1/aer/m/n/12 Muutoksella tarken-netaan, ketkä voivat hakea kunnalta vi-iden
- vuo-den mit-taista va-pau-tusta
- []
-
-
-Overfull \hbox (17.88348pt too wide) in paragraph at lines 1257--1265
-\T1/aer/m/n/12 vaike-assa elämän-ti-lanteessa ol-e-vat ki-in-teistönomis-ta-jat
- kuten työt-tömät ja pitkäaikais-sairaat)
- []
-
-
-Overfull \hbox (5.84348pt too wide) in paragraph at lines 1286--1293
-\T1/aer/m/n/12 Eu-roopan neu-vos-ton pitääkin varmis-taa, että selvi-tyk-siä ei
- es-tetä tai vaikeuteta poli-it-ti-sista
- []
-
-
-Overfull \hbox (25.46814pt too wide) in paragraph at lines 1286--1293
-\T1/aer/m/n/12 tapah-tu-mien täy-delli-nen läpikäynti aut-taa rak-en-ta-maan pa
-rem-paa tule-vaisu-utta. Os-oit-ta-malla
- []
-
-[29]
-Overfull \hbox (2.7594pt too wide) in paragraph at lines 1294--1306
-\T1/aer/m/n/12 virheen, jonka takia pienet taimikot jäivät tilapäis-esti hir-vi
-vahinkoko-r-vausten ulkop-uolelle.
- []
-
-
-Overfull \hbox (12.2682pt too wide) in paragraph at lines 1314--1323
-[]\T1/aer/m/n/12 Euroopan unionin ym-päristömerkki si-ir-tyy samaan kotipesään 
-po-hjo-is-maisen Jout-sen-merkin
- []
-
-
-Overfull \hbox (9.40724pt too wide) in paragraph at lines 1314--1323
-\T1/aer/m/n/12 kanssa. Eduskunta hyväksyi ti-is-taina lakimuu-tok-sen, jolla ym
--päristömerkin-nän kansal-lis-ten
- []
-
-
-Overfull \hbox (14.33113pt too wide) in paragraph at lines 1314--1323
-\T1/aer/m/n/12 on käytössä kaksi vi-ral-lista ym-päristömerk-in-täjär-jestelmää
-. Po-hjo-is-mainen ym-päristömerkki
- []
-
-[30]
-Overfull \hbox (5.20497pt too wide) in paragraph at lines 1367--1368
-[][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[31]) [32] (./main.bbl (./babelbst.tex (./englbst.tex)) [33
+[19
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 98--104
-[]\T1/aer/m/n/12 Tommi Pi-ip-po-nen.  Lait-tei-den ja palvelu-jen löytämi-nen i
-pv6-verkossa.
+Underfull \hbox (badness 1655) in paragraph at lines 100--104
+[]\T1/aer/m/n/12 W. Mekking R. Gieben.  Au-then-ti-cated De-nial of Ex-is-tence
+ in the DNS.
  []
 
 
-Underfull \hbox (badness 6792) in paragraph at lines 98--104
-\T1/aer/m/n/12 Kan-di-daat-in-työ, Aalto-yliopiston pe-rusti-etei-den ko-rkeak-
-oulu, Es-poo, 2011.
- []
-
-
-Underfull \hbox (badness 1117) in paragraph at lines 118--124
+Underfull \hbox (badness 1117) in paragraph at lines 139--145
 []\T1/aer/m/n/12 M. Skwarek, M. Ko-r-czyn-ski, W. Mazur-czyk and A. Duda.  Char
 -ac-ter-iz-ing
  []
 
-
-Underfull \hbox (badness 1852) in paragraph at lines 126--133
-\T1/aer/m/n/12 2011.  Saatavissa $\T1/aett/m/n/12 http : / / urn . fi / URN : N
-BN : fi : aalto-[]201305162355$\T1/aer/m/n/12 . Vi-itattu
- []
-
-) [34]
-
-Package natbib Warning: There were undefined citations.
-
-(./main.aux)
+) [20] (./main.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 6213 strings out of 482486
- 80469 string characters out of 5947364
- 339246 words of memory out of 5000000
- 21107 multiletter control sequences out of 15000+600000
- 580020 words of font info for 121 fonts, out of 8000000 for 9000
+ 5908 strings out of 482486
+ 77823 string characters out of 5947364
+ 327277 words of memory out of 5000000
+ 20824 multiletter control sequences out of 15000+600000
+ 559220 words of font info for 76 fonts, out of 8000000 for 9000
  417 hyphenation exceptions out of 8191
- 38i,11n,36p,947b,1510s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,11n,36p,1016b,401s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/pimpbot9000/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm12
 00.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt
-10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb
->
-Output written on main.pdf (34 pages, 332193 bytes).
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on main.pdf (20 pages, 348540 bytes).
 PDF statistics:
- 186 PDF objects out of 1000 (max. 8388607)
- 128 compressed objects within 2 object streams
+ 95 PDF objects out of 1000 (max. 8388607)
+ 63 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -4,58 +4,24 @@
 \babel@toc {english}{}
 \babel@toc {english}{}
 \babel@toc {english}{}
-\contentsline {section}{\numberline {1}Introduction}{6}%
-\contentsline {section}{\numberline {2}The Domain Name System}{6}%
+\contentsline {section}{\numberline {1}Introduction}{5}%
+\contentsline {section}{\numberline {2}The Domain Name System}{5}%
 \contentsline {subsection}{\numberline {2.1}Overview}{6}%
 \contentsline {subsection}{\numberline {2.2}DNS Record Types}{7}%
 \contentsline {subsection}{\numberline {2.3}DNS Zones}{8}%
 \contentsline {subsection}{\numberline {2.4}Publicity and Security of DNS}{8}%
 \contentsline {subsection}{\numberline {2.5}Recent development in DNS}{9}%
 \contentsline {section}{\numberline {3}DNS Enumeration}{9}%
-\contentsline {subsection}{\numberline {3.1}Basic DNS lookup}{10}%
+\contentsline {subsection}{\numberline {3.1}Basic DNS lookup}{9}%
 \contentsline {subsection}{\numberline {3.2}Zone Transfer Attack}{10}%
-\contentsline {subsection}{\numberline {3.3}Zone Enumeration}{11}%
-\contentsline {subsection}{\numberline {3.4}Reverse DNS sweeping}{11}%
-\contentsline {subsection}{\numberline {3.5}Zone Enumeration}{11}%
-\contentsline {subsubsection}{\numberline {3.5.1}Denial of Existence in DNS}{11}%
-\contentsline {subsubsection}{\numberline {3.5.2}Zone Walking}{12}%
-\contentsline {subsubsection}{\numberline {3.5.3}NSEC3}{14}%
-\contentsline {subsection}{\numberline {3.6}Brute Forcing}{15}%
-\contentsline {subsubsection}{\numberline {3.6.1}Enumerating Cloud Services in GCP}{15}%
-\contentsline {subsubsection}{\numberline {3.6.2}Enumerating Cloud Services in AWS}{15}%
-\contentsline {section}{\numberline {4}After getting a foothold: a case study}{15}%
-\contentsline {subsection}{\numberline {4.1}Notes}{15}%
-\contentsline {section}{\numberline {5}Subdomain Enumeration}{15}%
-\contentsline {subsection}{\numberline {5.1}Something something}{15}%
-\contentsline {subsection}{\numberline {5.2}Oma testaus2}{15}%
-\contentsline {subsubsection}{\numberline {5.2.1}Testaus2}{16}%
-\contentsline {subsection}{\numberline {5.3}Tämän dokumentin tausta}{16}%
-\contentsline {subsection}{\numberline {5.4}Johdantoluku}{16}%
-\contentsline {section}{\numberline {6}Kandidaatintyön rakenne- ja muotoseikat}{17}%
-\contentsline {subsection}{\numberline {6.1}TKK:n kandidaattityöryhmän ohjeistus}{17}%
-\contentsline {subsection}{\numberline {6.2}TIK.kand: kommentteja rakenne- ja muotoseikoista}{18}%
-\contentsline {subsection}{\numberline {6.3}Kirjallisuutta}{19}%
-\contentsline {section}{\numberline {7}Esimerkkejä \LaTeX {}in käytöstä}{20}%
-\contentsline {subsection}{\numberline {7.1}\LaTeX {}in asennus ja taustaa}{20}%
-\contentsline {subsubsection}{\numberline {7.1.1}Lähdetiedostosta PDF:ksi}{20}%
-\contentsline {subsubsection}{\numberline {7.1.2}Ongelmien ratkaisija: \LaTeX {} checker}{21}%
-\contentsline {subsubsection}{\numberline {7.1.3}``Ääkköset eivät ole enää ongelma''}{21}%
-\contentsline {subsubsection}{\numberline {7.1.4}Tavutus ei toimi?}{21}%
-\contentsline {subsubsection}{\numberline {7.1.5}Oikoluku}{22}%
-\contentsline {subsubsection}{\numberline {7.1.6}Hienosäätö}{22}%
-\contentsline {subsubsection}{\numberline {7.1.7}Eräs vaihtoehto Win7-koneella: MiKTeX ja LEd, Notepad++}{22}%
-\contentsline {subsection}{\numberline {7.2}Tekstin kirjoittaminen}{23}%
-\contentsline {subsubsection}{\numberline {7.2.1}Perusteksti ja muotoilut}{23}%
-\contentsline {subsubsection}{\numberline {7.2.2}Luetelmat}{23}%
-\contentsline {subsubsection}{\numberline {7.2.3}Kuvat ja taulukot}{24}%
-\contentsline {subsubsection}{\numberline {7.2.4}Matematiikka}{26}%
-\contentsline {subsubsection}{\numberline {7.2.5}Algoritmit ja ohjelmalistaukset}{26}%
-\contentsline {subsection}{\numberline {7.3}Viittaukset ja lähdeluettelo}{27}%
-\contentsline {subsubsection}{\numberline {7.3.1}Ristiinviittaukset}{27}%
-\contentsline {subsubsection}{\numberline {7.3.2}Lähdetiedosto}{27}%
-\contentsline {subsubsection}{\numberline {7.3.3}Tekstiviite}{27}%
-\contentsline {subsubsection}{\numberline {7.3.4}Lähdeluettelo}{28}%
-\contentsline {section}{\numberline {8}Testi: pelkkää tekstiä}{28}%
-\contentsline {section}{\numberline {9}Loppuluku}{30}%
-\contentsline {section}{\numberline {10}Liite}{31}%
-\contentsline {section}{References}{33}%
+\contentsline {subsection}{\numberline {3.3}Reverse DNS sweeping}{10}%
+\contentsline {subsection}{\numberline {3.4}Zone Enumeration}{11}%
+\contentsline {subsubsection}{\numberline {3.4.1}Denial of Existence in DNS}{11}%
+\contentsline {subsubsection}{\numberline {3.4.2}Zone Walking}{12}%
+\contentsline {subsubsection}{\numberline {3.4.3}NSEC3}{14}%
+\contentsline {subsection}{\numberline {3.5}Subdomain enumeration}{15}%
+\contentsline {subsubsection}{\numberline {3.5.1}TTL/TLS certificates}{16}%
+\contentsline {subsubsection}{\numberline {3.5.2}Brute forcing}{16}%
+\contentsline {subsubsection}{\numberline {3.5.3}Enumeration of Cloud Services}{17}%
+\contentsline {section}{\numberline {4}Conclusion}{17}%
+\contentsline {section}{References}{19}%

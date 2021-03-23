@@ -1,4 +1,4 @@
-\begin{thebibliography}{15}
+\begin{thebibliography}{24}
 \input babelbst.tex
 \newcommand{\Capitalize}[1]{\uppercase{#1}}
 \newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
@@ -8,56 +8,57 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[net()]{network_sec_assessment}
+\bibitem[net(2016)]{network_sec_assessment}
 \emph{Network Security Assessment}.
-\newblock O'Reilly Media, Inc., \bblfirst{} \bbledition{}.
+\newblock O'Reilly Media, Inc., \bblthird{} \bbledition{}, 2016.
+\newblock ISBN 9781491910955.
 
-\bibitem[Deccio \bbland{} Davis(2019)]{dns_privacy}
-Casey Deccio \bbland{} Jacob Davis.
-\newblock Dns privacy in practice and preparation.
-\newblock  \emph{Proceedings of the 15th International Conference on Emerging
-  Networking Experiments And Technologies}, CoNEXT '19, \bblpage{} 138–143,
-  New York, NY, USA, 2019. Association for Computing Machinery.
-\newblock ISBN 9781450369985.
-\newblock \doi{10.1145/3359989.3365435}.
-\newblock URL \url{https://doi.org/10.1145/3359989.3365435}.
+\bibitem[A.~Gulbrandsen \bbland{} Esibov(2000)]{RFC2782}
+P.~Vixie A.~Gulbrandsen \bbland{} L.~Esibov.
+\newblock {A DNS RR for specifying the location of services (DNS SRV)}.
+\newblock Proposed standard, \bblfeb{} 2000.
+\newblock URL \url{http://www.rfc-editor.org/rfc/rfc2782.txt}.
 
-\bibitem[Fukuda \bbland{} Heidemann(2015)]{detect_malicious}
-Kensuke Fukuda \bbland{} John Heidemann.
-\newblock Detecting malicious activity with dns backscatter.
-\newblock  \emph{Proceedings of the 2015 Internet Measurement Conference}, IMC
-  '15, \bblpage{} 197–210, New York, NY, USA, 2015. Association for Computing
-  Machinery.
-\newblock ISBN 9781450338486.
-\newblock \doi{10.1145/2815675.2815706}.
-\newblock URL \url{https://doi.org/10.1145/2815675.2815706}.
+\bibitem[B.~Laurie(2008)]{RFC5155}
+R.~Arends B.~Laurie, G.~Sission.
+\newblock {DNS Security (DNSSEC) Hashed Authenticated Denial of Existence}.
+\newblock Proposed standard, 2008.
+\newblock URL \url{http://www.rfc-editor.org/rfc/rfc5155.txt}.
 
-\bibitem[Graves(2010)]{hackers_guide}
-Kimberly Graves.
-\newblock \emph{CEH Certified Ethical Hacker Study Guide: Certified Ethical
-  Hacker Study Guide}.
-\newblock John Wiley \& Sons, Incorporated, Hoboken, 2010.
-\newblock ISBN 9780470525203.
+\bibitem[D.~Atkins(2004)]{RFC_threat_analysis}
+R.~Austein D.~Atkins.
+\newblock { Threat Analysis of the Domain Name System (DNS)}.
+\newblock Draft standard, \bblaug{} 2004.
+\newblock URL \url{http://www.rfc-editor.org/rfc/rfc4034.txt}.
 
-\bibitem[{Klein} \bbletal{}.(2017){Klein}, {Shulman}, \bbland{}
-  {Waidner}]{counting_in_the_dark}
-A.~{Klein}, H.~{Shulman} \bbland{} M.~{Waidner}.
-\newblock Counting in the dark: Dns caches discovery and enumeration in the
-  internet.
-\newblock  \emph{2017 47th Annual IEEE/IFIP International Conference on
-  Dependable Systems and Networks (DSN)}, \bblpages{} 367--378, 2017.
-\newblock \doi{10.1109/DSN.2017.63}.
+\bibitem[D.~Eastlake~3rd(1997)]{RFC_2065}
+C.~Kaufman D.~Eastlake~3rd.
+\newblock {Domain Name System Security Extensions}.
+\newblock Proposed standard, {IETF}, \bbljan{} 1997.
+\newblock URL \url{http://www.rfc-editor.org/rfc/rfc2065.txt}.
 
-\bibitem[Korczy\'{n}ski \bbletal{}.(2016)Korczy\'{n}ski, Kr\'{o}l, \bbland{}
-  van Eeten]{zone_poisoning}
-Maciej Korczy\'{n}ski, Micha\l{} Kr\'{o}l \bbland{} Michel van Eeten.
-\newblock Zone poisoning: The how and where of non-secure dns dynamic updates.
-\newblock  \emph{Proceedings of the 2016 Internet Measurement Conference}, IMC
-  '16, \bblpage{} 271–278, New York, NY, USA, 2016. Association for Computing
-  Machinery.
-\newblock ISBN 9781450345262.
-\newblock \doi{10.1145/2987443.2987477}.
-\newblock URL \url{https://doi.org/10.1145/2987443.2987477}.
+\bibitem[E.~Lewis(2010)]{RFC5936}
+Ed. E.~Lewis, A.~Hoenes.
+\newblock {DNS Zone Transfer Protocol (AXFR)}.
+\newblock Proposed standard, {IETF}, \bbljun{} 2010.
+\newblock URL \url{http://www.rfc-editor.org/rfc/rfc5936.txt}.
+
+\bibitem[in~Sweden()]{sweden}
+Internet~Foundation in~Sweden.
+\newblock {Access to Zone Files for .se and .nu}.
+\newblock \url{https://www.iis.se/english/domains/tech/zonefiles}.
+
+\bibitem[J.~Schlyter(2005)]{RFC3845}
+Ed. J.~Schlyter.
+\newblock {DNS Security (DNSSEC) NextSECure (NSEC) RDATA Format}.
+\newblock Proposed standard, {IETF}, \bblaug{} 2005.
+\newblock URL \url{http://www.rfc-editor.org/rfc/rfc3845.txt}.
+
+\bibitem[J.~Vcelak(2018)]{NSEC5}
+S.~Goldberg J.~Vcelak.
+\newblock {NSEC5, DNSSEC Authenticated Denial of Existence}.
+\newblock Internet draft, {Boston University}, 2018.
+\newblock URL \url{https://tools.ietf.org/id/draft-vcelak-nsec5-06.html}.
 
 \bibitem[Kurose \bbland{} Ross(2013)]{kurose_ross}
 James~F. Kurose \bbland{} Keith~W. Ross.
@@ -65,42 +66,62 @@ James~F. Kurose \bbland{} Keith~W. Ross.
 \newblock Pearson, Boston, 2013.
 \newblock ISBN 9780273775638.
 
-\bibitem[Liu \bbletal{}.(2016)Liu, Hao, \bbland{} Wang]{dns_belongs_to_us}
-Daiping Liu, Shuai Hao \bbland{} Haining Wang.
-\newblock All your dns records point to us: Understanding the security threats
-  of dangling dns records.
-\newblock  \emph{Proceedings of the 2016 ACM SIGSAC Conference on Computer and
-  Communications Security}, CCS '16, \bblpage{} 1414–1425, New York, NY, USA,
-  2016. Association for Computing Machinery.
-\newblock ISBN 9781450341394.
-\newblock \doi{10.1145/2976749.2978387}.
-\newblock URL \url{https://doi.org/10.1145/2976749.2978387}.
+\bibitem[McClure(2012)]{hacking_exposed}
+Stuart McClure.
+\newblock \emph{Hacking Exposed}.
+\newblock McGraw-Hill, 7\bblth{} \bbledition{}, 2012.
+\newblock ISBN 9780071780285.
 
-\bibitem[Mockapetris(1987)]{RFC1035}
-Paul Mockapetris.
-\newblock {RFC 1035: Domain Names - Implentation And Specification}, \bblnov{}
-  1987.
-\newblock Status: DRAFT STANDARD.
+\bibitem[Mockapetris(1987{\natexlab{a}})]{RFC1034}
+P.V. Mockapetris.
+\newblock {Domain Names - Concepts and Facilities}.
+\newblock Internet standard, {IETF}, \bblnov{} 1987{\natexlab{a}}.
+\newblock URL \url{http://www.rfc-editor.org/rfc/rfc1034.txt}.
 
-\bibitem[Pang \bbletal{}.(2004)Pang, Akella, Shaikh, Krishnamurthy, \bbland{}
-  Seshan]{dns_responsiveness}
-Jeffrey Pang, Aditya Akella, Anees Shaikh, Balachander Krishnamurthy \bbland{}
-  Srinivasan Seshan.
-\newblock On the responsiveness of dns-based network control.
-\newblock  \emph{Proceedings of the 4th ACM SIGCOMM Conference on Internet
-  Measurement}, IMC '04, \bblpage{} 21–26, New York, NY, USA, 2004.
-  Association for Computing Machinery.
-\newblock ISBN 1581138210.
-\newblock \doi{10.1145/1028788.1028792}.
-\newblock URL \url{https://doi.org/10.1145/1028788.1028792}.
+\bibitem[Mockapetris(1987{\natexlab{b}})]{RFC1035}
+P.V. Mockapetris.
+\newblock {Domain Names - Implentation and Specification}.
+\newblock Internet standard, {IETF}, \bblnov{} 1987{\natexlab{b}}.
+\newblock URL \url{http://www.rfc-editor.org/rfc/rfc1035.txt}.
 
-\bibitem[Piipponen(2011)]{ipv6_discovery}
-Tommi Piipponen.
-\newblock Laitteiden ja palvelujen löytäminen ipv6-verkossa.
-\newblock Kandidaatintyö, Aalto-yliopiston perustieteiden korkeakoulu, Espoo,
-  2011.
-\newblock Saatavissa \url{http://urn.fi/URN:NBN:fi:aalto-201305162358}.
-  Viitattu 2.2.2020.
+\bibitem[P.~Vixie(2000)]{RFC_2845_trans_sec}
+O.~Gudmundsson P.~Vixie.
+\newblock {Secret Key Transaction Authentication for DNS (TSIG)}.
+\newblock Proposed standard, \bblmay{} 2000.
+\newblock URL \url{http://www.rfc-editor.org/rfc/rfc2845.txt}.
+
+\bibitem[R.~Arends(2005)]{RFC4034}
+M.~Larson et~al. R.~Arends, R.~Austein.
+\newblock {Resource Records for the DNS Security Extensions}.
+\newblock Proposed standard, {IETF}, 2005.
+\newblock URL \url{http://www.rfc-editor.org/rfc/rfc4034.txt}.
+
+\bibitem[R.~Gieben(2014)]{RFC_7129}
+W.~Mekking R.~Gieben.
+\newblock {Authenticated Denial of Existence in the DNS}.
+\newblock Informational, \bblfeb{} 2014.
+\newblock URL \url{http://www.rfc-editor.org/rfc/rfc7129.txt}.
+
+\bibitem[S.~Thomson \bbland{} Souissi(2003)]{RFC3596}
+V.~Ksinant S.~Thomson, C.~Huitema \bbland{} M.~Souissi.
+\newblock {DNS Extensions to Support IP Version 6}.
+\newblock Internet standard (changed from draft standard may 2017), {IETF},
+  \bbloct{} 2003.
+\newblock URL \url{http://www.rfc-editor.org/rfc/rfc3596.txt}.
+
+\bibitem[Schulzrinne \bbletal{}.(2003)Schulzrinne, Casner, Frederic, \bbland{}
+  Jacobson]{RFC3550}
+H.~Schulzrinne, S.~Casner, R.~Frederic \bbland{} V.~Jacobson.
+\newblock {RTP: A Transport Protocol for Real-Time Applications}.
+\newblock Draft standard, \bbljul{} 2003.
+\newblock URL \url{http://www.rfc-editor.org/rfc/rfc7129.txt}.
+
+\bibitem[Sharon~Goldberg(2015)]{NSEC5_provably}
+Moni Naor et~al. Sharon~Goldberg.
+\newblock Nsec5: Provably preventing dnssec zone enumeration.
+\newblock San Diego, CA, \bblfeb{} 2015. {NDSS}.
+\newblock URL
+  \url{https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/shulman}.
 
 \bibitem[Shulman \bbland{} Waidner(2017)]{lotr}
 Haya Shulman \bbland{} Michael Waidner.
@@ -122,19 +143,26 @@ M.~{Skwarek}, M.~{Korczynski}, W.~{Mazurczyk} \bbland{} A.~{Duda}.
   193--198, 2019.
 \newblock \doi{10.1109/SPW.2019.00044}.
 
-\bibitem[Taipale(2011)]{service_discovery}
-Joni Taipale.
-\newblock Palvelun löytäminen erilaisissa verkoissa; service discovery in
-  different networks.
-\newblock Kandidaatintyö, Aalto-yliopiston perustieteiden korkeakoulu, Espoo,
-  2011.
-\newblock Saatavissa \url{http://urn.fi/URN:NBN:fi:aalto-201305162355}.
-  Viitattu 2.2.2020.
-
 \bibitem[Tanenbaum \bbland{} Wetherall(2014)]{tanenbaum}
 Andrew~S. Tanenbaum \bbland{} D.~Wetherall.
 \newblock \emph{Computer networks}.
 \newblock Pearson, Harlow, \bblfifth{} \bbledition{}, 2014.
 \newblock ISBN 9781292037189.
+
+\bibitem[Wagner \bbletal{}.(2012)Wagner, François, Dulaunoy, State, \bbland{}
+  Engel]{SMART_BRUTE}
+Cynthia Wagner, Jérôme François, Alexandre Dulaunoy, Radu State \bbland{}
+  Thomas Engel.
+\newblock {SDBF: Smart DNS brute-forcer}.
+\newblock 04 2012.
+\newblock \doi{10.1109/NOMS.2012.6212021}.
+
+\bibitem[{Wander} \bbletal{}.(2014){Wander}, {Schwittmann}, {Boelmann},
+  \bbland{} {Weis}]{NSEC3_hash_breaking}
+M.~{Wander}, L.~{Schwittmann}, C.~{Boelmann} \bbland{} T.~{Weis}.
+\newblock {GPU-Based NSEC3 Hash Breaking}.
+\newblock  \emph{2014 IEEE 13th International Symposium on Network Computing
+  and Applications}, \bblpages{} 137--144, 2014.
+\newblock \doi{10.1109/NCA.2014.27}.
 
 \end{thebibliography}

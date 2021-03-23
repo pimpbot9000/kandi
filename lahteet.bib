@@ -1,3 +1,29 @@
+@Misc{sweden,
+  OPTkey = 	 {},
+  author = 	 {Internet Foundation in Sweden},
+  title = 	 {{Access to Zone Files for .se and .nu}},
+  OPThowpublished = {},
+  OPTmonth = 	 {},
+  OPTyear = 	 {},
+  note = 	 {\url{https://www.iis.se/english/domains/tech/zonefiles}},
+  OPTannote = 	 {}
+}
+
+
+@book{hacking_exposed,
+author = {McClure, Stuart},
+booktitle = {Hacking Exposed},
+edition = {7th edition},
+keywords = {Electronic books},
+language = {eng},
+abstract = {The latest tactics for thwarting digital attacks “Our new reality is zero-day, APT, and state-sponsored attacks. Today, more than ever, security professionals need to get into the hacker’s mind, methods, and toolbox to successfully deter such relentless assaults. This edition brings readers abreast with the latest attack vectors and arms them for these continually evolving threats.” --Brett Wahlin, CSO, Sony Network Entertainment “Stop taking punches--let’s change the game; it’s time for a paradigm shift in the way we secure our networks, and Hacking Exposed 7 is the playbook for bringing pain to our adversaries.” --Shawn Henry, former Executive Assistant Director, FBI Bolster your system’s security and defeat the tools and tactics of cyber-criminals with expert advice and defense strategies from the world-renowned Hacking Exposed team. Case studies expose the hacker’s latest devious methods and illustrate field-tested remedies. Find out how to block infrastructure hacks, minimize advanced persistent threats, neutralize malicious code, secure web and database applications, and fortify UNIX networks. Hacking Exposed 7: Network Security Secrets & Solutions contains all-new visual maps and a comprehensive “countermeasures cookbook.” Obstruct APTs and web-based meta-exploits Defend against UNIX-based root access and buffer overflow hacks Block SQL injection, spear phishing, and embedded-code attacks Detect and terminate rootkits, Trojans, bots, worms, and malware Lock down remote access using smartcards and hardware tokens Protect 802.11 WLANs with multilayered encryption and gateways Plug holes in VoIP, social networking, cloud, and Web 2.0 services Learn about the latest iPhone and Android attacks and how to protect yourself},
+publisher = {McGraw-Hill},
+title = {Hacking Exposed},
+year = {2012},
+isbn={9780071780285}
+}
+
+
 @book{tanenbaum,
 	author={Andrew S. Tanenbaum and D. Wetherall},
 	year={2014},
@@ -8,6 +34,7 @@
 	abstract={Tanenbaum takes a structured approach to explaining how networks work from the inside out. He starts with an explanation of the physical layer of networking, computer hardware and transmission systems; then works his way up to network applications. Tanenbaum's in-depth application coverage includes email; the domain name system; the World Wide Web (both client- and server-side); and multimedia (including voice over IP, Internet radio video on demand, video conferencing, and streaming media. Each chapter follows a consistent approach: Tanenbaum presents key principles, then illustrates them utilizing real-world example networks that run through the entire book-the Internet, and wireless networks, including Wireless LANs, broadband wireless and Bluetooth. The fifth edition includes a chapter devoted exclusively to network security. The textbook is supplemented by a Solutions Manual, as well as a Website containing PowerPoint slides, art in various forms, and other tools for instruction, including a protocol simulator whereby students can develop and test their own network protocols.},
 	isbn={9781292037189}
 }
+
 @book{kurose_ross,
 	author={James F. Kurose and Keith W. Ross},
 	year={2013},
@@ -19,13 +46,24 @@
 
 @book{network_sec_assessment,
 booktitle = {Network Security Assessment},
-edition = {1st edition},
+edition = {3rd edition},
+year={2016},
 keywords = {Electronic books},
 language = {eng},
 publisher = {O'Reilly Media, Inc.},
 title = {Network Security Assessment },
+isbn={9781491910955}
 }
 
+@INPROCEEDINGS{NSEC3_hash_breaking,
+  author={M. {Wander} and L. {Schwittmann} and C. {Boelmann} and T. {Weis}},
+  booktitle={2014 IEEE 13th International Symposium on Network Computing and Applications}, 
+  title={{GPU-Based NSEC3 Hash Breaking}}, 
+  year={2014},
+  volume={},
+  number={},
+  pages={137-144},
+  doi={10.1109/NCA.2014.27}}
 
 @INPROCEEDINGS{global_zone_transfer,
   author={M. {Skwarek} and M. {Korczynski} and W. {Mazurczyk} and A. {Duda}},
@@ -36,7 +74,7 @@ title = {Network Security Assessment },
   number={},
   pages={193-198},
   doi={10.1109/SPW.2019.00044}}
-
+}
 
 @InProceedings{zone_provisioning,
 author = {Kalafut, Andrew J. and Shue, Craig A. and Gupta, Minaxi},
@@ -94,7 +132,7 @@ publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
 url = {https://doi.org/10.1145/2815675.2815706},
 doi = {10.1145/2815675.2815706},
-abstract = {Network-wide activity is when one computer (the originator) touches many others (the targets). Motives for activity may be benign (mailing lists, CDNs, and research scanning), malicious (spammers and scanners for security vulnerabilities), or perhaps indeterminate (ad trackers). Knowledge of malicious activity may help anticipate attacks, and understanding benign activity may set a baseline or characterize growth. This paper identifies DNS backscatter as a new source of information about network-wide activity. Backscatter is the reverse DNS queries caused when targets or middleboxes automatically look up the domain name of the originator. Queries are visible to the authoritative DNS servers that handle reverse DNS. While the fraction of backscatter they see depends on the server's location in the DNS hierarchy, we show that activity that touches many targets appear even in sampled observations. We use information about the queriers to classify originator activity using machine-learning. Our algorithm has reasonable precision (70-80%) as shown by data from three different organizations operating DNS servers at the root or country-level. Using this technique we examine nine months of activity from one authority to identify trends in scanning, identifying bursts corresponding to Heartbleed and broad and continuous scanning of ssh.},
+abstract = {Network-wide activity is when one computer (the originator) touches many others (the targets). Motives for activity may be benign (mailing lists, CDNs, and research scanning), malicious (spammers and scanners for security vulnerabilities), or perhaps indeterminate (ad trackers). Knowledge of malicious activity may help anticipate attacks, and understanding benign activity may set a bzaseline or characterize growth. This paper identifies DNS backscatter as a new source of information about network-wide activity. Backscatter is the reverse DNS queries caused when targets or middleboxes automatically look up the domain name of the originator. Queries are visible to the authoritative DNS servers that handle reverse DNS. While the fraction of backscatter they see depends on the server's location in the DNS hierarchy, we show that activity that touches many targets appear even in sampled observations. We use information about the queriers to classify originator activity using machine-learning. Our algorithm has reasonable precision (70-80%) as shown by data from three different organizations operating DNS servers at the root or country-level. Using this technique we examine nine months of activity from one authority to identify trends in scanning, identifying bursts corresponding to Heartbleed and broad and continuous scanning of ssh.},
 booktitle = {Proceedings of the 2015 Internet Measurement Conference},
 pages = {197–210},
 numpages = {14},
@@ -102,6 +140,10 @@ keywords = {domain name system, scanning, internet, measurement, dns, network ac
 location = {Tokyo, Japan},
 series = {IMC '15}
 }
+
+
+
+
 
 
 @inproceedings{dns_privacy,
@@ -179,61 +221,31 @@ address = {Boston, MA},
 pages = {131--144},
 url = {https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/shulman},
 publisher = {{USENIX} Association},
-month = mar,
+month = mar
 }
 
-
-@MastersThesis{ipv6_discovery,
-title={Laitteiden ja palvelujen löytäminen IPv6-verkossa},
-author={Tommi Piipponen},
-school={Aalto-yliopiston perustieteiden korkeakoulu},
-year={2011},
-language={fi},
-pages={23},
-keyword={IPv6; palvelun löytäminen; SLAAC; SLP; SSDP; DNS-SD},
-type={Kandidaatintyö},
-note={Saatavissa \url{http://urn.fi/URN:NBN:fi:aalto-201305162358}. Viitattu 2.2.2020},
-address={Espoo}
+@inproceedings {NSEC5_provably,
+author = {Sharon Goldberg, Moni Naor et al.},
+title = {NSEC5: Provably Preventing DNSSEC Zone Enumeration},
+year = {2015},
+isbn = {},
+address = {San Diego, CA},
+url = {https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/shulman},
+publisher = {{NDSS}},
+month = feb
 }
 
-
-
-@Mastersthesis{service_discovery,
-title={Palvelun löytäminen erilaisissa verkoissa; Service Discovery in different networks},
-author={Joni Taipale},
-school = 	 {Aalto-yliopiston perustieteiden korkeakoulu},
-year={2011},
-language={fi},
-pages={15},
-keyword={Service Discovery; SSDP; SLP; DHCP; DNS-SD; USDP},
-type={Kandidaatintyö},
-note={Saatavissa \url{http://urn.fi/URN:NBN:fi:aalto-201305162355}. Viitattu 2.2.2020},
-address={Espoo}
+@inproceedings{SMART_BRUTE,
+author = {Wagner, Cynthia and François, Jérôme and Dulaunoy, Alexandre and State, Radu and Engel, Thomas},
+year = {2012},
+month = {04},
+pages = {},
+title = {{SDBF: Smart DNS brute-forcer}},
+doi = {10.1109/NOMS.2012.6212021}
 }
 
 
 
-
-@MastersThesis{Teekkari2010,
-  author = 	 {Teemu Teekkari},
-  title = 	 {Diplomityöni},
-  school = 	 {Aalto-yliopiston perustieteiden korkeakoulu},
-  year = 	 {2010},
-  type = 	 {Diplomityö},
-  note =		 {Saatavissa \url{http://www.cis.hut.fi/
-teemu/katkotaan/
-rivia/
-jotta/
-helpompi/
-katkaista/
-sopivasta/
-kohtaa/
-tamakin/
-litania/
-poikki/
-rtfm.html}. Viitattu 25.1.2011.},
-  address = 	 {Espoo}
-}
 
 %% ###################################################
 %%
@@ -241,117 +253,240 @@ rtfm.html}. Viitattu 25.1.2011.},
 %%
 %% ###################################################
 
-Network Working Group                                          D. Atkins
-Request for Comments: 3833                              IHTFP Consulting
-Category: Informational                                       R. Austein
-                                                                     ISC
-                                                             August 2004
+%Network Working Group                                          D. Atkins
+%Request for Comments: 3833                              IHTFP Consulting
+%Category: Informational                                       R. Austein
+%                                                                     ISC
+%                                                             August 2004
+
+% TÄMÄ on esimerkki
+@techreport{IDReqNom03,
+  author =	 {Y. Nomura and R. Walsh and J. Ott and
+                  H. Schulzrinne},
+  title =	 {{Protocol Requirements for Internet Media Guides}},
+  institution =	 {{IETF}},
+  year =	 {2003},
+  type =	 {Internet Draft},
+  month =	 dec,
+  note =	 {Work in progress. Expires June, 2004},
+  description =	 {Now (Oct 2003) it seems as if the Electronic Service
+                  Guide ESG used in IP Datacasting will be based on
+                  IMG},
+  abstract =	 { This memo specifies requirements for a protocol for
+                  accessing and updating Internet Media Guide (IMG)
+                  information for media-on-demand and multicast
+                  applications. These requirements are designed to
+                  guide development of an IMG protocol for efficient
+                  and scalable delivery. },
+  url =
+                  {http://www.ietf.org/internet-drafts/draft-ietf-mmusic-img-req-02.txt}
+}
+
+%SRV record
+
+@techreport{RFC2782,
+
+author = {A. Gulbrandsen, P. Vixie and L. Esibov},
+title = {{A DNS RR for specifying the location of services (DNS SRV)}},
+year = {2000},
+type ={Proposed Standard},
+insitution =	 {{IETF}},
+month = Feb,
+url = {http://www.rfc-editor.org/rfc/rfc2782.txt}
+}
+
+% DNSSEC3
+
+%RFC5155
+@techreport{RFC5155,
+
+author = {B. Laurie, G. Sission, R. Arends},
+title = {{DNS Security (DNSSEC) Hashed Authenticated Denial of Existence}},
+year = {2008},
+type ={Proposed Standard},
+insitution =	 {{IETF}},
+month = March,
+url = {http://www.rfc-editor.org/rfc/rfc5155.txt}
+}
 
 
-            Threat Analysis of the Domain Name System (DNS)
 
-@misc{RFC_threat_analysis,
+% DNS specs 1035, 1034
+
+@techreport{RFC1035,
+  author =	 {P.V. Mockapetris},
+  title =	 {{Domain Names - Implentation and Specification}},
+  institution =	 {{IETF}},
+  year =	 {1987},
+  type =	 {Internet Standard},  
+  month =	 nov,
+  description = {something},
+  abstract = {yaba},
+  url = {http://www.rfc-editor.org/rfc/rfc1035.txt},
+  note = {}  
+}
+
+@techreport{RFC1034,
+  author =	 {P.V. Mockapetris},
+  title =	 {{Domain Names - Concepts and Facilities}},
+  institution =	 {{IETF}},
+  type =	 {Internet Standard},
+  year =	 {1987},
+  month =	 nov,
+  url = {http://www.rfc-editor.org/rfc/rfc1034.txt},
+  note = {}
+  
+}
+
+% NSEC5
+@techreport{NSEC5,
+  author =	 {J. Vcelak, S. Goldberg},
+  title =	 {{NSEC5, DNSSEC Authenticated Denial of Existence}},
+  institution =	 {{Boston University}},
+  type =	 {Internet Draft},
+  year =	 {2018},
+  month =	 July,
+  url = {https://tools.ietf.org/id/draft-vcelak-nsec5-06.html},
+  note = {}  
+}
+
+
+% AAAA specification
+% RFC3596
+
+@techreport{RFC3596,
+  author =	 {S. Thomson, C. Huitema, V. Ksinant and M. Souissi},
+  title =	 {{DNS Extensions to Support IP Version 6}},
+  institution =	 {{IETF}},
+  type =	 {Internet Standard (changed from Draft Standard May 2017)},
+  year =	 {2003},
+  month =	 oct,
+  url = {http://www.rfc-editor.org/rfc/rfc3596.txt},
+  note = {}
+  
+}
+
+% NXT introduction
+@techreport{RFC_2065,
+  author =	 {D. Eastlake 3rd, C. Kaufman},
+  title =	 {{Domain Name System Security Extensions}},
+  institution =	 {{IETF}},
+  type =	 {Proposed Standard},
+  year =	 {1997},
+  month =	 jan,
+  url = {http://www.rfc-editor.org/rfc/rfc2065.txt},
+  note = {}
+  
+}
+
+
+
+% RFC3845: DNS Security (DNSSEC) NextSECure (NSEC) RDATA Format
+
+@techreport{RFC3845,
+  author =	 {J. Schlyter, Ed.},
+  title =	 {{DNS Security (DNSSEC) NextSECure (NSEC) RDATA Format}},
+  institution =	 {{IETF}},
+  type =	 {Proposed Standard},
+  year =	 {2005},
+  month =	 aug,
+  url = {http://www.rfc-editor.org/rfc/rfc3845.txt}
+    
+}
+
+% RFC4034 Resource Records for the DNS Security Extensions
+
+@techreport{RFC4034,
+  author =	 {R. Arends, R. Austein, M. Larson et al.},
+  title =	 {{Resource Records for the DNS Security Extensions}},
+  institution =	 {{IETF}},
+  type =	 {Proposed Standard},
+  year =	 {2005},
+  month =	 march,
+  url = {http://www.rfc-editor.org/rfc/rfc4034.txt},
+  note = {}
+}
+
+@techreport{RFC_threat_analysis,
   author =	 {D. Atkins, R. Austein},
-  title =	 {{RFC 3833: Threat Analysis of the Domain Name System (DNS)}},
+  title =	 {{ Threat Analysis of the Domain Name System (DNS)}},
   insitution =	 {{IETF}},
   year =	 2004,
   month =	 aug,
-  note =	 {Status: DRAFT STANDARD}
+  type =	 {Draft Standard},
+  url = {http://www.rfc-editor.org/rfc/rfc4034.txt}
 }
 
 
+% NSEC 3
+@inproceedings{RFC_detect_malicious,
+author = {B. Laurie, G. Sission, R. Arends},
+title = {{DNS Security (DNSSEC) Hashed Authenticated Denial of Existence}},
+year = {2015},
+isbn = {9781450338486},
+publisher = {IETF},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2815675.2815706},
+doi = {10.1145/2815675.2815706}
+}
 
-@misc{RFC1035,
-  author =	 {Paul Mockapetris},
-  title =	 {{RFC 1035: Domain Names - Implentation And Specification}},
+@techreport{RFC_4033,
+  author =	 {R- Arends},
+  title =	 {{RFC 4033	: DNS Security Introduction and Requirements}},
   insitution =	 {{IETF}},
-  year =	 1987,
-  month =	 nov,
-  note =	 {Status: DRAFT STANDARD}
+  year =	 2006,
+  month =	 March,
+  url = {http://www.rfc-editor.org/rfc/rfc4033.txt}
+  
+}
+
+
+@techreport{RFC_2845_trans_sec,
+  author =	 { P. Vixie, O. Gudmundsson},
+  title =	 {{Secret Key Transaction Authentication for DNS (TSIG)}},
+  insitution =	 {{IETF}},
+  year =	 2000,
+  month =	 May,
+  type = {Proposed Standard},
+  url = {http://www.rfc-editor.org/rfc/rfc2845.txt}
+    
 }
 
 
 
-
-@book{kauranen2006,
-        author={Kaauraneeeen,Ilkka and Mustakallio,Mikko A. and Palmgren,Virpi},
-        year={2006},
-        title={Tutkimusraportin kirjoittamisen opas opinnäytetyön tekijöille},
-        publisher={Teknillinen korkeakoulu},
-        address={Espoo},
-        pages={109 s},
-        note={Lisäpainokset: 2. korj. p. 2007.},
-        isbn={951-22-8359-X (nid.)},
-        language={fin}
+% Authenticated Denial of Existence in the DNS
+@techreport{RFC_7129,
+  author =	 {R. Gieben, W. Mekking},
+  title =	 {{Authenticated Denial of Existence in the DNS}},
+  insitution =	 {{IETF}},
+  year =	 2014,
+  month =	 feb,
+  type = {Informational},
+  url = {http://www.rfc-editor.org/rfc/rfc7129.txt}
+  
 }
 
+% RFC 5936 
+% DNS Zone Transfer Protocol (AXFR)
 
-@book{hirsjarvi2009,
-        author={Hirsjärvi, Sirkka and Remes, Pirkko and Sajavaara, Paula},
-        year={2009},
-        title={Tutki ja kirjoita},
-        publisher={Tammi},
-        address={Hämeenlinna},
-        note={15. uudistettu painos},
-        isbn={978-951-31-4836-2},
-        language={fin}
+@techreport{RFC5936,
+  author =	 {E. Lewis, A. Hoenes, Ed.},
+  title =	 {{DNS Zone Transfer Protocol (AXFR)}},
+  institution =	 {{IETF}},
+  type =	 {Proposed Standard},
+  year =	 {2010},
+  month =	 jun,
+  url = {http://www.rfc-editor.org/rfc/rfc5936.txt},
+  note = {}  
 }
 
-
-@Book{oikeinkirjoitus2010,
-  ALTauthor = 	 {},
-  editor = 	 {Kankaanpää, Salli and Heikkilä, Elina and Korhonen, Riitta and Maamies, Sari and Piehl, Aino},
-  title = 	 {Kielitoimiston oikeinkirjoitusopas},
-  publisher = 	 {Kotimaisten kielten tutkimuskeskus},
-  year = 	 {2010},
-  OPTkey = 	 {},
-  OPTvolume = 	 {},
-  OPTnumber = 	 {},
-  OPTseries = 	 {},
-  OPTaddress = 	 {},
-  OPTedition = 	 {},
-  OPTmonth = 	 {},
-  note = 	 {8. painos},
-  OPTannote = 	 {}
-}
-
-@book{goossens1994,
-        author={Goossens,Michel and Mittelbach,Frank and Samarin,Alexander},
-        year={1994},
-        title={The LATEX companion},
-        publisher={Addison-Wesley},
-        address={Reading (MA)},
-        pages={528 s},
-        isbn={0-201-54199-8},
-        language={eng}
-}
+%RFS3833
 
 
-@book{mittelbach2004Safari,
-        author={Mittelbach,Frank},
-        year={2004},
-        title={{The LaTeX companion}},
-        publisher={Safari Tech Books Online},
-        address={Boston, MA},
-        edition={2nd ed.},
-        note={Safari Tech Books Online},
-        language={eng}
-}
 
-@book{mittelbach2004,
-        author={Mittelbach,Frank and Goossens,Michel and Braams,Johannes},
-        year={2004},
-        title={{The LaTeX companion}},
-        publisher={Addison-Wesley},
-        address={Boston},
-        pages={1090 s. +},
-        edition={2nd ed.},
-        note={Lisäpainokset: Repr. 2006.},
-        keywords={textbehandling - dataprogram; textproduktion; datorsättning; tekstinkäsittely; tekstinvalmistus; Latex; atk-ohjelmat - LaTeX; tekstinkäsittely - atk-ohjelmat; tekstinvalmistus - atk-ohjelmat; graafinen teollisuus; ohjelmistot; Printing industry; Computerized typesetting; Software; textbehandling; atk-ohjelmat},
-        isbn={0-201-36299-6 (nid.)},
-        language={eng}
-}
 
+
+% EXAMPLES
 
 
 
@@ -383,8 +518,7 @@ Category: Informational                                       R. Austein
                   Konstatntinos Peppas and Emmanuel N. Protonotarios
                   and Fotis I. Lazarakis and Constantitnos Papadias
                   and Panos I. Philippopoulos},
-  title =	 {Services in Interworking {3G} and {WLAN}
-                  Environments},
+  title =	 {Services in Interworking {3G} and {WLAN} Environments},
   journal =	 {IEEE Wireless Communications},
   year =	 2004,
   volume =	 11,
@@ -446,15 +580,16 @@ Category: Informational                                       R. Austein
                   {http://www.ietf.org/internet-drafts/draft-ietf-mmusic-img-req-02.txt}
 }
 
-@misc{RFC3550,
+@techreport{RFC3550,
   author =	 {H. Schulzrinne and S. Casner and R. Frederic and
                   V. Jacobson},
-  title =	 {{RFC 3550: RTP: A Transport Protocol for Real-Time
+  title =	 {{RTP: A Transport Protocol for Real-Time
                   Applications}},
   insitution =	 {{IETF}},
   year =	 2003,
   month =	 jul,
-  note =	 {Status: DRAFT STANDARD}
+  type =	 {Draft Standard},
+   url = {http://www.rfc-editor.org/rfc/rfc7129.txt}
 }
 
 @misc{SFS,  
