@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.2.2)  23 MAR 2021 20:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.2.2)  4 APR 2021 18:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -332,7 +332,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 (./makroja.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 226--226
+Underfull \hbox (badness 10000) in paragraph at lines 225--225
 
  []
 
@@ -379,91 +379,103 @@ LaTeX Font Warning: Font shape `TS1/aer/m/n' undefined
 [5
 
 ]
-<resolving.png, id=21, 1288.815pt x 556.0775pt>
-File: resolving.png Graphic file (type png)
-<use resolving.png>
-Package pdftex.def Info: resolving.png  used on input line 34.
-(pdftex.def)             Requested size: 407.6683pt x 175.89505pt.
+<resolving2.png, id=21, 1387.1825pt x 586.19pt>
+File: resolving2.png Graphic file (type png)
+<use resolving2.png>
+Package pdftex.def Info: resolving2.png  used on input line 36.
+(pdftex.def)             Requested size: 407.6683pt x 172.27159pt.
 LaTeX Font Info:    Trying to load font information for T1+aett on input line 3
-5.
+7.
  (/usr/share/texlive/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-) [6 <./resolving.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 62--62
+)
+Underfull \hbox (badness 3547) in paragraph at lines 37--37
+[]\T1/aer/m/n/12 Figure 1: A sim-plis-tic pre-sen-ta-tion of re-solv-ing an IP 
+ad-dress for a host
+ []
+
+[6 <./resolving2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 63--63
 []|\T1/aer/m/n/12 Start of Au-thor-ity. Spec-i-fies
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--62
+Underfull \hbox (badness 10000) in paragraph at lines 63--63
 \T1/aer/m/n/12 au-thor-i-ta-tive in-for-ma-tion about a
  []
 
 
-Underfull \hbox (badness 2142) in paragraph at lines 66--69
+Underfull \hbox (badness 2142) in paragraph at lines 67--70
 []|\T1/aer/m/n/12 Provides an au-then-ti-cated de-nial of
  []
 
 [7] [8] [9] [10] [11] [12]
-Overfull \hbox (3.4607pt too wide) in paragraph at lines 230--230
+Overfull \hbox (3.4607pt too wide) in paragraph at lines 237--237
 []\T1/aett/m/n/12 uhirv2ck3kkgn20e3fnqecj1nfu6eeko.fi. 86400 IN NSEC3 1 1 5 7B7
 EE2F28EAFC626[] 
  []
 
-[13]
-<nsec3.png, id=51, 1092.08pt x 855.195pt>
+[13] [14]
+<nsec3.png, id=54, 1092.08pt x 855.195pt>
 File: nsec3.png Graphic file (type png)
 <use nsec3.png>
-Package pdftex.def Info: nsec3.png  used on input line 279.
+Package pdftex.def Info: nsec3.png  used on input line 287.
 (pdftex.def)             Requested size: 226.48393pt x 177.35179pt.
- [14] [15 <./nsec3.png>]
-<markov.png, id=58, 1280.785pt x 1031.855pt>
+ [15 <./nsec3.png>] [16]
+<markov.png, id=61, 1280.785pt x 1031.855pt>
 File: markov.png Graphic file (type png)
 <use markov.png>
-Package pdftex.def Info: markov.png  used on input line 332.
+Package pdftex.def Info: markov.png  used on input line 337.
 (pdftex.def)             Requested size: 135.89174pt x 109.47372pt.
- [16] [17 <./markov.png>]) [18] (./main.bbl
+ [17 <./markov.png>] [18]) [19] (./main.bbl
 (./babelbst.tex (./englbst.tex))
-Underfull \hbox (badness 2181) in paragraph at lines 82--86
-\T1/aer/m/n/12 stan-dard, IETF, Novem-ber 1987.  URL $\T1/aett/m/n/12 http : / 
-/ www . rfc-[]editor . org / rfc /
+Underfull \hbox (badness 10000) in paragraph at lines 18--24
+\T1/aett/m/n/12 https : / / docs . aws . amazon . com / AmazonCloudFront / late
+st / DeveloperGuide /
  []
 
-[19
+
+Underfull \hbox (badness 1590) in paragraph at lines 86--91
+[]\T1/aer/m/n/12 S. Gold-berg and M. Naor.  NSEC5: Prov-ably Pre-vent-ing DNSSE
+C Zone
+ []
+
+[20
 
 ]
-Underfull \hbox (badness 1655) in paragraph at lines 100--104
-[]\T1/aer/m/n/12 W. Mekking R. Gieben.  Au-then-ti-cated De-nial of Ex-is-tence
- in the DNS.
+Underfull \hbox (badness 1394) in paragraph at lines 118--122
+[]\T1/aer/m/n/12 B. Lau-rie, G. Sis-siona and R. Arends.  DNS Se-cu-rity (DNSSE
+C) Hashed
  []
 
 
-Underfull \hbox (badness 1117) in paragraph at lines 139--145
+Underfull \hbox (badness 1117) in paragraph at lines 173--179
 []\T1/aer/m/n/12 M. Skwarek, M. Ko-r-czyn-ski, W. Mazur-czyk and A. Duda.  Char
 -ac-ter-iz-ing
  []
 
-) [20] (./main.aux)
+[21]) [22] (./main.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 5908 strings out of 482486
- 77823 string characters out of 5947364
- 327277 words of memory out of 5000000
- 20824 multiletter control sequences out of 15000+600000
+ 5931 strings out of 482486
+ 78164 string characters out of 5947364
+ 327793 words of memory out of 5000000
+ 20847 multiletter control sequences out of 15000+600000
  559220 words of font info for 76 fonts, out of 8000000 for 9000
  417 hyphenation exceptions out of 8191
- 38i,11n,36p,1016b,401s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,11n,36p,1212b,419s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/pimpbot9000/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm12
 00.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (20 pages, 348540 bytes).
+Output written on main.pdf (22 pages, 354570 bytes).
 PDF statistics:
- 95 PDF objects out of 1000 (max. 8388607)
- 63 compressed objects within 1 object stream
+ 101 PDF objects out of 1000 (max. 8388607)
+ 67 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

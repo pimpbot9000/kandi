@@ -4,62 +4,62 @@ The top-level auxiliary file: main.aux
 The style file: aaltosci_t.bst
 Database file #1: lahteet.bib
 Warning--string name "march" is undefined
---line 308 of file lahteet.bib
+--line 314 of file lahteet.bib
 Warning--string name "july" is undefined
---line 348 of file lahteet.bib
+--line 354 of file lahteet.bib
 Warning--string name "march" is undefined
---line 405 of file lahteet.bib
-Warning--to sort, need author, editor, or key in network_sec_assessment
+--line 411 of file lahteet.bib
+Warning--string name "march" is undefined
+--line 457 of file lahteet.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Warning--empty author and editor in network_sec_assessment
+Warning--empty institution in RFC_4033
+Warning--empty institution in RFC_threat_analysis
+Warning--empty institution in RFC_7129
+Warning--empty booktitle in NSEC5_provably
 Warning--empty institution in RFC2782
 Warning--empty institution in RFC5155
-Warning--empty institution in RFC_threat_analysis
-Warning--empty year in sweden
-Warning--empty institution in RFC_2845_trans_sec
-Warning--empty institution in RFC_7129
 Warning--empty institution in RFC3550
-Warning--empty booktitle in NSEC5_provably
+Warning--empty institution in RFC_2845_trans_sec
 Warning--empty booktitle in SMART_BRUTE
-You've used 24 entries,
+You've used 31 entries,
             3106 wiz_defined-function locations,
-            808 strings with 9077 characters,
-and the built_in function-call counts, 9001 in all, are:
-= -- 881
-> -- 407
-< -- 28
-+ -- 148
-- -- 123
-* -- 585
-:= -- 1496
-add.period$ -- 97
-call.type$ -- 24
-change.case$ -- 105
-chr.to.int$ -- 41
-cite$ -- 60
-duplicate$ -- 451
-empty$ -- 713
-format.name$ -- 165
-if$ -- 1895
-int.to.chr$ -- 2
+            849 strings with 10166 characters,
+and the built_in function-call counts, 12466 in all, are:
+= -- 1193
+> -- 705
+< -- 30
++ -- 250
+- -- 216
+* -- 872
+:= -- 2079
+add.period$ -- 127
+call.type$ -- 31
+change.case$ -- 152
+chr.to.int$ -- 46
+cite$ -- 71
+duplicate$ -- 564
+empty$ -- 910
+format.name$ -- 287
+if$ -- 2593
+int.to.chr$ -- 4
 int.to.str$ -- 1
-missing$ -- 12
-newline$ -- 154
-num.names$ -- 92
-pop$ -- 233
+missing$ -- 13
+newline$ -- 198
+num.names$ -- 124
+pop$ -- 345
 preamble$ -- 1
-purify$ -- 65
+purify$ -- 103
 quote$ -- 0
-skip$ -- 311
+skip$ -- 414
 stack$ -- 0
-substring$ -- 149
-swap$ -- 64
+substring$ -- 162
+swap$ -- 74
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 244
-warning$ -- 11
-while$ -- 79
+type$ -- 321
+warning$ -- 9
+while$ -- 103
 width$ -- 0
-write$ -- 361
-(There were 14 warnings)
+write$ -- 465
+(There were 13 warnings)

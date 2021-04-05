@@ -1,4 +1,4 @@
-\begin{thebibliography}{24}
+\begin{thebibliography}{31}
 \input babelbst.tex
 \newcommand{\Capitalize}[1]{\uppercase{#1}}
 \newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
@@ -8,45 +8,99 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[net(2016)]{network_sec_assessment}
-\emph{Network Security Assessment}.
-\newblock O'Reilly Media, Inc., \bblthird{} \bbledition{}, 2016.
-\newblock ISBN 9781491910955.
-
-\bibitem[A.~Gulbrandsen \bbland{} Esibov(2000)]{RFC2782}
-P.~Vixie A.~Gulbrandsen \bbland{} L.~Esibov.
-\newblock {A DNS RR for specifying the location of services (DNS SRV)}.
-\newblock Proposed standard, \bblfeb{} 2000.
-\newblock URL \url{http://www.rfc-editor.org/rfc/rfc2782.txt}.
-
-\bibitem[B.~Laurie(2008)]{RFC5155}
-R.~Arends B.~Laurie, G.~Sission.
-\newblock {DNS Security (DNSSEC) Hashed Authenticated Denial of Existence}.
-\newblock Proposed standard, 2008.
-\newblock URL \url{http://www.rfc-editor.org/rfc/rfc5155.txt}.
-
-\bibitem[D.~Atkins(2004)]{RFC_threat_analysis}
-R.~Austein D.~Atkins.
-\newblock { Threat Analysis of the Domain Name System (DNS)}.
-\newblock Draft standard, \bblaug{} 2004.
-\newblock URL \url{http://www.rfc-editor.org/rfc/rfc4034.txt}.
-
-\bibitem[D.~Eastlake~3rd(1997)]{RFC_2065}
-C.~Kaufman D.~Eastlake~3rd.
+\bibitem[3rd \bbland{} Kaufman(1997)]{RFC_2065}
+D.~Eastlake 3rd \bbland{} C.~Kaufman.
 \newblock {Domain Name System Security Extensions}.
 \newblock Proposed standard, {IETF}, \bbljan{} 1997.
 \newblock URL \url{http://www.rfc-editor.org/rfc/rfc2065.txt}.
 
-\bibitem[E.~Lewis(2010)]{RFC5936}
-Ed. E.~Lewis, A.~Hoenes.
-\newblock {DNS Zone Transfer Protocol (AXFR)}.
-\newblock Proposed standard, {IETF}, \bbljun{} 2010.
-\newblock URL \url{http://www.rfc-editor.org/rfc/rfc5936.txt}.
+\bibitem[Amazon(2021{\natexlab{a}})]{AWS}
+Amazon.
+\newblock {Locations and IP address ranges of CloudFront edge servers},
+  2021{\natexlab{a}}.
+\newblock URL
+  \url{https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/LocationsOfEdgeServers.html}.
+\newblock Viewed 27 March 2021.
 
-\bibitem[in~Sweden()]{sweden}
+\bibitem[Amazon(2021{\natexlab{b}})]{Route53}
+Amazon.
+\newblock {How internet traffic is routed to your website or web applications},
+  2021{\natexlab{b}}.
+\newblock URL
+  \url{https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/welcome-dns-service.html}.
+\newblock Viewed 4 April 2021.
+
+\bibitem[Arends \bbletal{}.(2005{\natexlab{a}})Arends, Austein, Larson,
+  \bbland{} D.~Massey]{RFC4034}
+R.~Arends, R.~Austein, M.~Larson \bbland{} S.~Rose D.~Massey.
+\newblock {Resource Records for the DNS Security Extensions}.
+\newblock Proposed standard, {IETF}, 2005{\natexlab{a}}.
+\newblock URL \url{http://www.rfc-editor.org/rfc/rfc4034.txt}.
+
+\bibitem[Arends \bbletal{}.(2005{\natexlab{b}})Arends, Austein, Larson, Massey,
+  \bbland{} Rose]{RFC_4033}
+R.~Arends, R.~Austein, M.~Larson, D.~Massey \bbland{} S.~Rose.
+\newblock {DNS Security Introduction and Requirements}.
+\newblock Proposed standard, 2005{\natexlab{b}}.
+\newblock URL \url{http://www.rfc-editor.org/rfc/rfc4033.txt}.
+
+\bibitem[Atkins \bbland{} Austein(2004)]{RFC_threat_analysis}
+D.~Atkins \bbland{} R.~Austein.
+\newblock { Threat Analysis of the Domain Name System (DNS)}.
+\newblock Draft standard, \bblaug{} 2004.
+\newblock URL \url{http://www.rfc-editor.org/rfc/rfc3833.txt}.
+
+\bibitem[Cloudflare(2021)]{PTR_uses}
+Cloudflare.
+\newblock {What is a DNS PTR record?}, 2021.
+\newblock URL
+  \url{https://www.cloudflare.com/learning/dns/dns-records/dns-ptr-record}.
+\newblock Viewed 30 March 2021.
+
+\bibitem[ClouDNS(2021)]{ClouDNS}
+ClouDNS.
+\newblock {What is an ALIAS Record?}, 2021.
+\newblock URL \url{https://www.cloudns.net/wiki/article/18}.
+\newblock Viewed 4 April 2021.
+
+\bibitem[DNSimple(2021)]{DNSimple}
+DNSimple.
+\newblock {Alias Records}, 2021.
+\newblock URL \url{https://support.dnsimple.com/articles/alias-record}.
+\newblock Viewed 4 April 2021.
+
+\bibitem[Finch \bbletal{}.(2019)Finch, Hunt, van Dijk, Eden, \bbland{}
+  Mekking]{ANAME}
+T.~Finch, E.~Hunt, P.~van Dijk, A.~Eden \bbland{} W.~Mekking.
+\newblock {Address-specific DNS aliases (ANAME)}.
+\newblock Standards track, {IETF}, \bbljul{} 2019.
+\newblock URL \url{https://tools.ietf.org/html/draft-ietf-dnsop-aname-04}.
+
+\bibitem[Gieben \bbland{} Mekking(2014)]{RFC_7129}
+R.~Gieben \bbland{} W.~Mekking.
+\newblock {Authenticated Denial of Existence in the DNS}.
+\newblock Informational, \bblfeb{} 2014.
+\newblock URL \url{http://www.rfc-editor.org/rfc/rfc7129.txt}.
+
+\bibitem[Goldberg \bbland{} Naor(2015)]{NSEC5_provably}
+S.~Goldberg \bbland{} M.~Naor.
+\newblock {NSEC5: Provably Preventing DNSSEC Zone Enumeration}.
+\newblock San Diego, CA, \bblfeb{} 2015. {NDSS}.
+\newblock URL
+  \url{https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/shulman}.
+
+\bibitem[Gulbrandsen \bbletal{}.(2000)Gulbrandsen, Vixie, \bbland{}
+  Esibov]{RFC2782}
+A.~Gulbrandsen, P.~Vixie \bbland{} L.~Esibov.
+\newblock {A DNS RR for specifying the location of services (DNS SRV)}.
+\newblock Proposed standard, \bblfeb{} 2000.
+\newblock URL \url{http://www.rfc-editor.org/rfc/rfc2782.txt}.
+
+\bibitem[in~Sweden(No Date)]{sweden}
 Internet~Foundation in~Sweden.
-\newblock {Access to Zone Files for .se and .nu}.
-\newblock \url{https://www.iis.se/english/domains/tech/zonefiles}.
+\newblock {Access to Zone Files for .se and .nu}, No Date.
+\newblock URL \url{https://www.iis.se/english/domains/tech/zonefiles}.
+\newblock Viewed 31 March 2021.
 
 \bibitem[J.~Schlyter(2005)]{RFC3845}
 Ed. J.~Schlyter.
@@ -54,60 +108,47 @@ Ed. J.~Schlyter.
 \newblock Proposed standard, {IETF}, \bblaug{} 2005.
 \newblock URL \url{http://www.rfc-editor.org/rfc/rfc3845.txt}.
 
-\bibitem[J.~Vcelak(2018)]{NSEC5}
-S.~Goldberg J.~Vcelak.
-\newblock {NSEC5, DNSSEC Authenticated Denial of Existence}.
-\newblock Internet draft, {Boston University}, 2018.
-\newblock URL \url{https://tools.ietf.org/id/draft-vcelak-nsec5-06.html}.
-
 \bibitem[Kurose \bbland{} Ross(2013)]{kurose_ross}
-James~F. Kurose \bbland{} Keith~W. Ross.
+J.F. Kurose \bbland{} K.W. Ross.
 \newblock \emph{Computer networking : a top-down approach}.
 \newblock Pearson, Boston, 2013.
 \newblock ISBN 9780273775638.
 
+\bibitem[Laurie \bbletal{}.(2008)Laurie, Sissiona, \bbland{} Arends]{RFC5155}
+B.~Laurie, G.~Sissiona \bbland{} R.~Arends.
+\newblock {DNS Security (DNSSEC) Hashed Authenticated Denial of Existence}.
+\newblock Proposed standard, 2008.
+\newblock URL \url{http://www.rfc-editor.org/rfc/rfc5155.txt}.
+
+\bibitem[Lewisa \bbland{} A.~Hoenes(2010)]{RFC5936}
+E.~Lewisa \bbland{} Ed. A.~Hoenes.
+\newblock {DNS Zone Transfer Protocol (AXFR)}.
+\newblock Proposed standard, {IETF}, \bbljun{} 2010.
+\newblock URL \url{http://www.rfc-editor.org/rfc/rfc5936.txt}.
+
 \bibitem[McClure(2012)]{hacking_exposed}
-Stuart McClure.
+S.~McClure.
 \newblock \emph{Hacking Exposed}.
 \newblock McGraw-Hill, 7\bblth{} \bbledition{}, 2012.
 \newblock ISBN 9780071780285.
 
+\bibitem[McNab(2016)]{network_sec_assessment}
+C.~McNab.
+\newblock \emph{Network Security Assessment}.
+\newblock O'Reilly Media, Inc., \bblthird{} \bbledition{}, 2016.
+\newblock ISBN 9781491910955.
+
 \bibitem[Mockapetris(1987{\natexlab{a}})]{RFC1034}
-P.V. Mockapetris.
+P.~Mockapetris.
 \newblock {Domain Names - Concepts and Facilities}.
 \newblock Internet standard, {IETF}, \bblnov{} 1987{\natexlab{a}}.
 \newblock URL \url{http://www.rfc-editor.org/rfc/rfc1034.txt}.
 
 \bibitem[Mockapetris(1987{\natexlab{b}})]{RFC1035}
-P.V. Mockapetris.
+P.~Mockapetris.
 \newblock {Domain Names - Implentation and Specification}.
 \newblock Internet standard, {IETF}, \bblnov{} 1987{\natexlab{b}}.
 \newblock URL \url{http://www.rfc-editor.org/rfc/rfc1035.txt}.
-
-\bibitem[P.~Vixie(2000)]{RFC_2845_trans_sec}
-O.~Gudmundsson P.~Vixie.
-\newblock {Secret Key Transaction Authentication for DNS (TSIG)}.
-\newblock Proposed standard, \bblmay{} 2000.
-\newblock URL \url{http://www.rfc-editor.org/rfc/rfc2845.txt}.
-
-\bibitem[R.~Arends(2005)]{RFC4034}
-M.~Larson et~al. R.~Arends, R.~Austein.
-\newblock {Resource Records for the DNS Security Extensions}.
-\newblock Proposed standard, {IETF}, 2005.
-\newblock URL \url{http://www.rfc-editor.org/rfc/rfc4034.txt}.
-
-\bibitem[R.~Gieben(2014)]{RFC_7129}
-W.~Mekking R.~Gieben.
-\newblock {Authenticated Denial of Existence in the DNS}.
-\newblock Informational, \bblfeb{} 2014.
-\newblock URL \url{http://www.rfc-editor.org/rfc/rfc7129.txt}.
-
-\bibitem[S.~Thomson \bbland{} Souissi(2003)]{RFC3596}
-V.~Ksinant S.~Thomson, C.~Huitema \bbland{} M.~Souissi.
-\newblock {DNS Extensions to Support IP Version 6}.
-\newblock Internet standard (changed from draft standard may 2017), {IETF},
-  \bbloct{} 2003.
-\newblock URL \url{http://www.rfc-editor.org/rfc/rfc3596.txt}.
 
 \bibitem[Schulzrinne \bbletal{}.(2003)Schulzrinne, Casner, Frederic, \bbland{}
   Jacobson]{RFC3550}
@@ -116,15 +157,8 @@ H.~Schulzrinne, S.~Casner, R.~Frederic \bbland{} V.~Jacobson.
 \newblock Draft standard, \bbljul{} 2003.
 \newblock URL \url{http://www.rfc-editor.org/rfc/rfc7129.txt}.
 
-\bibitem[Sharon~Goldberg(2015)]{NSEC5_provably}
-Moni Naor et~al. Sharon~Goldberg.
-\newblock Nsec5: Provably preventing dnssec zone enumeration.
-\newblock San Diego, CA, \bblfeb{} 2015. {NDSS}.
-\newblock URL
-  \url{https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/shulman}.
-
 \bibitem[Shulman \bbland{} Waidner(2017)]{lotr}
-Haya Shulman \bbland{} Michael Waidner.
+H.~Shulman \bbland{} M.~Waidner.
 \newblock One key to sign them all considered vulnerable: Evaluation of
   {DNSSEC} in the internet.
 \newblock  \emph{14th {USENIX} Symposium on Networked Systems Design and
@@ -144,17 +178,36 @@ M.~{Skwarek}, M.~{Korczynski}, W.~{Mazurczyk} \bbland{} A.~{Duda}.
 \newblock \doi{10.1109/SPW.2019.00044}.
 
 \bibitem[Tanenbaum \bbland{} Wetherall(2014)]{tanenbaum}
-Andrew~S. Tanenbaum \bbland{} D.~Wetherall.
+A.S. Tanenbaum \bbland{} D.~Wetherall.
 \newblock \emph{Computer networks}.
 \newblock Pearson, Harlow, \bblfifth{} \bbledition{}, 2014.
 \newblock ISBN 9781292037189.
 
+\bibitem[Thomson \bbletal{}.(2003)Thomson, Huitema, Ksinant, \bbland{}
+  Souissi]{RFC3596}
+S.~Thomson, C.~Huitema, V.~Ksinant \bbland{} M.~Souissi.
+\newblock {DNS Extensions to Support IP Version 6}.
+\newblock Internet standard (changed from draft standard may 2017), {IETF},
+  \bbloct{} 2003.
+\newblock URL \url{http://www.rfc-editor.org/rfc/rfc3596.txt}.
+
+\bibitem[Vcelak \bbland{} Goldberg(2018)]{NSEC5}
+J.~Vcelak \bbland{} S.~Goldberg.
+\newblock {NSEC5, DNSSEC Authenticated Denial of Existence}.
+\newblock Internet draft, {Boston University}, 2018.
+\newblock URL \url{https://tools.ietf.org/id/draft-vcelak-nsec5-06.html}.
+
+\bibitem[Vixie \bbland{} Gudmundsson(2000)]{RFC_2845_trans_sec}
+P.~Vixie \bbland{} O.~Gudmundsson.
+\newblock {Secret Key Transaction Authentication for DNS (TSIG)}.
+\newblock Proposed standard, \bblmay{} 2000.
+\newblock URL \url{http://www.rfc-editor.org/rfc/rfc2845.txt}.
+
 \bibitem[Wagner \bbletal{}.(2012)Wagner, François, Dulaunoy, State, \bbland{}
   Engel]{SMART_BRUTE}
-Cynthia Wagner, Jérôme François, Alexandre Dulaunoy, Radu State \bbland{}
-  Thomas Engel.
+C.~Wagner, J.~François, A.~Dulaunoy, R.~State \bbland{} T.~Engel.
 \newblock {SDBF: Smart DNS brute-forcer}.
-\newblock 04 2012.
+\newblock April 2012.
 \newblock \doi{10.1109/NOMS.2012.6212021}.
 
 \bibitem[{Wander} \bbletal{}.(2014){Wander}, {Schwittmann}, {Boelmann},
