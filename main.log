@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.2.2)  6 APR 2021 22:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.2.2)  7 APR 2021 01:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -477,16 +477,22 @@ Underfull \hbox (badness 1117) in paragraph at lines 233--239
 -ac-ter-iz-ing
  []
 
+
+Underfull \hbox (badness 2644) in paragraph at lines 255--259
+[]\T1/aer/m/n/12 J. Vce-lak and S. Gold-berg.  NSEC5, DNSSEC Au-then-ti-cated D
+e-nial of
+ []
+
 [23]) [24] (./main.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 5964 strings out of 482486
- 78762 string characters out of 5947364
+ 5966 strings out of 482486
+ 78791 string characters out of 5947364
  331097 words of memory out of 5000000
- 20879 multiletter control sequences out of 15000+600000
+ 20881 multiletter control sequences out of 15000+600000
  559220 words of font info for 76 fonts, out of 8000000 for 9000
  417 hyphenation exceptions out of 8191
  38i,11n,36p,1222b,437s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -495,7 +501,7 @@ Here is how much of TeX's memory you used:
 b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (24 pages, 869706 bytes).
+Output written on main.pdf (24 pages, 869704 bytes).
 PDF statistics:
  108 PDF objects out of 1000 (max. 8388607)
  71 compressed objects within 1 object stream

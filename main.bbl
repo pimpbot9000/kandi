@@ -25,13 +25,13 @@ R.~Arends, R.~Austein, M.~Larson \bbland{} S.~Rose D.~Massey.
   \bbland{} Rose]{RFC_4033}
 R.~Arends, R.~Austein, M.~Larson, D.~Massey \bbland{} S.~Rose.
 \newblock {DNS Security Introduction and Requirements}.
-\newblock Proposed standard, 2005{\natexlab{b}}.
+\newblock Proposed standard, {IETF}, 2005{\natexlab{b}}.
 \newblock URL \url{http://www.rfc-editor.org/rfc/rfc4033.txt}.
 
 \bibitem[Atkins \bbland{} Austein(2004)]{RFC_threat_analysis}
 D.~Atkins \bbland{} R.~Austein.
 \newblock { Threat Analysis of the Domain Name System (DNS)}.
-\newblock Draft standard, \bblaug{} 2004.
+\newblock Draft standard, {IETF}, \bblaug{} 2004.
 \newblock URL \url{http://www.rfc-editor.org/rfc/rfc3833.txt}.
 
 \bibitem[Cloudflare(2021)]{PTR_uses}
@@ -71,7 +71,7 @@ Z.~{Gao} \bbland{} A.~{Venkataramani}.
 \bibitem[Gieben \bbland{} Mekking(2014)]{RFC_7129}
 R.~Gieben \bbland{} W.~Mekking.
 \newblock {Authenticated Denial of Existence in the DNS}.
-\newblock Informational, \bblfeb{} 2014.
+\newblock Informational, {IETF}, \bblfeb{} 2014.
 \newblock URL \url{http://www.rfc-editor.org/rfc/rfc7129.txt}.
 
 \bibitem[Goldberg \bbland{} Naor(2015)]{NSEC5_provably}
@@ -91,7 +91,7 @@ Google.
   Esibov]{RFC2782}
 A.~Gulbrandsen, P.~Vixie \bbland{} L.~Esibov.
 \newblock {A DNS RR for specifying the location of services (DNS SRV)}.
-\newblock Proposed standard, \bblfeb{} 2000.
+\newblock Proposed standard, {IETF}, \bblfeb{} 2000.
 \newblock URL \url{http://www.rfc-editor.org/rfc/rfc2782.txt}.
 
 \bibitem[Helmus(2020)]{AWSpentest}
@@ -129,7 +129,7 @@ Rhino~Security Labs.
 \bibitem[Laurie \bbletal{}.(2008)Laurie, Sissiona, \bbland{} Arends]{RFC5155}
 B.~Laurie, G.~Sissiona \bbland{} R.~Arends.
 \newblock {DNS Security (DNSSEC) Hashed Authenticated Denial of Existence}.
-\newblock Proposed standard, 2008.
+\newblock Proposed standard, {IETF}, 2008.
 \newblock URL \url{http://www.rfc-editor.org/rfc/rfc5155.txt}.
 
 \bibitem[Lewisa \bbland{} A.~Hoenes(2010)]{RFC5936}
@@ -172,7 +172,7 @@ K.~Rouwhorst.
   Jacobson]{RFC3550}
 H.~Schulzrinne, S.~Casner, R.~Frederic \bbland{} V.~Jacobson.
 \newblock {RTP: A Transport Protocol for Real-Time Applications}.
-\newblock Draft standard, \bbljul{} 2003.
+\newblock Draft standard, {IETF}, \bbljul{} 2003.
 \newblock URL \url{http://www.rfc-editor.org/rfc/rfc7129.txt}.
 
 \bibitem[Security(No Date{\natexlab{a}})]{dnsenum}
@@ -254,13 +254,13 @@ S.~Thomson, C.~Huitema, V.~Ksinant \bbland{} M.~Souissi.
 \bibitem[Vcelak \bbland{} Goldberg(2018)]{NSEC5}
 J.~Vcelak \bbland{} S.~Goldberg.
 \newblock {NSEC5, DNSSEC Authenticated Denial of Existence}.
-\newblock Internet draft, {Boston University}, 2018.
+\newblock Internet draft, {IETF}, 2018.
 \newblock URL \url{https://tools.ietf.org/id/draft-vcelak-nsec5-06.html}.
 
 \bibitem[Vixie \bbland{} Gudmundsson(2000)]{RFC_2845_trans_sec}
 P.~Vixie \bbland{} O.~Gudmundsson.
 \newblock {Secret Key Transaction Authentication for DNS (TSIG)}.
-\newblock Proposed standard, \bblmay{} 2000.
+\newblock Proposed standard, {IETF}, \bblmay{} 2000.
 \newblock URL \url{http://www.rfc-editor.org/rfc/rfc2845.txt}.
 
 \bibitem[Wagner \bbletal{}.(2012)Wagner, François, Dulaunoy, State, \bbland{}

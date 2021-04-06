@@ -103,7 +103,7 @@ The intrinsic property of DNS records is that they are public by design and norm
 
 DNS Security Extension or DNSSEC (defined originally in now obsolete \cite{RFC_2065}) has been developed to provide end-to-end data integrity and source authenticity check between the source of DNS data and the client. To achieve this, DNSSEC uses public/private key pair signatures (RRSIG resource record). Threaths of data disclosure were ruled out of scope of DNSSEC \cite{RFC_threat_analysis}. Although DNSSEC was standardized already in 1997 it is still not widely used but the adoption is slowly progressing \cite{lotr}. In 2013 ICANN started a process of approving new TLDs with the additional requirement that they are secured by DNSSEC \cite{sweden}. DNSSEC relies on authentication chain of trust. All root level domain name servers use DNSSEC signatures, but if a TLD does not implement DNSSEC there can not be DNSSEC for any domain under such TLD since the chain of trust is broken \cite{lotr}.
 
-Transmission signatures or TSIG \cite{RFC_2845_trans_sec} use shared private keys to provide authentication of servers to secure actions such as zone transfers and dynamic updates of resource records.
+Another security measure, Transmission Signatures or TSIG \cite{RFC_2845_trans_sec} use shared private keys to provide authentication of servers to secure actions such as zone transfers and dynamic updates of resource records.
 
 
 \subsection{Recent developments in DNS}
