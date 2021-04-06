@@ -14,7 +14,7 @@ The goals of this thesis is as follows:
  \item Present some use cases of the existing methods.
 \end{itemize}
 
-DNS has been and still is vulnerable to attacks such as DNS cache poisoning where the attacker tricks a DNS server or a resolver to store false information in a DNS cache e.g to route a client to a phishing site. DNS Security Extensions or DNSSEC has been developed to prevent cache poisoning attacks but the way DNSSEC is implemented has opened up new ways to conduct DNS enumeration. Therefore DNSSEC will be discussed but DNS cache poisoning attacks are out of the scope of this study.
+DNS has been and still is vulnerable to attacks such as DNS cache poisoning where the attacker tricks a DNS server or a resolver to store false information in a DNS cache e.g., to route a client to a phishing site. DNS Security Extensions or DNSSEC has been developed to prevent cache poisoning attacks but the way DNSSEC is implemented has opened up new ways to conduct DNS enumeration. Therefore DNSSEC will be discussed but DNS cache poisoning attacks are out of the scope of this study. In addition recent developments in DNS and enumerating cloud services are briefly discussed.
 
 
 \section{The Domain Name System}
@@ -61,17 +61,17 @@ MX & Mail exchange server. \cite{RFC1035} \\
 CNAME & Canonical Name. Maps an "alias" to a canonical name. \cite{RFC1035} \\
     \hline
 SOA & Start of Authority. Specifies authoritative information about a DNS zone, including the primary name server for the zone. \cite{RFC1035}\\    \hline
-PTR & A Pointer Record. Maps an IP addres to a hostname. \cite{RFC1035} \\
+PTR & A Pointer Record. Maps an IP address to a hostname. \cite{RFC1035} \\
     \hline
     
 NSEC & Provides an authenticated denial of
    existence for DNS Resource Record Sets. Points to a next Domain in canonical order. \cite{RFC3845}. 
 \\
 \hline
-NSEC3 & Similar to NSEC but hashed values of domain names are used instead of plain text.\cite{RFC5155} \\
+NSEC3 & Similar to NSEC but hashed values of domain names are used instead of plain text. \cite{RFC5155} \\
 \hline
 
-NSEC3PARAM & Hold cryptographic information related to NSEC3. \cite{RFC5155}\\
+NSEC3PARAM & Holds cryptographic information related to NSEC3. \cite{RFC5155}\\
 \hline
 
 RRSIG & Resource record signature for a resource record set. \cite{RFC4034}\\
@@ -89,7 +89,7 @@ SRV & Specifies hostname and port number of servers for specified services. \cit
 \subsection{DNS Zones}
 \label{sec:dns_zones}
 
-A DNS zone is a distinct part of domain namespace which is delegated to an entity such as an organization. DNS zones should not be associated with domain namespaces, meaning there is no one to one correspondence between a zone and a domain. A single DNS server may be responsible for multiple zones, and for replication, load distribution and security (e.g to deflect DDoS attacks) there are usually multiple domain name servers for each zone. \citep{tanenbaum}
+A DNS zone is a distinct part of domain namespace which is delegated to an entity such as an organization. DNS zones should not be associated with domain namespaces, meaning there is no one to one correspondence between a zone and a domain. A single DNS server may be responsible for multiple zones, and for replication, load distribution and security (e.g., to deflect DDoS attacks) there are usually multiple domain name servers for each zone. \citep{tanenbaum}
 
 In the example presented in Fig. \ref{fig:resolving} second level domain name server for \texttt{example.com} has delegated the responsibility of subdomain \texttt{dev.example.com} for another zone.
 
@@ -106,13 +106,15 @@ DNS Security Extension or DNSSEC (defined originally in now obsolete \cite{RFC_2
 Transmission signatures or TSIG \cite{RFC_2845_trans_sec} use shared private keys to provide authentication of servers to secure actions such as zone transfers and dynamic updates of resource records.
 
 
-\subsection{Recent development in DNS}
+\subsection{Recent developments in DNS}
 
 Even though DNS was initially designed to translate domain names to IP addresses, the DNS has evolved into a complex system and has many uses beyond its original intent. A common dns query for example for \texttt{TXT} resource records reveal much information such as Google site verification and whitelisting email for spam verification. In the current form DNS may even be considered to be a distributed key value database for myriad of applications.
 
 Currently, DNSSEC provides data integrity and source authenticity, but DNS lacks confidentiality since DNS queries and responses are visible to network elements on the path. In recent years new standards for encrypting DNS query traffic has been proposed such as DNS over TLS [RFC 7858], DNS Queries over HTTPS [RFC 8484] and DNS over Datagram Transport Layer Security [RFC 8094]. 
 
-For some domains, it can be desirable to provide web sites or other services at a bare domain name, such as \texttt{domain.com} instead of \texttt{www.domain.com}. Use of CNAME record type for this purpose is in conflict with DNS specifications. RFC 1034 \cite{RFC1034} states that if there is a CNAME RR in a zone for a name there can not be any other RR for that name in the zone. If the zone is a so-called apex zone i.e the zone contains SOA and NS resource records for the domain name, according to \cite{RFC1034} use of CNAME for the domain name in this zone is prohibited. To overcome this limitation some DNS providers such as Route 53 by Amazon \cite{Route53}, DNSimple \cite{DNSimple} and ClouDNS \cite{ClouDNS} use a non-standard ALIAS resource record that can coexist with other resource records for a name. The ALIAS record is not returned to a DNS resolver but is resolved instead internally by the DNS server into an IP address to achieve compliance with DNS specifications. Due to use of a non-standard ALIAS resource record by multiple DNS providers a standard for new resource record (ANAME) with similar functionality is being developed \cite{ANAME}.
+For some domains, it can be desirable to provide web sites or other services at a bare domain name, such as \texttt{domain.com} instead of \texttt{www.domain.com}. Use of CNAME record type for this purpose is in conflict with DNS specifications. RFC 1034 \cite{RFC1034} states that if there is a CNAME RR in a zone for a name there can not be any other RR for that name in the zone. If the zone is a so-called apex zone i.e., the zone contains SOA and NS resource records for the domain name, according to \cite{RFC1034} use of CNAME for the domain name in this zone is prohibited. To overcome this limitation some managed DNS providers such as Route 53 by Amazon \cite{Route53}, DNSimple \cite{DNSimple} and ClouDNS \cite{ClouDNS} use a non-standard ALIAS resource record that can coexist with other resource records for a name. The ALIAS record is not returned to a DNS resolver but is resolved instead internally by the DNS server into an IP address to achieve compliance with DNS specifications. Due to use of a non-standard ALIAS resource record by multiple DNS providers a standard for new resource record (ANAME) with similar functionality is being developed \cite{ANAME}.
+
+As internet services are moving to the cloud, websites are turning to Content Delivery Networks (CDN) to provide services. CDNs are dynamic and change IP addresses based on the users' location and server load. Instead of static DNS records managed DNS providers nowadays use an anycast network and provide dynamic DNS records with features such as geolocation, failover and even load balancing on a DNS level \cite{ManagedDNS}.
 % 7858 = prevent eavesdropping
 % 8484 = security for integrity and confidentiality
 % 8094 =  DNS queries and responses are visible to network elements on the path
@@ -123,7 +125,7 @@ Due to the original design philosophy and easy access principle, DNS is vulnerab
 
 DNS Enumeration is considered to be part of the Open Source Intelligent or OSINT methodology where publicly available (open source) information is used in an intelligence context \cite{network_sec_assessment}. DNS enumeration is commonly used jointly with other OSINT methods such as \texttt{whois} queries and exploiting advanced search engine features such as "Google Dorks" \cite{network_sec_assessment}.
 
-This chapter will review the most common methods of DNS enumeration.
+This chapter will review the most common methods of DNS enumeration and in the last section (\ref{sec:cloud}) cloud services are briefly discussed.
 
 \subsection{Basic DNS lookup}
 
@@ -135,7 +137,7 @@ Above example which returns an IP address for a host name is called a forward lo
 
 \subsection{Zone Transfer Attack}
 
-As explained in Section \ref{sec:dns_zones} each DNS zone is composed by a primary server and secondary servers. Secondary servers maintain read-only copies of the primary servers zone file. DNS protocol defines a special type of query, Asynchronous Transfer Full Range or AXFR which requests for a transfer of an entire list of resource records for zone or a Zone File \cite{RFC1034}. The DNS zone information may include sensitive information e.g the internal infrastructure of a network of an organization. If a DNS server is misconfigured, the attacker may retrieve the zone file from a DNS server. The zone file is a plain text list of all resource records of the zone.
+As explained in Section \ref{sec:dns_zones} each DNS zone is composed by a primary server and secondary servers. Secondary servers maintain read-only copies of the primary servers zone file. DNS protocol defines a special type of query, Asynchronous Transfer Full Range or AXFR which requests for a transfer of an entire list of resource records for zone or a Zone File \cite{RFC1034}. The DNS zone information may include sensitive information e.g., the internal infrastructure of a network of an organization. If a DNS server is misconfigured, the attacker may retrieve the zone file from a DNS server. The zone file is a plain text list of all resource records of the zone.
 
 Although succeeding in unauthorized zone transfer requests is considered by some as a thing for the past \cite{network_sec_assessment}, on a global-scale vulnerability assessment  \citet{global_zone_transfer} were able to carry out approximately 11 million zone transfers containing information such as HINFO (information about OS and CPU \cite{RFC1035}) records, and domains with \texttt{test.} and \texttt{dev.} prefixes etc.
 
@@ -159,7 +161,7 @@ The AXFR offers no authentication mechanism \cite{RFC1035}\cite{RFC5936}. In ord
 
 \subsection{Reverse DNS sweeping}
 
-Once IP address ranges used by the target are discovered one can use reverse DNS sweeping. IP network blocks can be discovered for example using whois queries or other reconnaissance methods (see e.g \cite{network_sec_assessment}) or even by an educated guess. Reverse DNS sweeping on itself is quite a simple method. Reverse DNS queries are performed for a range of IP addresses. 
+Once IP address ranges used by the target are discovered one can use reverse DNS sweeping. IP network blocks can be discovered for example using whois queries or other reconnaissance methods (see e.g., \cite{network_sec_assessment}) or even by an educated guess. Reverse DNS sweeping in itself is quite a simple method. Reverse DNS queries are performed for a range of IP addresses. 
 
 As an example DNS forward lookup reveals four A resource records for domain \texttt{hs.fi}:
 \begin{verbatim}
@@ -280,8 +282,6 @@ Notable is that the Internet Foundation in Sweden \cite{sweden} intends the \tex
 NSEC is implemented using a sorted linked list of clear text names in the zone.
 RFC 5155 \cite{RFC5155} introduces NSEC3 as an alternative for NSEC which aims to make zone enumeration considerably harder. NSEC3 still works the similar way but instead of using clear text names, hashed names are used to construct the (linked) list for names in the zone (see Fig. \ref{fig:hash_list}). NSEC3 was developed to attempt to obstruct zone walking using obfuscated or hashed names.
 
-Study conducted by \citet{NSEC3_hash_breaking} showed that even with NSEC3 zone enumeration is still possible using GPU-based NSEC hash breaking. The algorithm had two parts. Since querying NSEC3 records directly is impossible the first phase was to query non-existing random names until all NSEC3 records (or NSEC3 intervals) had been retrieved and NSEC3 intervals formed a circular path so crawling NSEC3 intervals was finished.
-
 \begin{figure}[htb]
   \begin{center}
     \includegraphics[width=0.5\textwidth]{nsec3.png}
@@ -290,10 +290,14 @@ Study conducted by \citet{NSEC3_hash_breaking} showed that even with NSEC3 zone 
   \end{center}
 \end{figure}
 
+Study conducted by \citet{NSEC3_hash_breaking} showed that even with NSEC3 zone enumeration is still possible using GPU-based NSEC hash breaking. The algorithm had two parts. Since querying NSEC3 records directly is impossible the first phase was to query non-existing random names until all NSEC3 records (or NSEC3 intervals) had been retrieved and NSEC3 intervals formed a fully connected and circular path so crawling NSEC3 intervals was finished.
+
+
+
 After crawling the NSEC3 intervals brute forcing and dictionary based attack was used for hash breaking. The result was that approximately 64 \% of all NSEC3 hashes of the top level domain \texttt{com.} was reversed after 4.5 days of computation \cite{NSEC3_hash_breaking}. The Technique presented by \citet{NSEC3_hash_breaking} differs from using a brute force attack to directly query (or "bombard") a DNS server for domain names in a sense that the technique was carried out mostly offline. Notable is that the \texttt{com.} TLD NSEC3 hashing  used no salt in addition to zero iterations (hash computed only once) when computing the hash value for a domain name.
 
 
-In addition in the study \citet{NSEC3_hash_breaking} learned that 52 \% of the TLDs did not change their salt value during the 1 year of observation period and 5 \% of the TLDs did not use salt at all making both cases vulnerable to "rainbow table" attacks i.e table of precomputed hash values.
+In addition in the study \citet{NSEC3_hash_breaking} learned that 52 \% of the TLDs did not change their salt value during the 1 year of observation period and 5 \% of the TLDs did not use salt at all making both cases vulnerable to "rainbow table" attacks i.e., table of precomputed hash values.
 
 Since zone enumeration is feasible even with NSEC3, a variant of NSEC3, NSEC5 \cite{NSEC5} has been suggested to overcome the existing vulnerabilities in an authenticated denial of existence in NSEC and NSEC3. This thesis will not discuss NSEC5 but suffice to say that NSEC5 is designed so that it will prevent zone enumeration \cite{NSEC5_provably}. 
 %https://www.ndss-symposium.org/wp-content/uploads/2017/09/06_5_0.pdf
@@ -302,7 +306,7 @@ Since zone enumeration is feasible even with NSEC3, a variant of NSEC3, NSEC5 \c
 
 \subsection{Subdomain enumeration}
 
-First thing to enumerate subdomains is to try is zone transfer attack but the probability of succeeding is low \cite{NSEC3_hash_breaking}. This section discusses the few methods which may be leveraged to enumerate subdomains. Enumeration of subdomains using methods described in this section can be used in conjunction with advanced search engine features e.g., “Google Dorks” to gather information about the subdomains \cite{hacking_exposed}.
+The first stage in an attempt to enumerate subdomains is to try zone transfer attack but the probability of succeeding is low \cite{NSEC3_hash_breaking}. This section discusses the few methods which may be leveraged to enumerate subdomains. Enumeration of subdomains using methods described in this section can be used in conjunction with advanced search engine features e.g., “Google Dorks” to gather information about the subdomains \cite{hacking_exposed}.
 
 
 \subsubsection{TTL/TLS certificates}
@@ -328,24 +332,41 @@ Of course this is not a DNS enumeration technique per se but presents a simple y
 \subsubsection{Brute forcing}
 
 As the name suggests simple dictionary based brute forcing for subdomains is not a very finessed method. On the other hand, the "guessing" of subdomain names is feasible to a certain degree since certain services tend to have names which reflect their purpose. The downside is that simplistic dictionary based brute forcing methods tend not to give reliable results since the method depend of a huge list of known words and
-thus, will not work against unknown names \cite{SMART_BRUTE}. Most commonly known tools for enumerating subdomain names are \texttt{DNSEnum} and \texttt{Fierce} both using dictionary based brute forcing among with other methods to enumerate subdomains in addition to methods described in previous sections \cite{SMART_BRUTE}\cite{hacking_exposed}.
+thus, will not work against unknown names \cite{SMART_BRUTE}. Most commonly known tools for enumerating subdomain names are \texttt{DNSEnum} \cite{dnsenum} and \texttt{Fierce} \cite{fierce} both using dictionary based brute forcing to enumerate subdomains in addition to methods described in previous sections.
 
-Instead using dictionary based attacks, \citet{SMART_BRUTE} demonstrated that applying a relatively simple language generation model achieved better results than a basic dictionary based brute forcing. The training data was gathered by passive DNS monitoring activity for generating the domain names, see Figure \ref{fig:markov} for more details.
-
-\begin{figure}[htb]
+\begin{figure}[h]
   \begin{center}
     \includegraphics[width=0.3\textwidth]{markov.png}
-    \caption{A simplistic illustration of generating subdomain names using a simple Markov chain model i.e a state machine model. Using training data the transition probabilities were calculated by \citet{SMART_BRUTE} and the model was used to generate subdomain names. The initial character was chosen randomly based on the distribution of initial characters in the training data and subsequent characters were generated by the model.} 
+    \caption{A simplistic illustration of generating subdomain names using a simple Markov chain model i.e., a state machine model. Using training data the transition probabilities were calculated by \citet{SMART_BRUTE} and the model was used to generate subdomain names. The initial character was chosen randomly based on the distribution of initial characters in the training data and subsequent characters were generated by the model.} 
     \label{fig:markov}
   \end{center}
 \end{figure}
+
+Instead using dictionary based attacks, \citet{SMART_BRUTE} demonstrated that applying a relatively simple language generation model achieved better results than a basic dictionary based brute forcing. The training data was gathered by passive DNS monitoring activity for generating the domain names, see Figure \ref{fig:markov} for more details.
+
+
 The study conducted by \citet{SMART_BRUTE} is relatively old and one could argue that now fashionable autoregressive language models could be leveraged to generate subdomain names but no related studies were found.
 
 
-\subsubsection{Enumeration of Cloud Services}
+\subsection{Enumerating Cloud Services}
+\label{sec:cloud}
 
-Add stuff
+Services in the cloud may not reveal much information about the service as the internal infrastructure is not visible from outside. As an example, Figure \ref{fig:cloud_structure} illustrates a recommended three tier architecture for a cloud infrastructure in a case of Wordpress application in Amazon Web Services (AWS) \cite{AWSbestpractices}. In the architecture security critical components such as databases and volumes have been "hidden" in private subnets of the Virtual Private Cloud (VPC) with no access to the Internet thus making accessing and enumeration from the outside impossible. Enumeration of the internal structure would require the attacker to gain an access to an internal component such as an EC2 instance (virtual machine) in the case of AWS.
 
+\begin{figure}[htb]
+  \begin{center}
+    \includegraphics[width=1.0\textwidth]{cloud_rakenne.png}
+    \caption{A three tier achitecture suggested by Amazon for a Wordpress application in Amazon Web Services \cite{AWSbestpractices}.} 
+    \label{fig:cloud_structure}
+  \end{center}
+\end{figure}
+For a content such as images for web sites or other uses for a storage AWS provides a service called Simple Storage System (S3) \cite{s3buckets}. Google Cloud platform offers a similar solution called Cloud Storage \cite{googlebuckets} both solutions being referred commonly as "buckets". The use of a bucket can range from serving static files for a web site to database backups.
+
+Enumerating AWS S3 or Google Cloud Storage is popular as there are multiple AWS S3 and Google Cloud Storage enumerators available \cite{GCPBucket}\citep{AWSpentest}. Contents of a bucket may be configured to be either private or public. Many of the enumerators try to find misconfigured storages by brute forcing bucket names to find buckets in order to access information not intended to be public. Misconfigured buckets in some cases even allow a priviledge escalation attack \cite{GCPBucket}.
+
+Using DNS queries to enumerate buckets in both cases is not possible. For Google Storage the domain name for accessing a bucket is the same for each of the buckets (\texttt{storage.googleapis.com} \cite{googlebuckets}) and path is used to access a specific bucket with a globally unique bucket name. All S3 buckets have a globally unique name as well and the domain name for a bucket is \texttt{<bucket-name>.s3.amazonaws.com} \cite{s3buckets}.
+
+The latter gives a hint of a possibility to brute force buckets using DNS queries but this is not possible any more \cite{S3enum} since every DNS query for a non-existing bucket name returns a result which is indistinguishable  from a result for an existing bucket, possibly to prevent brute forcing using DNS queries. Instead enumerators available leverage either HTTP queries to bucket endpoints directly or use cloud provider command line interface software to query possible bucket names.
 
 \section{Conclusion and Future Work}
 
@@ -357,7 +378,7 @@ The DNS enumaration methods discussed are methods are Zone Transfer Attack, reve
 
 Even though this thesis discussed how to use DNS enumeration techniques to query DNS servers, an attacker does not have to query DNS servers directly. There are online resources that keep records of domains and their subdomains. The information available has been gathered using multiple different methods described in this study.
 
-The focus of this study has been "traditional" DNS enumeration. Since services move to the cloud and services may consist of multiple microservices this opens up new possibilities to leverage DNS or more generally service enumeration techniques. From the outside services may not reveal much information but if an attacker gains a foothold in the system e.g. Kubernetes cluster, EC2 instance of Amazon web services or a Compute Engine instance of Google Cloud Platform, this opens up new ways for enumerating services from the inside. Unfortunately discussing this aspect was not possible due to the time restrictions but it would be an interesting topic for a further study.
+The focus of this study has been "traditional" DNS enumeration. Since services move to the cloud and services may consist of multiple microservices this opens up new possibilities to leverage DNS or more generally service enumeration techniques. As discussed in the Chapter \ref{sec:cloud} from outside services may not reveal much information but if an attacker gains a foothold in the system e.g., Kubernetes cluster, EC2 instance of Amazon Web Services or a Compute Engine instance of Google Cloud Platform, this opens up new ways for enumerating services from the inside. Unfortunately discussing this aspect was not possible due to the time restrictions but it would be an interesting topic for a further study.
 
 
 % --------------------------------------------------------------------

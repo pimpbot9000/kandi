@@ -1,4 +1,4 @@
-\begin{thebibliography}{31}
+\begin{thebibliography}{40}
 \input babelbst.tex
 \newcommand{\Capitalize}[1]{\uppercase{#1}}
 \newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
@@ -13,22 +13,6 @@ D.~Eastlake 3rd \bbland{} C.~Kaufman.
 \newblock {Domain Name System Security Extensions}.
 \newblock Proposed standard, {IETF}, \bbljan{} 1997.
 \newblock URL \url{http://www.rfc-editor.org/rfc/rfc2065.txt}.
-
-\bibitem[Amazon(2021{\natexlab{a}})]{AWS}
-Amazon.
-\newblock {Locations and IP address ranges of CloudFront edge servers},
-  2021{\natexlab{a}}.
-\newblock URL
-  \url{https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/LocationsOfEdgeServers.html}.
-\newblock Viewed 27 March 2021.
-
-\bibitem[Amazon(2021{\natexlab{b}})]{Route53}
-Amazon.
-\newblock {How internet traffic is routed to your website or web applications},
-  2021{\natexlab{b}}.
-\newblock URL
-  \url{https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/welcome-dns-service.html}.
-\newblock Viewed 4 April 2021.
 
 \bibitem[Arends \bbletal{}.(2005{\natexlab{a}})Arends, Austein, Larson,
   \bbland{} D.~Massey]{RFC4034}
@@ -76,6 +60,14 @@ T.~Finch, E.~Hunt, P.~van Dijk, A.~Eden \bbland{} W.~Mekking.
 \newblock Standards track, {IETF}, \bbljul{} 2019.
 \newblock URL \url{https://tools.ietf.org/html/draft-ietf-dnsop-aname-04}.
 
+\bibitem[{Gao} \bbland{} {Venkataramani}(2019)]{ManagedDNS}
+Z.~{Gao} \bbland{} A.~{Venkataramani}.
+\newblock Measuring update performance and consistency anomalies in managed dns
+  services.
+\newblock  \emph{IEEE INFOCOM 2019 - IEEE Conference on Computer
+  Communications}, \bblpages{} 2206--2214, 2019.
+\newblock \doi{10.1109/INFOCOM.2019.8737568}.
+
 \bibitem[Gieben \bbland{} Mekking(2014)]{RFC_7129}
 R.~Gieben \bbland{} W.~Mekking.
 \newblock {Authenticated Denial of Existence in the DNS}.
@@ -89,12 +81,24 @@ S.~Goldberg \bbland{} M.~Naor.
 \newblock URL
   \url{https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/shulman}.
 
+\bibitem[Google(2021)]{googlebuckets}
+Google.
+\newblock {Cloud Storage, Quickstart: Using the Console}, 2021.
+\newblock URL \url{https://cloud.google.com/storage/docs/quickstart-console}.
+\newblock Viewed 6 April 2021.
+
 \bibitem[Gulbrandsen \bbletal{}.(2000)Gulbrandsen, Vixie, \bbland{}
   Esibov]{RFC2782}
 A.~Gulbrandsen, P.~Vixie \bbland{} L.~Esibov.
 \newblock {A DNS RR for specifying the location of services (DNS SRV)}.
 \newblock Proposed standard, \bblfeb{} 2000.
 \newblock URL \url{http://www.rfc-editor.org/rfc/rfc2782.txt}.
+
+\bibitem[Helmus(2020)]{AWSpentest}
+J.~Helmus.
+\newblock \emph{AWS Penetration Testing}.
+\newblock Packt Publishing, 2020.
+\newblock ISBN 9781839216923.
 
 \bibitem[in~Sweden(No Date)]{sweden}
 Internet~Foundation in~Sweden.
@@ -113,6 +117,14 @@ J.F. Kurose \bbland{} K.W. Ross.
 \newblock \emph{Computer networking : a top-down approach}.
 \newblock Pearson, Boston, 2013.
 \newblock ISBN 9780273775638.
+
+\bibitem[Labs(No Date)]{GCPBucket}
+Rhino~Security Labs.
+\newblock {Google Cloud Platform (GCP) Bucket Enumeration and Privilege
+  Escalation}, No Date.
+\newblock URL
+  \url{https://rhinosecuritylabs.com/gcp/google-cloud-platform-gcp-bucket-enumeration}.
+\newblock Viewed 5 April 2021.
 
 \bibitem[Laurie \bbletal{}.(2008)Laurie, Sissiona, \bbland{} Arends]{RFC5155}
 B.~Laurie, G.~Sissiona \bbland{} R.~Arends.
@@ -150,12 +162,60 @@ P.~Mockapetris.
 \newblock Internet standard, {IETF}, \bblnov{} 1987{\natexlab{b}}.
 \newblock URL \url{http://www.rfc-editor.org/rfc/rfc1035.txt}.
 
+\bibitem[Rouwhorst(2019)]{S3enum}
+K.~Rouwhorst.
+\newblock S3enum, 2019.
+\newblock URL \url{https://github.com/koenrh/s3enum}.
+\newblock Viewed 6 April 2021.
+
 \bibitem[Schulzrinne \bbletal{}.(2003)Schulzrinne, Casner, Frederic, \bbland{}
   Jacobson]{RFC3550}
 H.~Schulzrinne, S.~Casner, R.~Frederic \bbland{} V.~Jacobson.
 \newblock {RTP: A Transport Protocol for Real-Time Applications}.
 \newblock Draft standard, \bbljul{} 2003.
 \newblock URL \url{http://www.rfc-editor.org/rfc/rfc7129.txt}.
+
+\bibitem[Security(No Date{\natexlab{a}})]{dnsenum}
+Offensive Security.
+\newblock Dnsenum package description, No Date{\natexlab{a}}.
+\newblock URL \url{https://tools.kali.org/information-gathering/dnsenum}.
+\newblock Viewed 6 April 2021.
+
+\bibitem[Security(No Date{\natexlab{b}})]{fierce}
+Offensive Security.
+\newblock Fierce package description, No Date{\natexlab{b}}.
+\newblock URL \url{https://tools.kali.org/information-gathering/fierce}.
+\newblock Viewed 6 April 2021.
+
+\bibitem[Services(2021{\natexlab{a}})]{AWS}
+Amazon~Wab Services.
+\newblock {Locations and IP address ranges of CloudFront edge servers},
+  2021{\natexlab{a}}.
+\newblock URL
+  \url{https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/LocationsOfEdgeServers.html}.
+\newblock Viewed 27 March 2021.
+
+\bibitem[Services(2019)]{AWSbestpractices}
+Amazon~Web Services.
+\newblock {Best Practices for WordPress on AWS}, 2019.
+\newblock URL
+  \url{https://d1.awsstatic.com/whitepapers/wordpress-best-practices-on-aws.pdf}.
+\newblock Viewed 5 April 2021.
+
+\bibitem[Services(2021{\natexlab{b}})]{Route53}
+Amazon~Web Services.
+\newblock {How internet traffic is routed to your website or web applications},
+  2021{\natexlab{b}}.
+\newblock URL
+  \url{https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/welcome-dns-service.html}.
+\newblock Viewed 4 April 2021.
+
+\bibitem[Services(No Date)]{s3buckets}
+Amazon~Web Services.
+\newblock {Working with Amazon S3 Buckets}, No Date.
+\newblock URL
+  \url{https://docs.aws.amazon.com/AmazonS3/latest/dev-retired/UsingBucket.html}.
+\newblock Viewed 6 April 2021.
 
 \bibitem[Shulman \bbland{} Waidner(2017)]{lotr}
 H.~Shulman \bbland{} M.~Waidner.

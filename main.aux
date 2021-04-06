@@ -14,13 +14,10 @@
 \citation{tanenbaum}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{5}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {2}The Domain Name System}{5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Overview}{5}\protected@file@percent }
 \citation{kurose_ross}
 \citation{tanenbaum}
 \citation{kurose_ross}
 \citation{PTR_uses}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces A simplistic presentation of resolving an IP address for a host \texttt  {www.dev.example.com}. An Iterative query is performed by the DNS resolver until an authoritative name server for subdomain \texttt  {dev.example.com} is found. The authoritative server has a type A resource record which maps the name \texttt  {www.dev.example.com} into an IP address. Explanation for zones, see Section \ref  {sec:dns_zones}.}}{6}\protected@file@percent }
-\newlabel{fig:resolving}{{1}{6}}
 \citation{RFC1035}
 \citation{RFC3596}
 \citation{RFC1035}
@@ -33,9 +30,10 @@
 \citation{RFC4034}
 \citation{RFC2782}
 \citation{tanenbaum}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}DNS Resource Record Types}{7}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Most common or most the relevant DNS Record types for this study.}}{7}\protected@file@percent }
-\newlabel{table:dns_record_types}{{1}{7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Overview}{6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}DNS Resource Record Types}{6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}DNS Zones}{6}\protected@file@percent }
+\newlabel{sec:dns_zones}{{2.3}{6}}
 \citation{tanenbaum}
 \citation{tanenbaum}
 \citation{RFC_threat_analysis}
@@ -44,24 +42,29 @@
 \citation{lotr}
 \citation{sweden}
 \citation{lotr}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces A simplistic presentation of resolving an IP address for a host \texttt  {www.dev.example.com}. An Iterative query is performed by the DNS resolver until an authoritative name server for subdomain \texttt  {dev.example.com} is found. The authoritative server has a type A resource record which maps the name \texttt  {www.dev.example.com} into an IP address. Explanation for zones, see Section \ref  {sec:dns_zones}.}}{7}\protected@file@percent }
+\newlabel{fig:resolving}{{1}{7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Publicity and Security of DNS}{7}\protected@file@percent }
+\newlabel{sec:dns_security}{{2.4}{7}}
 \citation{RFC_2845_trans_sec}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}DNS Zones}{8}\protected@file@percent }
-\newlabel{sec:dns_zones}{{2.3}{8}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Publicity and Security of DNS}{8}\protected@file@percent }
-\newlabel{sec:dns_security}{{2.4}{8}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Most common or most the relevant DNS Record types for this study.}}{8}\protected@file@percent }
+\newlabel{table:dns_record_types}{{1}{8}}
 \citation{RFC1034}
 \citation{RFC1034}
 \citation{Route53}
 \citation{DNSimple}
 \citation{ClouDNS}
 \citation{ANAME}
+\citation{ManagedDNS}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Recent developments in DNS}{9}\protected@file@percent }
 \citation{network_sec_assessment}
 \citation{network_sec_assessment}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Recent development in DNS}{9}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3}DNS Enumeration}{9}\protected@file@percent }
 \citation{RFC1035}
 \citation{RFC1035}
 \citation{RFC1034}
+\@writefile{toc}{\contentsline {section}{\numberline {3}DNS Enumeration}{10}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Basic DNS lookup}{10}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Zone Transfer Attack}{10}\protected@file@percent }
 \citation{network_sec_assessment}
 \citation{global_zone_transfer}
 \citation{RFC1035}
@@ -71,21 +74,19 @@
 \citation{RFC1034}
 \citation{RFC1035}
 \citation{hacking_exposed}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Basic DNS lookup}{10}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Zone Transfer Attack}{10}\protected@file@percent }
 \citation{network_sec_assessment}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Reverse DNS sweeping}{11}\protected@file@percent }
 \citation{AWS}
 \citation{RFC_4033}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Reverse DNS sweeping}{11}\protected@file@percent }
 \citation{RFC_7129}
 \citation{RFC_7129}
 \citation{RFC_7129}
 \citation{RFC_7129}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Zone Enumeration}{12}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.1}Denial of Existence in DNS}{12}\protected@file@percent }
 \citation{RFC_2065}
 \citation{RFC3845}
 \citation{RFC4034}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Zone Enumeration}{12}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.1}Denial of Existence in DNS}{12}\protected@file@percent }
 \citation{RFC_7129}
 \citation{RFC3550}
 \citation{hacking_exposed}
@@ -96,65 +97,88 @@
 \citation{NSEC3_hash_breaking}
 \citation{NSEC3_hash_breaking}
 \citation{NSEC3_hash_breaking}
-\citation{NSEC3_hash_breaking}
-\citation{NSEC3_hash_breaking}
-\citation{NSEC3_hash_breaking}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.3}NSEC3}{15}\protected@file@percent }
 \newlabel{sec:nsec3}{{3.4.3}{15}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces A simple representation of how NSEC and NSEC3 differ. In the canonical ordering NSEC uses a linked list of plaintext domain names in lexicographic order. NSEC uses a linked list of hashed domain name values. Image from \cite  {NSEC3_hash_breaking}.}}{15}\protected@file@percent }
 \newlabel{fig:hash_list}{{2}{15}}
+\citation{NSEC3_hash_breaking}
+\citation{NSEC3_hash_breaking}
+\citation{NSEC3_hash_breaking}
 \citation{NSEC5}
 \citation{NSEC5_provably}
 \citation{NSEC3_hash_breaking}
 \citation{hacking_exposed}
 \citation{hacking_exposed}
-\citation{SMART_BRUTE}
-\citation{SMART_BRUTE}
-\citation{hacking_exposed}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Subdomain enumeration}{16}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.1}TTL/TLS certificates}{16}\protected@file@percent }
 \citation{SMART_BRUTE}
+\citation{dnsenum}
+\citation{fierce}
 \citation{SMART_BRUTE}
 \citation{SMART_BRUTE}
 \citation{SMART_BRUTE}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.2}Brute forcing}{17}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces A simplistic illustration of generating subdomain names using a simple Markov chain model i.e a state machine model. Using training data the transition probabilities were calculated by \citet  {SMART_BRUTE} and the model was used to generate subdomain names. The initial character was chosen randomly based on the distribution of initial characters in the training data and subsequent characters were generated by the model.}}{17}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces A simplistic illustration of generating subdomain names using a simple Markov chain model i.e., a state machine model. Using training data the transition probabilities were calculated by \citet  {SMART_BRUTE} and the model was used to generate subdomain names. The initial character was chosen randomly based on the distribution of initial characters in the training data and subsequent characters were generated by the model.}}{17}\protected@file@percent }
 \newlabel{fig:markov}{{3}{17}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.5.3}Enumeration of Cloud Services}{17}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4}Conclusion and Future Work}{18}\protected@file@percent }
-\newlabel{pages:text}{{4}{19}}
+\citation{SMART_BRUTE}
+\citation{AWSbestpractices}
+\citation{AWSbestpractices}
+\citation{AWSbestpractices}
+\citation{s3buckets}
+\citation{googlebuckets}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6}Enumerating Cloud Services}{18}\protected@file@percent }
+\newlabel{sec:cloud}{{3.6}{18}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces A three tier achitecture suggested by Amazon for a Wordpress application in Amazon Web Services \cite  {AWSbestpractices}.}}{18}\protected@file@percent }
+\newlabel{fig:cloud_structure}{{4}{18}}
+\citation{GCPBucket}
+\citation{AWSpentest}
+\citation{GCPBucket}
+\citation{googlebuckets}
+\citation{s3buckets}
+\citation{S3enum}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Conclusion and Future Work}{19}\protected@file@percent }
+\newlabel{pages:text}{{4}{20}}
 \bibstyle{aaltosci_t}
 \bibdata{lahteet}
 \bibcite{RFC_2065}{{1}{1997}{{3rd and{} Kaufman}}{{}}}
-\bibcite{AWS}{{2}{2021{}}{{Amazon}}{{}}}
-\bibcite{Route53}{{3}{2021{}}{{Amazon}}{{}}}
-\bibcite{RFC4034}{{4}{2005{}}{{Arends et~al{}.}}{{Arends, Austein, Larson, and{} D.~Massey}}}
-\bibcite{RFC_4033}{{5}{2005{}}{{Arends et~al{}.}}{{Arends, Austein, Larson, Massey, and{} Rose}}}
-\bibcite{RFC_threat_analysis}{{6}{2004}{{Atkins and{} Austein}}{{}}}
-\bibcite{PTR_uses}{{7}{2021}{{Cloudflare}}{{}}}
-\bibcite{ClouDNS}{{8}{2021}{{ClouDNS}}{{}}}
-\bibcite{DNSimple}{{9}{2021}{{DNSimple}}{{}}}
-\bibcite{ANAME}{{10}{2019}{{Finch et~al{}.}}{{Finch, Hunt, van Dijk, Eden, and{} Mekking}}}
-\bibcite{RFC_7129}{{11}{2014}{{Gieben and{} Mekking}}{{}}}
-\bibcite{NSEC5_provably}{{12}{2015}{{Goldberg and{} Naor}}{{}}}
-\@writefile{toc}{\contentsline {section}{References}{20}\protected@file@percent }
+\bibcite{RFC4034}{{2}{2005{}}{{Arends et~al{}.}}{{Arends, Austein, Larson, and{} D.~Massey}}}
+\bibcite{RFC_4033}{{3}{2005{}}{{Arends et~al{}.}}{{Arends, Austein, Larson, Massey, and{} Rose}}}
+\bibcite{RFC_threat_analysis}{{4}{2004}{{Atkins and{} Austein}}{{}}}
+\bibcite{PTR_uses}{{5}{2021}{{Cloudflare}}{{}}}
+\bibcite{ClouDNS}{{6}{2021}{{ClouDNS}}{{}}}
+\bibcite{DNSimple}{{7}{2021}{{DNSimple}}{{}}}
+\bibcite{ANAME}{{8}{2019}{{Finch et~al{}.}}{{Finch, Hunt, van Dijk, Eden, and{} Mekking}}}
+\bibcite{ManagedDNS}{{9}{2019}{{{Gao} and{} {Venkataramani}}}{{}}}
+\bibcite{RFC_7129}{{10}{2014}{{Gieben and{} Mekking}}{{}}}
+\bibcite{NSEC5_provably}{{11}{2015}{{Goldberg and{} Naor}}{{}}}
+\bibcite{googlebuckets}{{12}{2021}{{Google}}{{}}}
+\@writefile{toc}{\contentsline {section}{References}{21}\protected@file@percent }
 \bibcite{RFC2782}{{13}{2000}{{Gulbrandsen et~al{}.}}{{Gulbrandsen, Vixie, and{} Esibov}}}
-\bibcite{sweden}{{14}{No Date}{{in~Sweden}}{{}}}
-\bibcite{RFC3845}{{15}{2005}{{J.~Schlyter}}{{}}}
-\bibcite{kurose_ross}{{16}{2013}{{Kurose and{} Ross}}{{}}}
-\bibcite{RFC5155}{{17}{2008}{{Laurie et~al{}.}}{{Laurie, Sissiona, and{} Arends}}}
-\bibcite{RFC5936}{{18}{2010}{{Lewisa and{} A.~Hoenes}}{{}}}
-\bibcite{hacking_exposed}{{19}{2012}{{McClure}}{{}}}
-\bibcite{network_sec_assessment}{{20}{2016}{{McNab}}{{}}}
-\bibcite{RFC1034}{{21}{1987{}}{{Mockapetris}}{{}}}
-\bibcite{RFC1035}{{22}{1987{}}{{Mockapetris}}{{}}}
-\bibcite{RFC3550}{{23}{2003}{{Schulzrinne et~al{}.}}{{Schulzrinne, Casner, Frederic, and{} Jacobson}}}
-\bibcite{lotr}{{24}{2017}{{Shulman and{} Waidner}}{{}}}
-\bibcite{global_zone_transfer}{{25}{2019}{{{Skwarek} et~al{}.}}{{{Skwarek}, {Korczynski}, {Mazurczyk}, and{} {Duda}}}}
-\bibcite{tanenbaum}{{26}{2014}{{Tanenbaum and{} Wetherall}}{{}}}
-\bibcite{RFC3596}{{27}{2003}{{Thomson et~al{}.}}{{Thomson, Huitema, Ksinant, and{} Souissi}}}
-\bibcite{NSEC5}{{28}{2018}{{Vcelak and{} Goldberg}}{{}}}
-\bibcite{RFC_2845_trans_sec}{{29}{2000}{{Vixie and{} Gudmundsson}}{{}}}
-\bibcite{SMART_BRUTE}{{30}{2012}{{Wagner et~al{}.}}{{Wagner, François, Dulaunoy, State, and{} Engel}}}
-\bibcite{NSEC3_hash_breaking}{{31}{2014}{{{Wander} et~al{}.}}{{{Wander}, {Schwittmann}, {Boelmann}, and{} {Weis}}}}
-\newlabel{pages:refs}{{4}{22}}
+\bibcite{AWSpentest}{{14}{2020}{{Helmus}}{{}}}
+\bibcite{sweden}{{15}{No Date}{{in~Sweden}}{{}}}
+\bibcite{RFC3845}{{16}{2005}{{J.~Schlyter}}{{}}}
+\bibcite{kurose_ross}{{17}{2013}{{Kurose and{} Ross}}{{}}}
+\bibcite{GCPBucket}{{18}{No Date}{{Labs}}{{}}}
+\bibcite{RFC5155}{{19}{2008}{{Laurie et~al{}.}}{{Laurie, Sissiona, and{} Arends}}}
+\bibcite{RFC5936}{{20}{2010}{{Lewisa and{} A.~Hoenes}}{{}}}
+\bibcite{hacking_exposed}{{21}{2012}{{McClure}}{{}}}
+\bibcite{network_sec_assessment}{{22}{2016}{{McNab}}{{}}}
+\bibcite{RFC1034}{{23}{1987{}}{{Mockapetris}}{{}}}
+\bibcite{RFC1035}{{24}{1987{}}{{Mockapetris}}{{}}}
+\bibcite{S3enum}{{25}{2019}{{Rouwhorst}}{{}}}
+\bibcite{RFC3550}{{26}{2003}{{Schulzrinne et~al{}.}}{{Schulzrinne, Casner, Frederic, and{} Jacobson}}}
+\bibcite{dnsenum}{{27}{No Date{}}{{Security}}{{}}}
+\bibcite{fierce}{{28}{No Date{}}{{Security}}{{}}}
+\bibcite{AWS}{{29}{2021{}}{{Services}}{{}}}
+\bibcite{AWSbestpractices}{{30}{2019}{{Services}}{{}}}
+\bibcite{Route53}{{31}{2021{}}{{Services}}{{}}}
+\bibcite{s3buckets}{{32}{No Date}{{Services}}{{}}}
+\bibcite{lotr}{{33}{2017}{{Shulman and{} Waidner}}{{}}}
+\bibcite{global_zone_transfer}{{34}{2019}{{{Skwarek} et~al{}.}}{{{Skwarek}, {Korczynski}, {Mazurczyk}, and{} {Duda}}}}
+\bibcite{tanenbaum}{{35}{2014}{{Tanenbaum and{} Wetherall}}{{}}}
+\bibcite{RFC3596}{{36}{2003}{{Thomson et~al{}.}}{{Thomson, Huitema, Ksinant, and{} Souissi}}}
+\bibcite{NSEC5}{{37}{2018}{{Vcelak and{} Goldberg}}{{}}}
+\bibcite{RFC_2845_trans_sec}{{38}{2000}{{Vixie and{} Gudmundsson}}{{}}}
+\bibcite{SMART_BRUTE}{{39}{2012}{{Wagner et~al{}.}}{{Wagner, François, Dulaunoy, State, and{} Engel}}}
+\bibcite{NSEC3_hash_breaking}{{40}{2014}{{{Wander} et~al{}.}}{{{Wander}, {Schwittmann}, {Boelmann}, and{} {Weis}}}}
+\newlabel{pages:refs}{{4}{24}}

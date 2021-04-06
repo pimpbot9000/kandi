@@ -4,13 +4,13 @@ The top-level auxiliary file: main.aux
 The style file: aaltosci_t.bst
 Database file #1: lahteet.bib
 Warning--string name "march" is undefined
---line 314 of file lahteet.bib
+--line 323 of file lahteet.bib
 Warning--string name "july" is undefined
---line 354 of file lahteet.bib
+--line 363 of file lahteet.bib
 Warning--string name "march" is undefined
---line 411 of file lahteet.bib
+--line 420 of file lahteet.bib
 Warning--string name "march" is undefined
---line 457 of file lahteet.bib
+--line 466 of file lahteet.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty institution in RFC_4033
 Warning--empty institution in RFC_threat_analysis
@@ -21,45 +21,45 @@ Warning--empty institution in RFC5155
 Warning--empty institution in RFC3550
 Warning--empty institution in RFC_2845_trans_sec
 Warning--empty booktitle in SMART_BRUTE
-You've used 31 entries,
+You've used 40 entries,
             3106 wiz_defined-function locations,
-            849 strings with 10166 characters,
-and the built_in function-call counts, 12466 in all, are:
-= -- 1193
-> -- 705
-< -- 30
-+ -- 250
-- -- 216
-* -- 872
-:= -- 2079
-add.period$ -- 127
-call.type$ -- 31
-change.case$ -- 152
-chr.to.int$ -- 46
-cite$ -- 71
-duplicate$ -- 564
-empty$ -- 910
-format.name$ -- 287
-if$ -- 2593
-int.to.chr$ -- 4
+            895 strings with 11378 characters,
+and the built_in function-call counts, 15470 in all, are:
+= -- 1476
+> -- 805
+< -- 40
++ -- 290
+- -- 246
+* -- 1017
+:= -- 2547
+add.period$ -- 163
+call.type$ -- 40
+change.case$ -- 179
+chr.to.int$ -- 54
+cite$ -- 89
+duplicate$ -- 715
+empty$ -- 1213
+format.name$ -- 329
+if$ -- 3256
+int.to.chr$ -- 5
 int.to.str$ -- 1
-missing$ -- 13
-newline$ -- 198
-num.names$ -- 124
-pop$ -- 345
+missing$ -- 16
+newline$ -- 252
+num.names$ -- 160
+pop$ -- 453
 preamble$ -- 1
-purify$ -- 103
+purify$ -- 122
 quote$ -- 0
-skip$ -- 414
+skip$ -- 536
 stack$ -- 0
-substring$ -- 162
-swap$ -- 74
-text.length$ -- 3
+substring$ -- 216
+swap$ -- 97
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 321
+type$ -- 415
 warning$ -- 9
-while$ -- 103
+while$ -- 132
 width$ -- 0
-write$ -- 465
+write$ -- 592
 (There were 13 warnings)
