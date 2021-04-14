@@ -1,27 +1,25 @@
 \babel@toc {swedish}{}
 \babel@toc {english}{}
-\babel@toc {finnish}{}
 \babel@toc {english}{}
 \babel@toc {english}{}
-\babel@toc {english}{}
-\contentsline {section}{\numberline {1}Introduction}{5}%
-\contentsline {section}{\numberline {2}The Domain Name System}{5}%
-\contentsline {subsection}{\numberline {2.1}Overview}{6}%
-\contentsline {subsection}{\numberline {2.2}DNS Resource Record Types}{6}%
-\contentsline {subsection}{\numberline {2.3}DNS Zones}{6}%
-\contentsline {subsection}{\numberline {2.4}Publicity and Security of DNS}{7}%
-\contentsline {subsection}{\numberline {2.5}Recent developments in DNS}{9}%
-\contentsline {section}{\numberline {3}DNS Enumeration}{10}%
-\contentsline {subsection}{\numberline {3.1}Basic DNS lookup}{10}%
-\contentsline {subsection}{\numberline {3.2}Zone Transfer Attack}{10}%
-\contentsline {subsection}{\numberline {3.3}Reverse DNS sweeping}{11}%
-\contentsline {subsection}{\numberline {3.4}Zone Enumeration}{12}%
-\contentsline {subsubsection}{\numberline {3.4.1}Denial of Existence in DNS}{12}%
-\contentsline {subsubsection}{\numberline {3.4.2}Zone Walking}{13}%
-\contentsline {subsubsection}{\numberline {3.4.3}NSEC3}{15}%
+\contentsline {section}{\numberline {1}Introduction}{4}%
+\contentsline {section}{\numberline {2}The Domain Name System}{4}%
+\contentsline {subsection}{\numberline {2.1}Overview}{5}%
+\contentsline {subsection}{\numberline {2.2}DNS Resource Record Types}{5}%
+\contentsline {subsection}{\numberline {2.3}DNS Zones}{5}%
+\contentsline {subsection}{\numberline {2.4}Publicity and Security of DNS}{6}%
+\contentsline {subsection}{\numberline {2.5}Recent developments in DNS}{8}%
+\contentsline {section}{\numberline {3}DNS Enumeration}{9}%
+\contentsline {subsection}{\numberline {3.1}Basic DNS lookup}{9}%
+\contentsline {subsection}{\numberline {3.2}Zone Transfer Attack}{9}%
+\contentsline {subsection}{\numberline {3.3}Reverse DNS sweeping}{10}%
+\contentsline {subsection}{\numberline {3.4}Zone Enumeration}{11}%
+\contentsline {subsubsection}{\numberline {3.4.1}Denial of Existence in DNS}{11}%
+\contentsline {subsubsection}{\numberline {3.4.2}Zone Walking}{12}%
+\contentsline {subsubsection}{\numberline {3.4.3}NSEC3}{14}%
 \contentsline {subsection}{\numberline {3.5}Subdomain enumeration}{16}%
 \contentsline {subsubsection}{\numberline {3.5.1}TTL/TLS certificates}{16}%
-\contentsline {subsubsection}{\numberline {3.5.2}Brute forcing}{17}%
-\contentsline {subsection}{\numberline {3.6}Enumerating Cloud Services}{18}%
+\contentsline {subsubsection}{\numberline {3.5.2}Brute forcing}{16}%
+\contentsline {subsection}{\numberline {3.6}Enumerating Cloud Services}{17}%
 \contentsline {section}{\numberline {4}Conclusion and Future Work}{19}%
 \contentsline {section}{References}{21}%
