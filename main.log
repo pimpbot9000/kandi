@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.2.2)  14 APR 2021 11:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.2.2)  14 APR 2021 23:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -351,12 +351,12 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 14.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 8094) in paragraph at lines 24--24
+Underfull \hbox (badness 8094) in paragraph at lines 25--25
 []\T1/aer/m/n/12 DNS, do-main name sys-tem, DNS enu-mer-a-tion, ser-vice
  []
 
 
-Overfull \hbox (2.61234pt too wide) in paragraph at lines 14--24
+Overfull \hbox (2.61234pt too wide) in paragraph at lines 14--25
 [][] [] 
  []
 
@@ -369,6 +369,12 @@ Overfull \hbox (2.61234pt too wide) in paragraph at lines 14--24
 ] (./luku_sisalto.tex [4
 
 ]
+LaTeX Font Info:    Trying to load font information for T1+aess on input line 2
+3.
+
+(/usr/share/texlive/texmf-dist/tex/latex/ae/t1aess.fd
+File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
+)
 <resolving2.png, id=17, 1387.1825pt x 586.19pt>
 File: resolving2.png Graphic file (type png)
 <use resolving2.png>
@@ -386,17 +392,17 @@ ad-dress for a host
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--57
+Underfull \hbox (badness 10000) in paragraph at lines 58--58
 []|\T1/aer/m/n/12 Start of Au-thor-ity. Spec-i-fies
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--57
+Underfull \hbox (badness 10000) in paragraph at lines 58--58
 \T1/aer/m/n/12 au-thor-i-ta-tive in-for-ma-tion about a
  []
 
 
-Underfull \hbox (badness 2142) in paragraph at lines 61--64
+Underfull \hbox (badness 2142) in paragraph at lines 62--65
 []|\T1/aer/m/n/12 Provides an au-then-ti-cated de-nial of
  []
 
@@ -411,25 +417,25 @@ LaTeX Font Warning: Font shape `TS1/aer/m/n' undefined
 (Font)              for symbol `textbullet' on input line 202.
 
 [11] [12]
-Overfull \hbox (3.4607pt too wide) in paragraph at lines 237--237
+Overfull \hbox (3.4607pt too wide) in paragraph at lines 236--236
 []\T1/aett/m/n/12 uhirv2ck3kkgn20e3fnqecj1nfu6eeko.fi. 86400 IN NSEC3 1 1 5 7B7
 EE2F28EAFC626[] 
  []
 
 [13]
-<nsec3.png, id=51, 1092.08pt x 855.195pt>
+<nsec3.png, id=53, 1092.08pt x 855.195pt>
 File: nsec3.png Graphic file (type png)
 <use nsec3.png>
-Package pdftex.def Info: nsec3.png  used on input line 303.
+Package pdftex.def Info: nsec3.png  used on input line 302.
 (pdftex.def)             Requested size: 226.48393pt x 177.35179pt.
  [14] [15 <./nsec3.png>]
-<markov.png, id=58, 1280.785pt x 1031.855pt>
+<markov.png, id=60, 1280.785pt x 1031.855pt>
 File: markov.png Graphic file (type png)
 <use markov.png>
-Package pdftex.def Info: markov.png  used on input line 355.
+Package pdftex.def Info: markov.png  used on input line 354.
 (pdftex.def)             Requested size: 135.89174pt x 109.47372pt.
  [16]
-<cloud_rakenne.png, id=62, 2352.79pt x 1264.725pt>
+<cloud_rakenne.png, id=64, 2352.79pt x 1264.725pt>
 File: cloud_rakenne.png Graphic file (type png)
 <use cloud_rakenne.png>
 Package pdftex.def Info: cloud_rakenne.png  used on input line 374.
@@ -443,40 +449,28 @@ C Zone
 
 [21
 
-]
-Underfull \hbox (badness 1394) in paragraph at lines 130--134
-[]\T1/aer/m/n/12 B. Lau-rie, G. Sis-siona and R. Arends.  DNS Se-cu-rity (DNSSE
-C) Hashed
- []
-
-[22]
-Underfull \hbox (badness 10000) in paragraph at lines 199--204
+] [22]
+Underfull \hbox (badness 10000) in paragraph at lines 193--198
 \T1/aett/m/n/12 / / d1 . awsstatic . com / whitepapers / wordpress-[]best-[]pra
 ctices-[]on-[]aws . pdf$\T1/aer/m/n/12 .
  []
 
 
-Underfull \hbox (badness 1337) in paragraph at lines 206--212
+Underfull \hbox (badness 1337) in paragraph at lines 200--206
 []\T1/aer/m/n/12 Amazon Web Ser-vices.  How in-ter-net traf-fic is routed to yo
 ur web-site or
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 214--219
+Underfull \hbox (badness 10000) in paragraph at lines 208--213
 \T1/aett/m/n/12 / / docs . aws . amazon . com / AmazonS3 / latest / dev-[]retir
 ed / UsingBucket . html$\T1/aer/m/n/12 .
  []
 
 
-Underfull \hbox (badness 1117) in paragraph at lines 233--239
+Underfull \hbox (badness 1117) in paragraph at lines 227--233
 []\T1/aer/m/n/12 M. Skwarek, M. Ko-r-czyn-ski, W. Mazur-czyk and A. Duda.  Char
 -ac-ter-iz-ing
- []
-
-
-Underfull \hbox (badness 2644) in paragraph at lines 255--259
-[]\T1/aer/m/n/12 J. Vce-lak and S. Gold-berg.  NSEC5, DNSSEC Au-then-ti-cated D
-e-nial of
  []
 
 [23]) [24] (./main.aux)
@@ -485,22 +479,24 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 5959 strings out of 482486
- 78643 string characters out of 5947364
- 331097 words of memory out of 5000000
- 20874 multiletter control sequences out of 15000+600000
- 559220 words of font info for 76 fonts, out of 8000000 for 9000
+ 5984 strings out of 482486
+ 79097 string characters out of 5947364
+ 331102 words of memory out of 5000000
+ 20893 multiletter control sequences out of 15000+600000
+ 562433 words of font info for 79 fonts, out of 8000000 for 9000
  417 hyphenation exceptions out of 8191
- 38i,11n,36p,1222b,437s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,10n,36p,1269b,435s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/pimpbot9000/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm12
 00.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (24 pages, 868008 bytes).
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on main.pdf (24 pages, 888172 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
- 71 compressed objects within 1 object stream
+ 116 PDF objects out of 1000 (max. 8388607)
+ 77 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

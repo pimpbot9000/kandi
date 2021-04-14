@@ -1,4 +1,4 @@
-\begin{thebibliography}{40}
+\begin{thebibliography}{39}
 \input babelbst.tex
 \newcommand{\Capitalize}[1]{\uppercase{#1}}
 \newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
@@ -14,9 +14,9 @@ D.~Eastlake 3rd \bbland{} C.~Kaufman.
 \newblock Proposed standard, {IETF}, \bbljan{} 1997.
 \newblock URL \url{http://www.rfc-editor.org/rfc/rfc2065.txt}.
 
-\bibitem[Arends \bbletal{}.(2005{\natexlab{a}})Arends, Austein, Larson,
-  \bbland{} D.~Massey]{RFC4034}
-R.~Arends, R.~Austein, M.~Larson \bbland{} S.~Rose D.~Massey.
+\bibitem[Arends \bbletal{}.(2005{\natexlab{a}})Arends, Austein, Larson, Massey,
+  \bbland{} Rose]{RFC4034}
+R.~Arends, R.~Austein, M.~Larson, D.~Massey \bbland{} S.~Rose.
 \newblock {Resource Records for the DNS Security Extensions}.
 \newblock Proposed standard, {IETF}, 2005{\natexlab{a}}.
 \newblock URL \url{http://www.rfc-editor.org/rfc/rfc4034.txt}.
@@ -31,12 +31,12 @@ R.~Arends, R.~Austein, M.~Larson, D.~Massey \bbland{} S.~Rose.
 \bibitem[Atkins \bbland{} Austein(2004)]{RFC_threat_analysis}
 D.~Atkins \bbland{} R.~Austein.
 \newblock { Threat Analysis of the Domain Name System (DNS)}.
-\newblock Draft standard, {IETF}, \bblaug{} 2004.
+\newblock Informational, {IETF}, \bblaug{} 2004.
 \newblock URL \url{http://www.rfc-editor.org/rfc/rfc3833.txt}.
 
 \bibitem[Cloudflare(2021)]{PTR_uses}
 Cloudflare.
-\newblock {What is a DNS PTR record?}, 2021.
+\newblock {What is a DNS PTR Record?}, 2021.
 \newblock URL
   \url{https://www.cloudflare.com/learning/dns/dns-records/dns-ptr-record}.
 \newblock Viewed 30 March 2021.
@@ -96,7 +96,7 @@ A.~Gulbrandsen, P.~Vixie \bbland{} L.~Esibov.
 
 \bibitem[Helmus(2020)]{AWSpentest}
 J.~Helmus.
-\newblock \emph{AWS Penetration Testing}.
+\newblock \emph{{AWS Penetration Testing}}.
 \newblock Packt Publishing, 2020.
 \newblock ISBN 9781839216923.
 
@@ -114,7 +114,7 @@ Ed. J.~Schlyter.
 
 \bibitem[Kurose \bbland{} Ross(2013)]{kurose_ross}
 J.F. Kurose \bbland{} K.W. Ross.
-\newblock \emph{Computer networking : a top-down approach}.
+\newblock \emph{{Computer Networking : A Top-Down Approach}}.
 \newblock Pearson, Boston, 2013.
 \newblock ISBN 9780273775638.
 
@@ -126,8 +126,9 @@ Rhino~Security Labs.
   \url{https://rhinosecuritylabs.com/gcp/google-cloud-platform-gcp-bucket-enumeration}.
 \newblock Viewed 5 April 2021.
 
-\bibitem[Laurie \bbletal{}.(2008)Laurie, Sissiona, \bbland{} Arends]{RFC5155}
-B.~Laurie, G.~Sissiona \bbland{} R.~Arends.
+\bibitem[Laurie \bbletal{}.(2008)Laurie, Sissiona, Arends, \bbland{}
+  Blacka]{RFC5155}
+B.~Laurie, G.~Sissiona, R.~Arends \bbland{} D.~Blacka.
 \newblock {DNS Security (DNSSEC) Hashed Authenticated Denial of Existence}.
 \newblock Proposed standard, {IETF}, 2008.
 \newblock URL \url{http://www.rfc-editor.org/rfc/rfc5155.txt}.
@@ -164,31 +165,24 @@ P.~Mockapetris.
 
 \bibitem[Rouwhorst(2019)]{S3enum}
 K.~Rouwhorst.
-\newblock S3enum, 2019.
+\newblock {s3enum}, 2019.
 \newblock URL \url{https://github.com/koenrh/s3enum}.
 \newblock Viewed 6 April 2021.
 
-\bibitem[Schulzrinne \bbletal{}.(2003)Schulzrinne, Casner, Frederic, \bbland{}
-  Jacobson]{RFC3550}
-H.~Schulzrinne, S.~Casner, R.~Frederic \bbland{} V.~Jacobson.
-\newblock {RTP: A Transport Protocol for Real-Time Applications}.
-\newblock Draft standard, {IETF}, \bbljul{} 2003.
-\newblock URL \url{http://www.rfc-editor.org/rfc/rfc7129.txt}.
-
 \bibitem[Security(No Date{\natexlab{a}})]{dnsenum}
 Offensive Security.
-\newblock Dnsenum package description, No Date{\natexlab{a}}.
+\newblock {Dnsenum Package Description}, No Date{\natexlab{a}}.
 \newblock URL \url{https://tools.kali.org/information-gathering/dnsenum}.
 \newblock Viewed 6 April 2021.
 
 \bibitem[Security(No Date{\natexlab{b}})]{fierce}
 Offensive Security.
-\newblock Fierce package description, No Date{\natexlab{b}}.
+\newblock {Fierce Package Description}, No Date{\natexlab{b}}.
 \newblock URL \url{https://tools.kali.org/information-gathering/fierce}.
 \newblock Viewed 6 April 2021.
 
 \bibitem[Services(2021{\natexlab{a}})]{AWS}
-Amazon~Wab Services.
+Amazon~Web Services.
 \newblock {Locations and IP address ranges of CloudFront edge servers},
   2021{\natexlab{a}}.
 \newblock URL
@@ -219,8 +213,8 @@ Amazon~Web Services.
 
 \bibitem[Shulman \bbland{} Waidner(2017)]{lotr}
 H.~Shulman \bbland{} M.~Waidner.
-\newblock One key to sign them all considered vulnerable: Evaluation of
-  {DNSSEC} in the internet.
+\newblock {One Key to Sign Them All Considered Vulnerable: Evaluation of
+  {DNSSEC} in the Internet}.
 \newblock  \emph{14th {USENIX} Symposium on Networked Systems Design and
   Implementation ({NSDI} 17)}, \bblpages{} 131--144, Boston, MA, \bblmar{}
   2017. {USENIX} Association.
@@ -231,15 +225,15 @@ H.~Shulman \bbland{} M.~Waidner.
 \bibitem[{Skwarek} \bbletal{}.(2019){Skwarek}, {Korczynski}, {Mazurczyk},
   \bbland{} {Duda}]{global_zone_transfer}
 M.~{Skwarek}, M.~{Korczynski}, W.~{Mazurczyk} \bbland{} A.~{Duda}.
-\newblock Characterizing vulnerability of dns axfr transfers with global-scale
-  scanning.
+\newblock {Characterizing Vulnerability of DNS AXFR Transfers with Global-Scale
+  Scanning}.
 \newblock  \emph{2019 IEEE Security and Privacy Workshops (SPW)}, \bblpages{}
   193--198, 2019.
 \newblock \doi{10.1109/SPW.2019.00044}.
 
 \bibitem[Tanenbaum \bbland{} Wetherall(2014)]{tanenbaum}
 A.S. Tanenbaum \bbland{} D.~Wetherall.
-\newblock \emph{Computer networks}.
+\newblock \emph{{Computer Networks}}.
 \newblock Pearson, Harlow, \bblfifth{} \bbledition{}, 2014.
 \newblock ISBN 9781292037189.
 
@@ -251,14 +245,16 @@ S.~Thomson, C.~Huitema, V.~Ksinant \bbland{} M.~Souissi.
   \bbloct{} 2003.
 \newblock URL \url{http://www.rfc-editor.org/rfc/rfc3596.txt}.
 
-\bibitem[Vcelak \bbland{} Goldberg(2018)]{NSEC5}
-J.~Vcelak \bbland{} S.~Goldberg.
+\bibitem[Vcelak \bbletal{}.(2018)Vcelak, Goldberg, Papadopoulos, Huque,
+  \bbland{} Lawrence]{NSEC5}
+J.~Vcelak, S.~Goldberg, D.~Papadopoulos, S.~Huque \bbland{} D.~Lawrence.
 \newblock {NSEC5, DNSSEC Authenticated Denial of Existence}.
 \newblock Internet draft, {IETF}, 2018.
 \newblock URL \url{https://tools.ietf.org/id/draft-vcelak-nsec5-06.html}.
 
-\bibitem[Vixie \bbland{} Gudmundsson(2000)]{RFC_2845_trans_sec}
-P.~Vixie \bbland{} O.~Gudmundsson.
+\bibitem[Vixie \bbletal{}.(2000)Vixie, Gudmundsson, 3rd, \bbland{}
+  Wellington]{RFC_2845_trans_sec}
+P.~Vixie, O.~Gudmundsson, D.~Eastlake 3rd \bbland{} B.~Wellington.
 \newblock {Secret Key Transaction Authentication for DNS (TSIG)}.
 \newblock Proposed standard, {IETF}, \bblmay{} 2000.
 \newblock URL \url{http://www.rfc-editor.org/rfc/rfc2845.txt}.
@@ -274,8 +270,8 @@ C.~Wagner, J.~François, A.~Dulaunoy, R.~State \bbland{} T.~Engel.
   \bbland{} {Weis}]{NSEC3_hash_breaking}
 M.~{Wander}, L.~{Schwittmann}, C.~{Boelmann} \bbland{} T.~{Weis}.
 \newblock {GPU-Based NSEC3 Hash Breaking}.
-\newblock  \emph{2014 IEEE 13th International Symposium on Network Computing
-  and Applications}, \bblpages{} 137--144, 2014.
+\newblock  \emph{{2014 IEEE 13th International Symposium on Network Computing
+  and Applications}}, \bblpages{} 137--144, 2014.
 \newblock \doi{10.1109/NCA.2014.27}.
 
 \end{thebibliography}

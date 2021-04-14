@@ -19,7 +19,7 @@
 \contentsline {subsubsection}{\numberline {3.4.3}NSEC3}{14}%
 \contentsline {subsection}{\numberline {3.5}Subdomain enumeration}{16}%
 \contentsline {subsubsection}{\numberline {3.5.1}TTL/TLS certificates}{16}%
-\contentsline {subsubsection}{\numberline {3.5.2}Brute forcing}{16}%
+\contentsline {subsubsection}{\numberline {3.5.2}Brute-forcing}{16}%
 \contentsline {subsection}{\numberline {3.6}Enumerating Cloud Services}{17}%
 \contentsline {section}{\numberline {4}Conclusion and Future Work}{19}%
 \contentsline {section}{References}{21}%

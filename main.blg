@@ -4,55 +4,55 @@ The top-level auxiliary file: main.aux
 The style file: aaltosci_t.bst
 Database file #1: lahteet.bib
 Warning--string name "march" is undefined
---line 323 of file lahteet.bib
+--line 322 of file lahteet.bib
 Warning--string name "july" is undefined
---line 363 of file lahteet.bib
+--line 362 of file lahteet.bib
 Warning--string name "march" is undefined
---line 420 of file lahteet.bib
+--line 419 of file lahteet.bib
 Warning--string name "march" is undefined
 --line 466 of file lahteet.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty booktitle in NSEC5_provably
 Warning--empty booktitle in SMART_BRUTE
-You've used 40 entries,
+You've used 39 entries,
             3106 wiz_defined-function locations,
-            894 strings with 11359 characters,
-and the built_in function-call counts, 15463 in all, are:
-= -- 1483
-> -- 805
-< -- 40
-+ -- 290
-- -- 246
-* -- 1003
-:= -- 2554
-add.period$ -- 163
-call.type$ -- 40
+            889 strings with 11291 characters,
+and the built_in function-call counts, 15361 in all, are:
+= -- 1460
+> -- 830
+< -- 38
++ -- 298
+- -- 255
+* -- 1013
+:= -- 2536
+add.period$ -- 159
+call.type$ -- 39
 change.case$ -- 179
-chr.to.int$ -- 54
-cite$ -- 82
-duplicate$ -- 715
-empty$ -- 1213
-format.name$ -- 329
-if$ -- 3263
+chr.to.int$ -- 53
+cite$ -- 80
+duplicate$ -- 701
+empty$ -- 1192
+format.name$ -- 332
+if$ -- 3236
 int.to.chr$ -- 5
 int.to.str$ -- 1
 missing$ -- 16
-newline$ -- 252
-num.names$ -- 160
-pop$ -- 446
+newline$ -- 246
+num.names$ -- 156
+pop$ -- 449
 preamble$ -- 1
-purify$ -- 122
+purify$ -- 124
 quote$ -- 0
-skip$ -- 536
+skip$ -- 529
 stack$ -- 0
-substring$ -- 216
-swap$ -- 97
+substring$ -- 214
+swap$ -- 96
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 415
+type$ -- 404
 warning$ -- 2
-while$ -- 132
+while$ -- 129
 width$ -- 0
-write$ -- 599
+write$ -- 584
 (There were 6 warnings)
